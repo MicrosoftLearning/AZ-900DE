@@ -1,26 +1,26 @@
 ---
 wts:
-    title: '05 – Erstellen einer SQL-Datenbank'
-    module: 'Modul 02 – Core Azure Services'
+    title: '05 â€“ Erstellen einer SQL-Datenbank'
+    module: 'Modul 02 â€“ Core Azure Services'
 ---
 
-# 05 – Erstellen einer SQL-Datenbank
+# 05 â€“ Erstellen einer SQL-Datenbank
 
 In dieser exemplarischen Vorgehensweise erstellen wir eine SQL-Datenbank in Azure und fragen dann die Daten in dieser Datenbank ab.
 
-# Aufgabe 1: Erstellen der Datenbank
+# AufgabeÂ 1: Erstellen der Datenbank
 
 In dieser Aufgabe werden wir eine SQL-Datenbank auf der Grundlage der AdventureWorksLT-Beispieldatenbank erstellen. 
 
 1. Melden Sie sich beim Azure-Portal an unter [**https://portal.azure.com**](https://portal.azure.com).
 
-2. Suchen Sie im Blatt **Alle Dienste** nach **SQL-Datenbanken** und wählen Sie es aus. Klicken Sie dann auf **+ Hinzufügen**. 
+2. Suchen Sie im Blatt **Alle Dienste** nach **SQL-Datenbanken** und wÃ¤hlen Sie es aus. Klicken Sie dann auf **+ HinzufÃ¼gen**. 
 
 3. Geben Sie auf der Registerkarte **Grundlagen** diese Informationen ein.  
 
     | Einstellung | Wert | 
     | --- | --- |
-    | Abonnement | **Wählen Sie Ihr Abonnement** |
+    | Abonnement | **WÃ¤hlen Sie Ihr Abonnement** |
     | Ressourcengruppe | **myRGDb** (Neu erstellen) |
     | Datenbankname| **db1** | 
     | | |
@@ -33,23 +33,23 @@ In dieser Aufgabe werden wir eine SQL-Datenbank auf der Grundlage der AdventureW
     | Serveradministratoranmeldung | **sqluser** |
     | Kennwort | **Pa$$w0rd1234** |
     | Ort | **(USA) USA, Osten** |
-    | Azure-Diensten Zugriff auf den Server erlauben| ***Aktivieren Sie das Kontrollkästchen*** |
+    | Azure-Diensten Zugriff auf den Server erlauben| ***Aktivieren Sie das KontrollkÃ¤stchen*** |
     | | |
 
-   ![Screenshot des Bereichs „Server“ und des Bereichs „Neuer Server“, wobei die Felder entsprechend der Tabelle ausgefüllt und die Schaltflächen „Überprüfen + Erstellen“ und „OK“" hervorgehoben sind.](../images/0501.png)
+   ![Screenshot des Bereichs â€Serverâ€œ und des Bereichs â€Neuer Serverâ€œ, wobei die Felder entsprechend der Tabelle ausgefÃ¼llt und die SchaltflÃ¤chen â€ÃœberprÃ¼fen + Erstellenâ€œ und â€OKâ€œ" hervorgehoben sind.](../images/0501.png)
 
 4. Wechseln Sie auf die Registerkarte **Netzwerk**, und konfigurieren Sie die folgenden Einstellungen (lassen Sie andere mit ihren Standardeinstellungen). 
 
     | Einstellung | Wert | 
     | --- | --- |
-    | Konnektivitätsmethode | **Öffentlicher Endpunkt** |    
-    | Ermöglichen Sie Azure-Diensten und -Ressourcen den Zugriff auf diesen Server | **Ja** |
-    | Aktuelle Client-IP-Adresse hinzufügen | **Nein** |
+    | KonnektivitÃ¤tsmethode | **Ã–ffentlicher Endpunkt** |    
+    | ErmÃ¶glichen Sie Azure-Diensten und -Ressourcen den Zugriff auf diesen Server | **Ja** |
+    | Aktuelle Client-IP-Adresse hinzufÃ¼gen | **Nein** |
     | | |
     
-   ![Screenshot der Registerkarte „Netzwerk“ des Blattes „SQL-Datenbank erstellen“ mit den in der Tabelle gewählten Einstellungen und hervorgehobener Schaltfläche „Überprüfen + Erstellen“.](../images/0501b.png)
+   ![Screenshot der Registerkarte â€Netzwerkâ€œ des Blattes â€SQL-Datenbank erstellenâ€œ mit den in der Tabelle gewÃ¤hlten Einstellungen und hervorgehobener SchaltflÃ¤che â€ÃœberprÃ¼fen + Erstellenâ€œ.](../images/0501b.png)
 
-5. Wechseln Sie in die Registerkarte **Zusätzliche Einstellungen**. Wir werden die AdventureWorksLT-Beispieldatenbank verwenden.
+5. Wechseln Sie in die Registerkarte **ZusÃ¤tzliche Einstellungen**. Wir werden die AdventureWorksLT-Beispieldatenbank verwenden.
 
     | Einstellung | Wert | 
     | --- | --- |
@@ -58,17 +58,17 @@ In dieser Aufgabe werden wir eine SQL-Datenbank auf der Grundlage der AdventureW
     | Advanced Data Security aktivieren | **Nicht jetzt** |
     | | |
 
-    ![Screenshot der Registerkarte „Zusätzliche Einstellungen“ des Blatts „SQL-Datenbank erstellen“, wobei die Einstellungen gemäß der Tabelle ausgewählt und die Schaltfläche „Überprüfen + erstellen“ hervorgehoben ist.](../images/0501c.png)
+    ![Screenshot der Registerkarte â€ZusÃ¤tzliche Einstellungenâ€œ des Blatts â€SQL-Datenbank erstellenâ€œ, wobei die Einstellungen gemÃ¤ÃŸ der Tabelle ausgewÃ¤hlt und die SchaltflÃ¤che â€ÃœberprÃ¼fen + erstellenâ€œ hervorgehoben ist.](../images/0501c.png)
 
-6. Klicken Sie auf **Überprüfen + Erstellen** und dann auf **Erstellen**, um die Ressourcengruppe, den Server und die Datenbank bereitzustellen. Die Bereitstellung kann etwa 2 bis 5 Minuten dauern.
+6. Klicken Sie auf **ÃœberprÃ¼fen + Erstellen** und dann auf **Erstellen**, um die Ressourcengruppe, den Server und die Datenbank bereitzustellen. Die Bereitstellung kann etwa 2 bis 5 Minuten dauern.
 
-7. Überwachen Sie Ihre Bereitstellung. 
+7. Ãœberwachen Sie Ihre Bereitstellung. 
 
-# Aufgabe 2: Datenbank testen.
+# AufgabeÂ 2: Datenbank testen.
 
-In dieser Aufgabe konfigurieren wir den SQL Server und führen eine SQL-Abfrage aus. 
+In dieser Aufgabe konfigurieren wir den SQL Server und fÃ¼hren eine SQL-Abfrage aus. 
 
-1. Suchen Sie auf dem Blatt **Alle Dienste** nach **SQL-Datenbanken**, und wählen Sie diese Option aus. Vergewissern Sie sich, dass Ihre neue Datenbank erstellt wurde. Möglicherweise müssen Sie die Seite **Aktualisieren**.
+1. Suchen Sie auf dem Blatt **Alle Dienste** nach **SQL-Datenbanken**, und wÃ¤hlen Sie diese Option aus. Vergewissern Sie sich, dass Ihre neue Datenbank erstellt wurde. MÃ¶glicherweise mÃ¼ssen Sie die Seite **Aktualisieren**.
 
     ![Screenshot der gerade bereitgestellten SQL-Datenbank und des SQL-Servers.](../images/0502.png)
 
@@ -76,21 +76,21 @@ In dieser Aufgabe konfigurieren wir den SQL Server und führen eine SQL-Abfrage a
 
 3. Melden Sie sich als **sqluser** mit dem Kennwort **Pa$$$w0rd1234** an.
 
-4. Sie werden sich nicht anmelden können. Lesen Sie den Fehler genau durch und notieren Sie sich die IP-Adresse, die durch die Firewall erlaubt werden muss. 
+4. Sie werden sich nicht anmelden kÃ¶nnen. Lesen Sie den Fehler genau durch und notieren Sie sich die IP-Adresse, die durch die Firewall erlaubt werden muss. 
 
     ![Screenshot der Anmeldeseite des Abfrage-Editors mit IP-Adressfehler.](../images/0503.png)
 
-5. Klicken Sie im Blatt **db1** auf **Überblick**. 
+5. Klicken Sie im Blatt **db1** auf **Ãœberblick**. 
 
-    ![Screenshot der Seite „SQL-Server“.](../images/0504.png)
+    ![Screenshot der Seite â€SQL-Serverâ€œ.](../images/0504.png)
 
-6. Klicken Sie im SQL-Server-Blatt **Überblick** auf **Server-Firewall einstellen**.
+6. Klicken Sie im SQL-Server-Blatt **Ãœberblick** auf **Server-Firewall einstellen**.
 
-7. Klicken Sie auf **Client-IP hinzufügen** (obere Menüleiste), um die IP-Adresse hinzuzufügen, auf die in der Fehlermeldung verwiesen wird. Achten Sie darauf, Ihre Änderungen zu **Speichern**. 
+7. Klicken Sie auf **Client-IP hinzufÃ¼gen** (obere MenÃ¼leiste), um die IP-Adresse hinzuzufÃ¼gen, auf die in der Fehlermeldung verwiesen wird. Achten Sie darauf, Ihre Ã„nderungen zu **Speichern**. 
 
     ![Screenshot der Einstellungsseite der SQL-Server-Firewall mit hervorgehobener neuer IP-Regel.](../images/0506.png)
 
-8. Kehren Sie zu Ihrer SQL-Datenbank und der Anmeldeseite von **Abfrage-Editor (Vorschau)** zurück. Versuchen Sie, sich wieder als **sqluser** mit dem Kennwort **Pa$$$w0rd1234** anzumelden. Diesmal sollten Sie Erfolg haben. Beachten Sie, dass es einige Minuten dauern kann, bis die neue Firewall-Regel bereitgestellt wird. 
+8. Kehren Sie zu Ihrer SQL-Datenbank und der Anmeldeseite von **Abfrage-Editor (Vorschau)** zurÃ¼ck. Versuchen Sie, sich wieder als **sqluser** mit dem Kennwort **Pa$$$w0rd1234** anzumelden. Diesmal sollten Sie Erfolg haben. Beachten Sie, dass es einige Minuten dauern kann, bis die neue Firewall-Regel bereitgestellt wird. 
 
 9. Sobald Sie sich erfolgreich angemeldet haben, wird das Abfragefenster angezeigt. Geben Sie die folgende Abfrage in den Editor-Bereich ein.
 
@@ -101,12 +101,12 @@ In dieser Aufgabe konfigurieren wir den SQL Server und führen eine SQL-Abfrage a
     ON pc.productcategoryid = p.productcategoryid;
     ```
 
-    ![Screenshot des Query-Editors mit dem Abfragebereich und den Befehlen, die erfolgreich ausgeführt wurden.](../images/0507.png)
+    ![Screenshot des Query-Editors mit dem Abfragebereich und den Befehlen, die erfolgreich ausgefÃ¼hrt wurden.](../images/0507.png)
 
-10. Klicken Sie auf **Ausführen**, und überprüfen Sie dann die Abfrageergebnisse im Bereich **Ergebnisse**. Die Abfrage sollte erfolgreich ausgeführt werden.
+10. Klicken Sie auf **AusfÃ¼hren**, und Ã¼berprÃ¼fen Sie dann die Abfrageergebnisse im Bereich **Ergebnisse**. Die Abfrage sollte erfolgreich ausgefÃ¼hrt werden.
 
-    ![Screenshot des Datenbank-Abfrage-Editor-Bereichs, in dem der SQL-Code erfolgreich ausgeführt wurde und die Ausgabe im Ergebnisbereich sichtbar ist.](../images/0508.png)
+    ![Screenshot des Datenbank-Abfrage-Editor-Bereichs, in dem der SQL-Code erfolgreich ausgefÃ¼hrt wurde und die Ausgabe im Ergebnisbereich sichtbar ist.](../images/0508.png)
 
-Herzlichen Glückwunsch! Sie haben eine SQL-Datenbank in Azure erstellt und die Daten in dieser Datenbank erfolgreich abgefragt.
+Herzlichen GlÃ¼ckwunsch! Sie haben eine SQL-Datenbank in Azure erstellt und die Daten in dieser Datenbank erfolgreich abgefragt.
 
-**Hinweis**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**Hinweis**: Um zusÃ¤tzliche Kosten zu vermeiden, kÃ¶nnen Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe lÃ¶schen**. ÃœberprÃ¼fen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **LÃ¶schen**. Ãœberwachen Sie die **Benachrichtigungen**, um zu sehen, wie der LÃ¶schvorgang ablÃ¤uft.

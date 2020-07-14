@@ -1,33 +1,33 @@
 ---
 wts:
-    title: '12 – Sicherer Netzwerkdatenverkehr'
-    module: 'Modul 03 – Sicherheit, Datenschutz, Compliance und Vertrauen'
+    title: '12 â€“ Sicherer Netzwerkdatenverkehr'
+    module: 'Modul 03 â€“ Sicherheit, Datenschutz, Compliance und Vertrauen'
 ---
-# 12 – Sicherer Netzwerkdatenverkehr
+# 12 â€“ Sicherer Netzwerkdatenverkehr
 
 In dieser Anleitung konfigurieren wir eine Netzwerksicherheitsgruppe.
 
-# Aufgabe 1: Erstellen eines virtuellen Computers
+# AufgabeÂ 1: Erstellen eines virtuellen Computers
 
 In dieser Aufgabe erstellen wir einen virtuellen Windows Server 2019 Datacenter-Computer. 
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 
-2. Suchen Sie auf dem Blatt **Alle Dienste** nach **Virtuelle Computer**, und wählen Sie diese Option aus. Klicken Sie dann auf **+ Hinzufügen**.
+2. Suchen Sie auf dem Blatt **Alle Dienste** nach **Virtuelle Computer**, und wÃ¤hlen Sie diese Option aus. Klicken Sie dann auf **+ HinzufÃ¼gen**.
 
 3. Auf der Registerkarte **Grundlagen** geben Sie die folgenden Informationen ein (belassen Sie ansonsten die Standardeinstellungen):
 
     | Einstellungen | Werte |
     |  -- | -- |
-    | Abonnement | **Wählen Sie Ihr Abonnement**|
+    | Abonnement | **WÃ¤hlen Sie Ihr Abonnement**|
     | Ressourcengruppe | **myRGSecure** (Neu erstellen) |
     | Name des virtuellen Computers | **SimpleWinVM** |
     | Ort | **(US) East US**|
     | Bild | **Windows Server 2019 Datacenter**|
-    | Größe | **Standard D2s v3**|
+    | GrÃ¶ÃŸe | **Standard D2s v3**|
     | Benutzername des Administratorkontos | **azureuser** |
-    | Kennwort für das Administratorkonto | **Pa$$w0rd1234**|
-    | Regeln für eingehende Ports | **Keine**|
+    | Kennwort fÃ¼r das Administratorkonto | **Pa$$w0rd1234**|
+    | Regeln fÃ¼r eingehende Ports | **Keine**|
     | | |
 
 4. Wechseln Sie zur Registerkarte **Netzwerk**, und konfigurieren Sie die folgende Einstellung:
@@ -37,64 +37,64 @@ In dieser Aufgabe erstellen wir einen virtuellen Windows Server 2019 Datacenter-
     | NIC-Netzwerksicherheitsgruppe | **Keine**|
     | | |
 
-5. Wechseln Sie zur Registerkarte **Verwaltung**, und wählen Sie im Abschnitt **Überwachung** die folgende Einstellung aus:
+5. Wechseln Sie zur Registerkarte **Verwaltung**, und wÃ¤hlen Sie im Abschnitt **Ãœberwachung** die folgende Einstellung aus:
 
     | Einstellungen | Werte |
     | -- | -- |
     | Startdiagnose | **Aus**|
     | | |
 
-6. Übernehmen Sie die verbleibenden Standardeinstellungen, und klicken Sie dann auf die Schaltfläche **Überprüfen + Erstellen** am unteren Rand der Seite.
+6. Ãœbernehmen Sie die verbleibenden Standardeinstellungen, und klicken Sie dann auf die SchaltflÃ¤che **ÃœberprÃ¼fen + Erstellen** am unteren Rand der Seite.
 
-7. Sobald die Validierung bestanden ist, klicken Sie auf die Schaltfläche **Erstellen**. Es kann etwa fünf Minuten dauern, den virtuellen Computer bereitzustellen.
+7. Sobald die Validierung bestanden ist, klicken Sie auf die SchaltflÃ¤che **Erstellen**. Es kann etwa fÃ¼nf Minuten dauern, den virtuellen Computer bereitzustellen.
 
-8. Überwachen Sie die Bereitstellung. Das Erstellen der Ressourcengruppe und des virtuellen Computers kann einige Minuten dauern. 
+8. Ãœberwachen Sie die Bereitstellung. Das Erstellen der Ressourcengruppe und des virtuellen Computers kann einige Minuten dauern. 
 
 9. Klicken Sie im Bereitstellungsblatt oder im Infobereich auf **Zu Ressource wechseln**. 
 
-10. Klicken Sie auf dem **SimpleWinVM**-Blatt des virtuellen Computers auf **Netzwerk** und überprüfen Sie die Registerkarte **Regeln für eingehende Ports**. Beachten Sie, dass der Netzwerkschnittstelle des virtuellen Computers oder dem Subnetz, an das die Netzwerkschnittstelle angeschlossen ist, keine Netzwerksicherheitsgruppe zugeordnet ist.
+10. Klicken Sie auf dem **SimpleWinVM**-Blatt des virtuellen Computers auf **Netzwerk** und Ã¼berprÃ¼fen Sie die Registerkarte **Regeln fÃ¼r eingehende Ports**. Beachten Sie, dass der Netzwerkschnittstelle des virtuellen Computers oder dem Subnetz, an das die Netzwerkschnittstelle angeschlossen ist, keine Netzwerksicherheitsgruppe zugeordnet ist.
 
-    **Hinweis**: Identifizieren Sie den Namen der Netzwerkschnittstelle. Sie werden dies in der nächsten Aufgabe benötigen.
+    **Hinweis**: Identifizieren Sie den Namen der Netzwerkschnittstelle. Sie werden dies in der nÃ¤chsten Aufgabe benÃ¶tigen.
 
-# Aufgabe 2: Netzwerksicherheitsgruppe erstellen
+# AufgabeÂ 2: Netzwerksicherheitsgruppe erstellen
 
 In dieser Aufgabe erstellen wir eine Netzwerksicherheitsgruppe und ordnen sie der Netzwerkschnittstelle zu.
 
-1. Suchen Sie auf dem Blatt **Alle Dienste** nach **Netzwerksicherheitsgruppen**, und wählen Sie diese Option aus. Klicken Sie anschließend auf **+ Hinzufügen**.
+1. Suchen Sie auf dem Blatt **Alle Dienste** nach **Netzwerksicherheitsgruppen**, und wÃ¤hlen Sie diese Option aus. Klicken Sie anschlieÃŸend auf **+ HinzufÃ¼gen**.
 
 2. Geben Sie die folgenden Einstellungen auf der Registerkarte **Grundlagen** des Blatts **Netzwerksicherheitsgruppe erstellen** an.
 
     | Einstellung | Wert |
     | -- | -- |
-    | Abonnement | **Wählen Sie Ihr Abonnement** |
+    | Abonnement | **WÃ¤hlen Sie Ihr Abonnement** |
     | Ressourcengruppe | **myRGSecure** |
     | Name | **myNSGSecure** |
     | Region | **(USA) USA, Osten**  |
     | | |
 
-3. Klicken Sie auf **Überprüfen + Erstellen** und nach der Validierung auf **Erstellen**.
+3. Klicken Sie auf **ÃœberprÃ¼fen + Erstellen** und nach der Validierung auf **Erstellen**.
 
 4. Klicken Sie nach dem Erstellen des NSG auf **Zu Ressource wechseln**.
 
 5. Klicken Sie unter **Einstellungen** auf **Netzwerkschnittstellen** und dann auf **+ Zuordnen**.
 
-6. Wählen Sie die in der vorherigen Aufgabe identifizierte Netzwerkschnittstelle aus. 
+6. WÃ¤hlen Sie die in der vorherigen Aufgabe identifizierte Netzwerkschnittstelle aus. 
 
-# Aufgabe 3: Eingehende Sicherheitsportregel konfigurieren, um RDP zuzulassen
+# AufgabeÂ 3: Eingehende Sicherheitsportregel konfigurieren, um RDP zuzulassen
 
 In dieser Aufgabe erlauben wir den RDP-Verkehr zum virtuellen Computer, indem wir eine eingehende Sicherheitsportregel konfigurieren. 
 
 1. Navigieren Sie im Azure-Portal zum Blatt des virtuellen Computers **SimpleWinVM**. 
 
-2. Klicken Sie im Bereich **Übersicht** auf **Verbinden**.
+2. Klicken Sie im Bereich **Ãœbersicht** auf **Verbinden**.
 
-3. Versuchen Sie, über RDP eine Verbindung zum virtuellen Computer herzustellen. Standardmäßig erlaubt die Netzwerksicherheitsgruppe kein RDP. Schließen Sie das Fehlerfenster. 
+3. Versuchen Sie, Ã¼ber RDP eine Verbindung zum virtuellen Computer herzustellen. StandardmÃ¤ÃŸig erlaubt die Netzwerksicherheitsgruppe kein RDP. SchlieÃŸen Sie das Fehlerfenster. 
 
     ![Screenshot der Fehlermeldung, die besagt, dass die Verbindung zum virtuellen Computer fehlgeschlagen ist.](../images/1201.png)
 
-4. Scrollen Sie im Blatt „Virtueller Computer“ nach unten zum Abschnitt **Einstellungen** und klicken Sie auf **Netzwerk**. Beachten Sie, dass die eingehenden Regeln für die Netzwerksicherheitsgruppe **myNSGSecure (an die Netzwerkschnittstelle angeschlossen: myVMNic)** den gesamten eingehenden Datenverkehr mit Ausnahme des Datenverkehrs innerhalb des virtuellen Netzwerks und der Load Balancer-Tests verweigert.
+4. Scrollen Sie im Blatt â€žVirtueller Computerâ€œ nach unten zum Abschnitt **Einstellungen** und klicken Sie auf **Netzwerk**. Beachten Sie, dass die eingehenden Regeln fÃ¼r die Netzwerksicherheitsgruppe **myNSGSecure (an die Netzwerkschnittstelle angeschlossen: myVMNic)** den gesamten eingehenden Datenverkehr mit Ausnahme des Datenverkehrs innerhalb des virtuellen Netzwerks und der Load Balancer-Tests verweigert.
 
-5. Klicken Sie auf der Registerkarte **Regeln für eingehende Ports** auf **Regel für eingehende Ports hinzufügen**. Klicken Sie auf **Hinzufügen**, wenn Sie fertig sind. 
+5. Klicken Sie auf der Registerkarte **Regeln fÃ¼r eingehende Ports** auf **Regel fÃ¼r eingehende Ports hinzufÃ¼gen**. Klicken Sie auf **HinzufÃ¼gen**, wenn Sie fertig sind. 
 
     | Einstellung | Wert |
     | -- | -- |
@@ -104,31 +104,31 @@ In dieser Aufgabe erlauben wir den RDP-Verkehr zum virtuellen Computer, indem wi
     | Zielportbereiche | **3389** |
     | Protokoll | **TCP** |
     | Aktion | **Zulassen** |
-    | Priorität | **300** |
+    | PrioritÃ¤t | **300** |
     | Name | **AllowRDP** |
     | | |
 
 6. Warten Sie bis zum Bereitstellen der Regel, und versuchen Sie dann erneut sich per RDP mit dem virtuellen Computer zu verbinden. Diesmal sollten Sie Erfolg haben. Denken Sie daran, der Benutzername ist **azureuser**, und das Passwort lautet **Pa$$w0rd1234**.
 
-# Aufgabe 4: Ausgehende Sicherheitsportregel konfigurieren, um den Internetzugriff zu verweigern
+# AufgabeÂ 4: Ausgehende Sicherheitsportregel konfigurieren, um den Internetzugriff zu verweigern
 
-In dieser Aufgabe erstellen wir eine NSG-Regel für ausgehende Ports, die den Internetzugriff verweigert, und testen dann, ob die Regel funktioniert.
+In dieser Aufgabe erstellen wir eine NSG-Regel fÃ¼r ausgehende Ports, die den Internetzugriff verweigert, und testen dann, ob die Regel funktioniert.
 
 1. Fahren Sie in der RDP-Sitzung Ihres virtuellen Computers fort. 
 
-2. Öffnen Sie nach dem Start der Maschine den **Internet Explorer**-Browser. 
+2. Ã–ffnen Sie nach dem Start der Maschine den **Internet Explorer**-Browser. 
 
-3. Stellen Sie sicher, dass Sie auf **https://www.bing.com** zugreifen können, und schließen Sie dann Internet Explorer. Sie müssen sich durch die erweiterten Sicherheits-Popups von IE durcharbeiten. 
+3. Stellen Sie sicher, dass Sie auf **https://www.bing.com** zugreifen kÃ¶nnen, und schlieÃŸen Sie dann Internet Explorer. Sie mÃ¼ssen sich durch die erweiterten Sicherheits-Popups von IE durcharbeiten. 
 
     **Hinweis**: Wir konfigurieren nun eine Regel, um den ausgehenden Internetzugang zu verweigern. 
 
-4. Navigieren Sie im Azure-Portal zurück zum Blatt des virtuellen Computers **SimpleWinVM**. 
+4. Navigieren Sie im Azure-Portal zurÃ¼ck zum Blatt des virtuellen Computers **SimpleWinVM**. 
 
-5. Klicken Sie unter **Einstellungen** auf **Netzewerk** und dann auf **Regeln für ausgehende Ports**.
+5. Klicken Sie unter **Einstellungen** auf **Netzewerk** und dann auf **Regeln fÃ¼r ausgehende Ports**.
 
 6. Beachten Sie, dass es die Regel **AllowInternetOutbound** gibt. Dies ist eine Standardregel und kann nicht entfernt werden. 
 
-7. Klicken Sie auf **Regel für ausgehende Ports hinzufügen** rechts von der Netzwerksicherheitsgruppe **myNSGSecure (an die Netzwerkschnittstelle angeschlossen: myVMNic)** und konfigurieren Sie eine neue ausgehende Sicherheitsregel mit einer höheren Priorität, die den Internetverkehr verweigert. Klicken Sie auf  **Hinzufügen**, wenn Sie fertig sind. 
+7. Klicken Sie auf **Regel fÃ¼r ausgehende Ports hinzufÃ¼gen** rechts von der Netzwerksicherheitsgruppe **myNSGSecure (an die Netzwerkschnittstelle angeschlossen: myVMNic)** und konfigurieren Sie eine neue ausgehende Sicherheitsregel mit einer hÃ¶heren PrioritÃ¤t, die den Internetverkehr verweigert. Klicken Sie auf  **HinzufÃ¼gen**, wenn Sie fertig sind. 
 
     | Einstellung | Wert |
     | -- | -- |
@@ -139,12 +139,12 @@ In dieser Aufgabe erstellen wir eine NSG-Regel für ausgehende Ports, die den Int
     | Zielportbereiche | **\*** |
     | Protokoll | **TCP** |
     | Aktion | **Verweigern** |
-    | Priorität | **4000** |
+    | PrioritÃ¤t | **4000** |
     | Name | **DenyInternet** |
     | | |
 
-8. Kehren Sie zu Ihrer RDP-Sitzung zurück. 
+8. Kehren Sie zu Ihrer RDP-Sitzung zurÃ¼ck. 
 
-9. Wechseln Sie zu **https://www.microsoft.com**. Die Seite sollte nicht angezeigt werden. Möglicherweise müssen Sie sich durch zusätzliche erweiterte Sicherheits-Popups im IE durcharbeiten.  
+9. Wechseln Sie zu **https://www.microsoft.com**. Die Seite sollte nicht angezeigt werden. MÃ¶glicherweise mÃ¼ssen Sie sich durch zusÃ¤tzliche erweiterte Sicherheits-Popups im IE durcharbeiten.  
 
-**Hinweis**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**Hinweis**: Um zusÃ¤tzliche Kosten zu vermeiden, kÃ¶nnen Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe lÃ¶schen**. ÃœberprÃ¼fen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **LÃ¶schen**. Ãœberwachen Sie die **Benachrichtigungen**, um zu sehen, wie der LÃ¶schvorgang ablÃ¤uft.

@@ -1,5 +1,5 @@
 ---
 wts:
-    title: '00 – Readme – Fehlerprotokoll'
-    module: 'Modul 00 – Einführung in den Kurs'
+    title: '00 â€“ Readme â€“ Fehlerprotokoll'
+    module: 'Modul 00 â€“ EinfÃ¼hrung in den Kurs'
 ---

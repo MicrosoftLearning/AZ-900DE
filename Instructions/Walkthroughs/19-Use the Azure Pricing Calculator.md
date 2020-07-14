@@ -1,27 +1,27 @@
 ---
 wts:
-    title: '19 – Verwenden des Azure-Preisrechners'
-    module: 'Modul 04 – Azure-Preise und -Support'
+    title: '19 â€“ Verwenden des Azure-Preisrechners'
+    module: 'Modul 04 â€“ Azure-Preise und -Support'
 ---
-# 19 – Verwenden des Preisrechners
+# 19 â€“ Verwenden des Preisrechners
 
-In dieser exemplarischen Vorgehensweise verwenden wir den Azure-Preisrechner, um einen Kostenvoranschlag für einen virtuellen Azure-Computer und zugehörige Netzwerkressourcen zu erstellen.
+In dieser exemplarischen Vorgehensweise verwenden wir den Azure-Preisrechner, um einen Kostenvoranschlag fÃ¼r einen virtuellen Azure-Computer und zugehÃ¶rige Netzwerkressourcen zu erstellen.
 
-# Aufgabe 1: Konfigurieren des Preisrechners
+# AufgabeÂ 1: Konfigurieren des Preisrechners
 
-In dieser Aufgabe schätzen wir die Kosten einer Infrastruktur-Stichprobe mithilfe des Azure-Preisrechners ab. 
+In dieser Aufgabe schÃ¤tzen wir die Kosten einer Infrastruktur-Stichprobe mithilfe des Azure-Preisrechners ab. 
 
-**Hinweis**: Um eine Azure-Preisrechnerschätzung zu erstellen, enthält diese exemplarische Vorgehensweise Beispielkonfigurationen für den virtuellen Computer und die zugehörigen Ressourcen. Verwenden Sie diese Beispielkonfigurationen, oder stellen Sie stattdessen dem Azure-Preisrechner Details zu Ihren *tatsächlichen* Ressourcenanforderungen zur Verfügung.
+**Hinweis**: Um eine Azure-PreisrechnerschÃ¤tzung zu erstellen, enthÃ¤lt diese exemplarische Vorgehensweise Beispielkonfigurationen fÃ¼r den virtuellen Computer und die zugehÃ¶rigen Ressourcen. Verwenden Sie diese Beispielkonfigurationen, oder stellen Sie stattdessen dem Azure-Preisrechner Details zu Ihren *tatsÃ¤chlichen* Ressourcenanforderungen zur VerfÃ¼gung.
 
 1. Navigieren Sie in einem Browser zur [Azure-Preisrechner](https://azure.microsoft.com/de-de/pricing/calculator/)-Webseite.
 
-2. Klicken Sie auf der Registerkarte **Produkte** auf **Virtual Machines**, um Details zu Ihrer Konfiguration des virtuellen Computers hinzuzufügen. Scrollen Sie nach unten, um die Details des virtuellen Computers anzuzeigen. 
+2. Klicken Sie auf der Registerkarte **Produkte** auf **Virtual Machines**, um Details zu Ihrer Konfiguration des virtuellen Computers hinzuzufÃ¼gen. Scrollen Sie nach unten, um die Details des virtuellen Computers anzuzeigen. 
 
-3. Ersetzen Sie den Text **Ihre Schätzung** und **Virtuelle Computer** mit aussagekräftigeren Namen für Ihre Azure-Preisrechnerschätzung und Ihre Konfiguration des virtuellen Computers. In dieser exemplarischen Vorgehensweise wird **Meine Preisrechnerschätzung** für die Schätzung und **Virtueller Windows-Computer** für die Konfiguration des virtuellen Computers verwendet.
+3. Ersetzen Sie den Text **Ihre SchÃ¤tzung** und **Virtuelle Computer** mit aussagekrÃ¤ftigeren Namen fÃ¼r Ihre Azure-PreisrechnerschÃ¤tzung und Ihre Konfiguration des virtuellen Computers. In dieser exemplarischen Vorgehensweise wird **Meine PreisrechnerschÃ¤tzung** fÃ¼r die SchÃ¤tzung und **Virtueller Windows-Computer** fÃ¼r die Konfiguration des virtuellen Computers verwendet.
 
-   ![Screenshot des VM-Konfigurationsbereichs auf der Azure-Webseite für Preisrechnerschätzung. Der hervorgehobene Schätzungsname und der Konfigurationsname des virtuellen Computers geben an, wie ein Schätzungsname und ein Konfigurationsname für den virtuellen Computer zu einer Schätzung des Azure-Preisrechners hinzugefügt werden.](../images/1901.png)
+   ![Screenshot des VM-Konfigurationsbereichs auf der Azure-Webseite fÃ¼r PreisrechnerschÃ¤tzung. Der hervorgehobene SchÃ¤tzungsname und der Konfigurationsname des virtuellen Computers geben an, wie ein SchÃ¤tzungsname und ein Konfigurationsname fÃ¼r den virtuellen Computer zu einer SchÃ¤tzung des Azure-Preisrechners hinzugefÃ¼gt werden.](../images/1901.png)
 
-4. Ändern Sie die Standardkonfiguration des virtuellen Computers.
+4. Ã„ndern Sie die Standardkonfiguration des virtuellen Computers.
 
     | Region | Betriebssystem | Typ |
     |------|----------------|----|
@@ -30,50 +30,50 @@ In dieser Aufgabe schätzen wir die Kosten einer Infrastruktur-Stichprobe mithilf
 
     | Ebene | Instanz |
     |----|--------|
-    | Standard | A2: 2 Kernspeicher, 3,5 GB RAM, 135 GB temporärer Speicher |
+    | Standard | A2: 2 Kernspeicher, 3,5 GB RAM, 135 GB temporÃ¤rer Speicher |
     | | |
 
-   ![Screenshot des VM-Konfigurationsbereichs auf der Azure-Webseite für Preisrechnerschätzung. Die hervorgehobenen Beispiele für vom Benutzer eingegebene Konfigurationseigenschaftswerte des virtuellen Computers geben an, wie eine Konfiguration des virtuellen Computers in einer Azure-Preisrechnerschätzung angegeben wird.](../images/1902.png)
+   ![Screenshot des VM-Konfigurationsbereichs auf der Azure-Webseite fÃ¼r PreisrechnerschÃ¤tzung. Die hervorgehobenen Beispiele fÃ¼r vom Benutzer eingegebene Konfigurationseigenschaftswerte des virtuellen Computers geben an, wie eine Konfiguration des virtuellen Computers in einer Azure-PreisrechnerschÃ¤tzung angegeben wird.](../images/1902.png)
 
-    **Hinweis**: Die Spezifikationen und Preise der Instanzen des virtuellen Computers können von denen in diesem Beispiel abweichen. Folgen Sie dieser exemplarischen Vorgehensweise, indem Sie eine Instanz auswählen, die dem Beispiel so genau wie möglich entspricht. Wählen Sie im Menü **Mehr Info** rechts **Produktdetails** aus, um Details zu den verschiedenen Produktoptionen des virtuellen Computers anzuzeigen.
+    **Hinweis**: Die Spezifikationen und Preise der Instanzen des virtuellen Computers kÃ¶nnen von denen in diesem Beispiel abweichen. Folgen Sie dieser exemplarischen Vorgehensweise, indem Sie eine Instanz auswÃ¤hlen, die dem Beispiel so genau wie mÃ¶glich entspricht. WÃ¤hlen Sie im MenÃ¼ **Mehr Info** rechts **Produktdetails** aus, um Details zu den verschiedenen Produktoptionen des virtuellen Computers anzuzeigen.
 
 5. Legen Sie **Abrechnungsoption** auf **Vorausbezahlung** fest.
 
-   ![Screenshot des Bereichs mit den Abrechnungsoptionen des virtuellen Computers auf der Azure-Webseite für Preisrechnerschätzung. Die hervorgehobene Abrechnungsoption „Vorausbezahlung“ gibt an, wie eine Abrechnungsoption für einen virtuellen Computer in einer Azure-Preisrechnerschätzung angegeben wird.](../images/1903.png)
+   ![Screenshot des Bereichs mit den Abrechnungsoptionen des virtuellen Computers auf der Azure-Webseite fÃ¼r PreisrechnerschÃ¤tzung. Die hervorgehobene Abrechnungsoption â€Vorausbezahlungâ€œ gibt an, wie eine Abrechnungsoption fÃ¼r einen virtuellen Computer in einer Azure-PreisrechnerschÃ¤tzung angegeben wird.](../images/1903.png)
 
-6. In Azure wird ein Monat als 730 Stunden definiert. Wenn Ihr virtueller Computer jeden Monat zu 100 Prozent verfügbar sein muss, setzen Sie den Wert für Stunden pro Monat auf `730`. In diesem exemplarischen Vorgehensweise muss ein virtueller Computer jeden Monat zu 50 Prozent verfügbar sein.
+6. In Azure wird ein Monat als 730 Stunden definiert. Wenn Ihr virtueller Computer jeden Monat zu 100 Prozent verfÃ¼gbar sein muss, setzen Sie den Wert fÃ¼r Stunden pro Monat auf `730`. In diesem exemplarischen Vorgehensweise muss ein virtueller Computer jeden Monat zu 50 Prozent verfÃ¼gbar sein.
 
-    Belassen Sie die Anzahl der virtuellen Computer auf `1`, und ändern Sie den Wert für Stunden pro Monat zu `365`.
+    Belassen Sie die Anzahl der virtuellen Computer auf `1`, und Ã¤ndern Sie den Wert fÃ¼r Stunden pro Monat zu `365`.
 
-   ![Screenshot des Bereichs mit den Abrechnungsoptionen des virtuellen Computers auf der Azure-Webseite für Preisrechnerschätzung. Die hervorgehobene Zahl von Instanzen des virtuellen Computers und Stunden pro Monat gibt an, wie die Anzahl von Instanzen und Stunden pro Monat für einen virtuellen Computer in einer Schätzung des Azure-Preisrechners bestimmt wird.](../images/1904.png)
+   ![Screenshot des Bereichs mit den Abrechnungsoptionen des virtuellen Computers auf der Azure-Webseite fÃ¼r PreisrechnerschÃ¤tzung. Die hervorgehobene Zahl von Instanzen des virtuellen Computers und Stunden pro Monat gibt an, wie die Anzahl von Instanzen und Stunden pro Monat fÃ¼r einen virtuellen Computer in einer SchÃ¤tzung des Azure-Preisrechners bestimmt wird.](../images/1904.png)
 
-7. Ändern Sie im Bereich **Verwaltete BS-Datenträger** die standardmäßige VM-Speicherkonfiguration.
+7. Ã„ndern Sie im Bereich **Verwaltete BS-DatentrÃ¤ger** die standardmÃ¤ÃŸige VM-Speicherkonfiguration.
 
-    | Ebene | Diskgröße | Zahl der Disks | Momentaufnahme | Speichertransaktionen |
+    | Ebene | DiskgrÃ¶ÃŸe | Zahl der Disks | Momentaufnahme | Speichertransaktionen |
     | ---- | --------- | --------------- | -------- | -------------------- |
     | HDD Standard | S30: 1.024 GiB | 1 | Aus | 10.000 |
 
-   ![Screenshot des Optionsbereichs für verwaltete Betriebssystemdatenträger auf der Azure-Preisberechnungs-Webseite. Die hervorgehobenen Optionen für Stufentyp, Datenträgergröße, Anzahl der Datenträger und Anzahl der Speichertransaktionen geben an, wie eine Speicherkonfiguration für einen virtuellen Computer in einer Azure-Preisrechnerschätzung angegeben wird.](../images/1905.png)
+   ![Screenshot des Optionsbereichs fÃ¼r verwaltete BetriebssystemdatentrÃ¤ger auf der Azure-Preisberechnungs-Webseite. Die hervorgehobenen Optionen fÃ¼r Stufentyp, DatentrÃ¤gergrÃ¶ÃŸe, Anzahl der DatentrÃ¤ger und Anzahl der Speichertransaktionen geben an, wie eine Speicherkonfiguration fÃ¼r einen virtuellen Computer in einer Azure-PreisrechnerschÃ¤tzung angegeben wird.](../images/1905.png)
 
-8. Informationen zum Hinzufügen von Netzwerkbandbreite zu Ihrer Schätzung finden Sie oben auf der Azure-Preisrechner-Webseite. Klicken Sie auf **Netzwerk** im Produktmenü links und dann auf die Kachel **Bandbreite**. Klicken Sie im Meldungsdialogfeld **Bandbreite hinzugefügt** auf **Anzeigen**.
+8. Informationen zum HinzufÃ¼gen von Netzwerkbandbreite zu Ihrer SchÃ¤tzung finden Sie oben auf der Azure-Preisrechner-Webseite. Klicken Sie auf **Netzwerk** im ProduktmenÃ¼ links und dann auf die Kachel **Bandbreite**. Klicken Sie im Meldungsdialogfeld **Bandbreite hinzugefÃ¼gt** auf **Anzeigen**.
 
-   ![Screenshot des Bereichs für Netzwerkprodukte auf der Azure-Preisrechner-Webseite. Die hervorgehobenen Kacheln „Netzwerk“, „Bandbreite hinzufügen“ und „Bandbreite anzeigen“ geben an, wie Details einer Netzwerkbandbreiten-Konfiguration in einer Azure-Preisrechnerschätzung hinzugefügt und angezeigt werden.](../images/1906.png)
+   ![Screenshot des Bereichs fÃ¼r Netzwerkprodukte auf der Azure-Preisrechner-Webseite. Die hervorgehobenen Kacheln â€Netzwerkâ€œ, â€Bandbreite hinzufÃ¼genâ€œ und â€Bandbreite anzeigenâ€œ geben an, wie Details einer Netzwerkbandbreiten-Konfiguration in einer Azure-PreisrechnerschÃ¤tzung hinzugefÃ¼gt und angezeigt werden.](../images/1906.png)
 
-9. Fügen Sie einen Namen für die Bandbreitenkonfiguration Ihres virtuellen Computers hinzu. In diesem exemplarischen Beispiel lautet der Name **Bandbreite: Windows-VM**. Ändern Sie die standardmäßige Bandbreitenkonfiguration, indem Sie die folgenden Details hinzufügen.
+9. FÃ¼gen Sie einen Namen fÃ¼r die Bandbreitenkonfiguration Ihres virtuellen Computers hinzu. In diesem exemplarischen Beispiel lautet der Name **Bandbreite: Windows-VM**. Ã„ndern Sie die standardmÃ¤ÃŸige Bandbreitenkonfiguration, indem Sie die folgenden Details hinzufÃ¼gen.
 
-    | Region | Betrag für ausgehende Datenübertragung in Zone 1 |
+    | Region | Betrag fÃ¼r ausgehende DatenÃ¼bertragung in Zone 1 |
     | ------ | -------------------------------------- |
     | Europa, Norden | 50 GB |
 
-   ![Screenshot des Konfigurationsbereichs für die Netzwerkbandbreite auf der Webseite der Azure-Preisrechners. Die hervorgehobenen Beispiele für vom Benutzer eingegebene Bandbreiten-Eigenschaftswerte geben an, wie eine Bandbreitenkonfiguration für einen virtuellen Computer innerhalb einer Azure-Preisrechnerschätzung angegeben wird.](../images/1907.png)
+   ![Screenshot des Konfigurationsbereichs fÃ¼r die Netzwerkbandbreite auf der Webseite der Azure-Preisrechners. Die hervorgehobenen Beispiele fÃ¼r vom Benutzer eingegebene Bandbreiten-Eigenschaftswerte geben an, wie eine Bandbreitenkonfiguration fÃ¼r einen virtuellen Computer innerhalb einer Azure-PreisrechnerschÃ¤tzung angegeben wird.](../images/1907.png)
 
-10. Kehren Sie zum Hinzufügen eines Application Gateway zum Anfang der Azure-Preisrechner-Webseite zurück. Klicken Sie im Produktmenü **Netzwerk** auf die Kachel **Application Gateway**. Klicken Sie im Meldungsdialogfeld **Application Gateway** auf **Anzeigen**.
+10. Kehren Sie zum HinzufÃ¼gen eines Application Gateway zum Anfang der Azure-Preisrechner-Webseite zurÃ¼ck. Klicken Sie im ProduktmenÃ¼ **Netzwerk** auf die Kachel **Application Gateway**. Klicken Sie im Meldungsdialogfeld **Application Gateway** auf **Anzeigen**.
 
-    ![Screenshot des Bereichs für Netzwerkprodukte auf der Azure-Preisrechner-Webseite. In den hervorgehobenen Kacheln „Netzwerk“, „Application Gateway hinzufügen“ und „Application Gateway anzeigen“ wird angegeben, wie Details einer Application Gateway-Konfiguration in einer Azure-Preisrechnerschätzung hinzugefügt und angezeigt werden.](../images/1908.png)
+    ![Screenshot des Bereichs fÃ¼r Netzwerkprodukte auf der Azure-Preisrechner-Webseite. In den hervorgehobenen Kacheln â€Netzwerkâ€œ, â€Application Gateway hinzufÃ¼genâ€œ und â€Application Gateway anzeigenâ€œ wird angegeben, wie Details einer Application Gateway-Konfiguration in einer Azure-PreisrechnerschÃ¤tzung hinzugefÃ¼gt und angezeigt werden.](../images/1908.png)
 
-11. Fügen Sie einen Namen für Ihre Application Gateway-Konfiguration hinzu. In dieser exemplarischen Vorgehensweise ist der Name **App Gateway: Windows-VM**. Ändern Sie die Standardkonfiguration des Application Gateway, indem Sie die folgenden Details hinzufügen.
+11. FÃ¼gen Sie einen Namen fÃ¼r Ihre Application Gateway-Konfiguration hinzu. In dieser exemplarischen Vorgehensweise ist der Name **App Gateway: Windows-VM**. Ã„ndern Sie die Standardkonfiguration des Application Gateway, indem Sie die folgenden Details hinzufÃ¼gen.
 
-    | Region | Ebene | Größe |
+    | Region | Ebene | GrÃ¶ÃŸe |
     | ------ | ---- | ---- |
     | Europa, Norden | Basic | Klein |
     | | |
@@ -93,21 +93,21 @@ In dieser Aufgabe schätzen wir die Kosten einer Infrastruktur-Stichprobe mithilf
     | 50 GB |
     | | |
 
-    ![Screenshot des Application Gateway-Konfigurationsbereichs auf der Webseite für die Azure-Preisrechnerschätzung.](../images/1909.png)
+    ![Screenshot des Application Gateway-Konfigurationsbereichs auf der Webseite fÃ¼r die Azure-PreisrechnerschÃ¤tzung.](../images/1909.png)
 
 
-# Aufgabe 2: Preisschätzung überprüfen
+# AufgabeÂ 2: PreisschÃ¤tzung Ã¼berprÃ¼fen
 
-In dieser Aufgabe werden die Ergebnisse des Azure-Preisrechners überprüft. 
+In dieser Aufgabe werden die Ergebnisse des Azure-Preisrechners Ã¼berprÃ¼ft. 
 
-1. Scrollen Sie zum Ende der Azure-Preisrechner-Webseite, um die Gesamtsumme der **Geschätzten monatlichen Kosten** anzuzeigen.
+1. Scrollen Sie zum Ende der Azure-Preisrechner-Webseite, um die Gesamtsumme der **GeschÃ¤tzten monatlichen Kosten** anzuzeigen.
 
-    **Hinweis**: Informieren Sie sich über die verschiedenen Optionen, die im Azure-Preisrechner verfügbar sind. In dieser exemplarischen Vorgehensweise müssen Sie beispielsweise die Währung auf Euro aktualisieren.
+    **Hinweis**: Informieren Sie sich Ã¼ber die verschiedenen Optionen, die im Azure-Preisrechner verfÃ¼gbar sind. In dieser exemplarischen Vorgehensweise mÃ¼ssen Sie beispielsweise die WÃ¤hrung auf Euro aktualisieren.
 
-2. Ändern Sie die Währung in Euro und wählen Sie dann **Export**, um eine Kopie des Kostenvoranschlags für die Offline-Anzeige im Microsoft Excel-Format (`.xlsx`) herunterzuladen.
+2. Ã„ndern Sie die WÃ¤hrung in Euro und wÃ¤hlen Sie dann **Export**, um eine Kopie des Kostenvoranschlags fÃ¼r die Offline-Anzeige im Microsoft Excel-Format (`.xlsx`) herunterzuladen.
 
-    ![Screenshot der geschätzten monatlichen Gesamtkosten auf der Webseite für die Azure-Preisrechnerschätzung. Die hervorgehobene Euro-Währungsoption gibt an, wie die in einer Azure-Preisrechnerschätzung verwendete Währung geändert werden kann. Die hervorgehobene Exportoption zeigt, wie Sie eine Kopie eines Kostenvoranschlags für die Offline-Anzeige herunterladen.](../images/1910.png)
+    ![Screenshot der geschÃ¤tzten monatlichen Gesamtkosten auf der Webseite fÃ¼r die Azure-PreisrechnerschÃ¤tzung. Die hervorgehobene Euro-WÃ¤hrungsoption gibt an, wie die in einer Azure-PreisrechnerschÃ¤tzung verwendete WÃ¤hrung geÃ¤ndert werden kann. Die hervorgehobene Exportoption zeigt, wie Sie eine Kopie eines Kostenvoranschlags fÃ¼r die Offline-Anzeige herunterladen.](../images/1910.png)
 
-    ![Screenshot einer Beispielschätzung des Azure-Preisrechners in Microsoft Excel.](../images/1911.png)
+    ![Screenshot einer BeispielschÃ¤tzung des Azure-Preisrechners in Microsoft Excel.](../images/1911.png)
 
-Herzlichen Glückwunsch! Sie haben einen Kostenvoranschlag aus dem Azure-Preisrechner heruntergeladen.
+Herzlichen GlÃ¼ckwunsch! Sie haben einen Kostenvoranschlag aus dem Azure-Preisrechner heruntergeladen.

@@ -1,50 +1,50 @@
 ---
 wts:
-    title: '08 – Erstellen einer Web-App'
-    module: 'Modul 02 – Core Azure Services'
+    title: '08 â€“ Erstellen einer Web-App'
+    module: 'Modul 02 â€“ Core Azure Services'
 ---
-# 08 – Erstellen einer Web-App
+# 08 â€“ Erstellen einer Web-App
 
-In dieser exemplarischen Vorgehensweise erstellen wir eine neue Web-App, in der ein Docker-Container ausgeführt wird. Der Container zeigt eine Begrüßungsnachricht an. 
+In dieser exemplarischen Vorgehensweise erstellen wir eine neue Web-App, in der ein Docker-Container ausgefÃ¼hrt wird. Der Container zeigt eine BegrÃ¼ÃŸungsnachricht an. 
 
-# Aufgabe 1: Eine Web-App erstellen
+# AufgabeÂ 1: Eine Web-App erstellen
 
-Azure App Service ist eine Sammlung von vier Diensten, die alle zum Hosten und Ausführen von Webanwendungen dienen. Die vier Dienste (Web-Apps, Mobile Apps, API-Apps und Locic Apps) sehen unterschiedlich aus, funktionieren jedoch letztendlich alle sehr ähnlich. Web-Apps ist der am häufigsten verwendete Dienst der vier Dienste. Diesen Dienst werden wir in diesem Lab verwenden.
+Azure App Service ist eine Sammlung von vier Diensten, die alle zum Hosten und AusfÃ¼hren von Webanwendungen dienen. Die vier Dienste (Web-Apps, Mobile Apps, API-Apps und Locic Apps) sehen unterschiedlich aus, funktionieren jedoch letztendlich alle sehr Ã¤hnlich. Web-Apps ist der am hÃ¤ufigsten verwendete Dienst der vier Dienste. Diesen Dienst werden wir in diesem Lab verwenden.
 
 In dieser Aufgabe erstellen Sie eine Azure App Service-Web-App. 
 
 1. Melden Sie sich beim [Azure-Portal](http://portal.azure.com/) an. 
 
-2. Suchen Sie im Blatt **Alle Dienste** den Eintrag **App Services**, wählen Sie ihn aus, und klicken Sie auf **+ Hinzufügen**.
+2. Suchen Sie im Blatt **Alle Dienste** den Eintrag **App Services**, wÃ¤hlen Sie ihn aus, und klicken Sie auf **+ HinzufÃ¼gen**.
 
-3. Geben Sie auf der Registerkarte **Grundlagen** auf dem **Web-App**-Blatt die folgenden Einstellungen an (Ersetzen Sie **xxxx** im Namen der Web-App mit Buchstaben und Ziffern, so dass der Name global eindeutig ist). Behalten Sie ansonsten die Standardeinstellungen bei, auch für den App Service-Plan. 
+3. Geben Sie auf der Registerkarte **Grundlagen** auf dem **Web-App**-Blatt die folgenden Einstellungen an (Ersetzen Sie **xxxx** im Namen der Web-App mit Buchstaben und Ziffern, so dass der Name global eindeutig ist). Behalten Sie ansonsten die Standardeinstellungen bei, auch fÃ¼r den App Service-Plan. 
 
     | Einstellung | Wert |
     | -- | -- |
-    | Abonnement | **Wählen Sie Ihr Abonnement** |
+    | Abonnement | **WÃ¤hlen Sie Ihr Abonnement** |
     | Ressourcengruppe | **myRGWebApp1** (Neu erstellen) |
     | Name | **myDockerWebAppxxxx** |
-    | Veröffentlichen | **Docker-Container** |
+    | VerÃ¶ffentlichen | **Docker-Container** |
     | Betriebssystem | **Linux** |
-    | Region | **USA, Osten** (ignorieren Sie alle Warnungen zur Verfügbarkeit von Dienstplänen) |
+    | Region | **USA, Osten** (ignorieren Sie alle Warnungen zur VerfÃ¼gbarkeit von DienstplÃ¤nen) |
     | | |	
 
-4. Klicken Sie auf **Weiter > Docker** und konfigurieren Sie die Containerinformationen. Der Startupbefehl ist optional und wird in dieser Übung nicht benötigt. 
+4. Klicken Sie auf **Weiter > Docker** und konfigurieren Sie die Containerinformationen. Der Startupbefehl ist optional und wird in dieser Ãœbung nicht benÃ¶tigt. 
 
-    **Hinweis:** Dies ist derselbe Container, der in der exemplarischen Vorgehensweise für Container Instances verwendet wurde, um eine Hallo Welt-Meldung anzuzeigen. 
+    **Hinweis:** Dies ist derselbe Container, der in der exemplarischen Vorgehensweise fÃ¼r Container Instances verwendet wurde, um eine Hallo Welt-Meldung anzuzeigen. 
 
     | Einstellung | Wert |
     | -- | -- |
     | Optionen | **Einzelner Container** |
     | Bildquelle | **Docker Hub** |
-    | Zugriffstyp | **Öffentlich** |
+    | Zugriffstyp | **Ã–ffentlich** |
     | Bild und Tag | **Microsoft / Aci-Helloworld** |
     | | |	
 
 
-5. Klicken Sie auf **Überprüfen + Erstellen **, und klicken Sie dann auf **Erstellen**. 
+5. Klicken Sie auf **ÃœberprÃ¼fen + Erstellen **, und klicken Sie dann auf **Erstellen**. 
 
-# Aufgabe 2: Web-App testen
+# AufgabeÂ 2: Web-App testen
 
 In dieser Aufgabe testen wir die Web-App.
 
@@ -52,15 +52,15 @@ In dieser Aufgabe testen wir die Web-App.
 
 2. Klicken Sie in **Benachrichtigungen** auf **Zur Ressource gehen**. 
 
-3. Suchen Sie im Blatt **Überblick** den Eintrag **URL**. 
+3. Suchen Sie im Blatt **Ãœberblick** den Eintrag **URL**. 
 
     ![Screenshot des Web-App-Eigenschaftenblatts. Die URL wird hervorgehoben.](../images/0801.png)
 
-4. Klicken Sie auf **URL**, um die neue Browser-Registerkarte zu öffnen und die Seite „Willkommen bei Azure Container Instances“ anzuzeigen.
+4. Klicken Sie auf **URL**, um die neue Browser-Registerkarte zu Ã¶ffnen und die Seite â€žWillkommen bei Azure Container Instancesâ€œ anzuzeigen.
 
-    ![Screenshot der Seite „Willkommen bei Azure Container Instances“.](../images/0802.png)
+    ![Screenshot der Seite â€žWillkommen bei Azure Container Instancesâ€œ.](../images/0802.png)
 
-5. Wechseln Sie wieder zum Blatt **Übersicht** Ihrer Web-App, und beachten Sie, dass es mehrere Diagramme enthält. Wenn Sie Schritt 4 einige Male wiederholen, sollte die entsprechende Telemetrie in den Diagrammen angezeigt werden. Dies umfasst die Anzahl der Anfragen und die durchschnittliche Antwortzeit. 
+5. Wechseln Sie wieder zum Blatt **Ãœbersicht** Ihrer Web-App, und beachten Sie, dass es mehrere Diagramme enthÃ¤lt. Wenn Sie Schritt 4 einige Male wiederholen, sollte die entsprechende Telemetrie in den Diagrammen angezeigt werden. Dies umfasst die Anzahl der Anfragen und die durchschnittliche Antwortzeit. 
 
-**Hinweis**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**Hinweis**: Um zusÃ¤tzliche Kosten zu vermeiden, kÃ¶nnen Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe lÃ¶schen**. ÃœberprÃ¼fen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **LÃ¶schen**. Ãœberwachen Sie die **Benachrichtigungen**, um zu sehen, wie der LÃ¶schvorgang ablÃ¤uft.
 

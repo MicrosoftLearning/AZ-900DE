@@ -1,22 +1,22 @@
 ---
 wts:
-    title: '20 – Verwenden des Azure-TCO-Rechners'
-    module: 'Modul 04 – Azure-Preise und -Support'
+    title: '20 â€“ Verwenden des Azure-TCO-Rechners'
+    module: 'Modul 04 â€“ Azure-Preise und -Support'
 ---
-# 20 – Verwenden des Azure-Gesamtbetriebskostenrechners
+# 20 â€“ Verwenden des Azure-Gesamtbetriebskostenrechners
 
 
-In dieser exemplarischen Vorgehensweise verwenden Sie den Gesamtbetriebskostenrechner, um einen Kostenvergleichsbericht für eine lokale Umgebung zu erstellen.
+In dieser exemplarischen Vorgehensweise verwenden Sie den Gesamtbetriebskostenrechner, um einen Kostenvergleichsbericht fÃ¼r eine lokale Umgebung zu erstellen.
 
-**Hinweis**: Diese exemplarische Vorgehensweise enthält Beispieldefinitionen der lokalen Infrastruktur und Workloads für ein typisches Rechenzentrum. Verwenden Sie zum Erstellen eines Gesamtbetriebskosten-Rechner-Berichts die Beispieldefinitionen, oder geben Sie Details Ihrer *tatsächlich* lokalen Infrastruktur und Arbeitsauslastungen an.
+**Hinweis**: Diese exemplarische Vorgehensweise enthÃ¤lt Beispieldefinitionen der lokalen Infrastruktur und Workloads fÃ¼r ein typisches Rechenzentrum. Verwenden Sie zum Erstellen eines Gesamtbetriebskosten-Rechner-Berichts die Beispieldefinitionen, oder geben Sie Details Ihrer *tatsÃ¤chlich* lokalen Infrastruktur und Arbeitsauslastungen an.
 
-# Aufgabe 1: Konfigurieren des Gesamtbetriebskostenrechners
+# AufgabeÂ 1: Konfigurieren des Gesamtbetriebskostenrechners
 
-In dieser Aufgabe fügen wir dem Rechner Infrastrukturinformationen hinzu. 
+In dieser Aufgabe fÃ¼gen wir dem Rechner Infrastrukturinformationen hinzu. 
 
 1. Navigieren Sie in einem Browser zur Seite [Gesamtkostenrechner](https://azure.microsoft.com/de-de/pricing/tco/calculator/).
 
-2. Um Details zu Ihrer lokalen Serverinfrastruktur hinzuzufügen, klicken Sie im Bereich **Workloads definieren** auf **+ Serverworkload hinzufügen**.
+2. Um Details zu Ihrer lokalen Serverinfrastruktur hinzuzufÃ¼gen, klicken Sie im Bereich **Workloads definieren** auf **+ Serverworkload hinzufÃ¼gen**.
 
     | Einstellungen | Wert |
     | -- | -- |
@@ -29,10 +29,10 @@ In dieser Aufgabe fügen wir dem Rechner Infrastrukturinformationen hinzu.
     | Kern(e) | **8**|
     | RAM (GB) | **16** |
     | Optimieren nach | **CPU** |
-    |  Windows Server 2008/2008 R2 | **Aus** |
+    | Â Windows Server 2008/2008 R2 | **Aus** |
     | | |
 
-3. Wählen Sie **+ Server-Arbeitsauslastung hinzufügen** aus, um eine Zeile für eine neue Definition der Server-Arbeitsauslastungen zu erstellen. 
+3. WÃ¤hlen Sie **+ Server-Arbeitsauslastung hinzufÃ¼gen** aus, um eine Zeile fÃ¼r eine neue Definition der Server-Arbeitsauslastungen zu erstellen. 
 
     | Einstellungen | Wert |
     | -- | -- |
@@ -45,22 +45,22 @@ In dieser Aufgabe fügen wir dem Rechner Infrastrukturinformationen hinzu.
     | Kern(e) | **8**|
     | RAM (GB) | **16** |
     | Optimieren nach | **CPU** |
-    |  Windows Server 2008/2008 R2 | **Aus** |
+    | Â Windows Server 2008/2008 R2 | **Aus** |
     | | |
 
-4. Klicken Sie im Bereich **Speicher** auf **Speicher hinzufügen**.
+4. Klicken Sie im Bereich **Speicher** auf **Speicher hinzufÃ¼gen**.
 
     | Einstellungen | Wert |
     | -- | -- |
     | Name | **Serverspeicher** |
     | Speichertyp | **Lokale Festplatte/SAN** |
-    | Datenträgertyp | **Festplattenlaufwerk** |
-    | Kapazität | **60 TB** |  
+    | DatentrÃ¤gertyp | **Festplattenlaufwerk** |
+    | KapazitÃ¤t | **60 TB** |  
     | Sicherung | **120 TB** |
     | Archivierung | **0 TB** |
     | | |
 
-5. Fügen Sie im Bereich **Netzwerk** Bandbreite hinzu. 
+5. FÃ¼gen Sie im Bereich **Netzwerk** Bandbreite hinzu. 
 
     | Einstellungen | Wert |
     | -- | -- |
@@ -69,32 +69,32 @@ In dieser Aufgabe fügen wir dem Rechner Infrastrukturinformationen hinzu.
 
 6. Klicken Sie auf **Weiter**.
 
-7. Prüfen Sie die Optionen, und nehmen Sie erforderliche Anpassungen vor. 
+7. PrÃ¼fen Sie die Optionen, und nehmen Sie erforderliche Anpassungen vor. 
 
     | Einstellungen | Wert |
     | -- | -- |
-    | Währung | **Euro** |
+    | WÃ¤hrung | **Euro** |
     | | |
 
 8. Klicken Sie auf **Weiter**.
 
-# Aufgabe 2: Ergebnisse überprüfen und eine Kopie speichern
+# AufgabeÂ 2: Ergebnisse Ã¼berprÃ¼fen und eine Kopie speichern
 
-In dieser Aufgabe werden wir die Empfehlungen zur Kosteneinsparung überprüfen und einen Bericht herunterladen. 
+In dieser Aufgabe werden wir die Empfehlungen zur Kosteneinsparung Ã¼berprÃ¼fen und einen Bericht herunterladen. 
 
 1. Lesen Sie die Azure-Empfehlungen und -Visualisierungen zur Kosteneinsparung.
 
     | Einstellungen | Wert |
     | -- | -- |
-    | Zeitrahmen| **3 Jahre** |
+    | Zeitrahmen| **3Â Jahre** |
     | Region | **Europa, Norden** |
     | | |
 
 
-2. Um die von Ihnen angegebenen Informationen zu ändern, gehen Sie zum Ende der Seite, und klicken Sie auf **Zurück**. 
+2. Um die von Ihnen angegebenen Informationen zu Ã¤ndern, gehen Sie zum Ende der Seite, und klicken Sie auf **ZurÃ¼ck**. 
 
 3. Um eine PDF-Kopie des Berichts zu speichern oder zu drucken, klicken Sie auf **Herunterladen**.
 
-    ![Screenshot des Berichtsbereichs des Gesamtbetriebskostenrechners in Azure. Die hervorgehobenen und ausgefüllten Eingabefelder geben an, wie der Zeitrahmen des Gesamtbetriebskostenrechners auf drei Jahre und die Region auf Nordeuropa eingestellt wird. Ein Diagramm zeigt die Kosten für lokale Infrastruktur und Workloads im Vergleich zu den durch die Verwendung von Azure reduzierten Kosten.](../images/2001.png)
+    ![Screenshot des Berichtsbereichs des Gesamtbetriebskostenrechners in Azure. Die hervorgehobenen und ausgefÃ¼llten Eingabefelder geben an, wie der Zeitrahmen des Gesamtbetriebskostenrechners auf drei Jahre und die Region auf Nordeuropa eingestellt wird. Ein Diagramm zeigt die Kosten fÃ¼r lokale Infrastruktur und Workloads im Vergleich zu den durch die Verwendung von Azure reduzierten Kosten.](../images/2001.png)
 
-Herzlichen Glückwunsch! Sie haben den Gesamtbetriebskosten-Rechner verwendet, um einen Kostenvergleichsbericht für eine lokale Umgebung zu erstellen.
+Herzlichen GlÃ¼ckwunsch! Sie haben den Gesamtbetriebskosten-Rechner verwendet, um einen Kostenvergleichsbericht fÃ¼r eine lokale Umgebung zu erstellen.

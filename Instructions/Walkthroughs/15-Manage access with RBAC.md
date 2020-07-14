@@ -1,70 +1,70 @@
 ---
 wts:
-    title: '15 – Zugriff mit RBAC verwalten'
-    module: 'Modul 03 – Sicherheit, Datenschutz, Compliance und Vertrauen'
+    title: '15 â€“ Zugriff mit RBAC verwalten'
+    module: 'Modul 03 â€“ Sicherheit, Datenschutz, Compliance und Vertrauen'
 ---
-# 15 – Verwalten des Zugriffs mit RBAC
+# 15 â€“ Verwalten des Zugriffs mit RBAC
 
-In dieser exemplarischen Vorgehensweise werden wir Rollen zuweisen und Aktivitätsprotokolle anzeigen. 
+In dieser exemplarischen Vorgehensweise werden wir Rollen zuweisen und AktivitÃ¤tsprotokolle anzeigen. 
 
-# Aufgabe 1: Anzeigen und Zuweisen von Rollen
+# AufgabeÂ 1: Anzeigen und Zuweisen von Rollen
 
-In dieser Aufgabe weisen wir die Rolle „Mitwirkender für virtuelle Computer“ zu. 
+In dieser Aufgabe weisen wir die Rolle â€žMitwirkender fÃ¼r virtuelle Computerâ€œ zu. 
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 
-2. Suchen Sie auf dem Blatt **Alle Dienste** nach **Ressourcengruppen**, und wählen Sie diese Option aus. Klicken Sie anschließend auf **+ Hinzufügen**.
+2. Suchen Sie auf dem Blatt **Alle Dienste** nach **Ressourcengruppen**, und wÃ¤hlen Sie diese Option aus. Klicken Sie anschlieÃŸend auf **+ HinzufÃ¼gen**.
 
 3. Erstellen Sie eine neue Ressourcengruppe. Klicken Sie auf **Erstellen**, wenn Sie fertig sind. 
 
     | Einstellung | Wert |
     | -- | -- |
-    | Abonnement | **Wählen Sie Ihr Abonnement** |
+    | Abonnement | **WÃ¤hlen Sie Ihr Abonnement** |
     | Ressourcengruppe | **myRGRBAC** |
     | Region | **(USA) USA, Osten** |
     | | |
 
-4. Erstellen Sie **Überprüfen + Erstellen**, und klicken Sie dann auf **Erstellen**.
+4. Erstellen Sie **ÃœberprÃ¼fen + Erstellen**, und klicken Sie dann auf **Erstellen**.
 
-5. **Aktualisieren** Sie die Seite „Ressourcengruppe“, und klicken Sie auf den Eintrag, der die neu erstellte Ressourcengruppe darstellt.
+5. **Aktualisieren** Sie die Seite â€žRessourcengruppeâ€œ, und klicken Sie auf den Eintrag, der die neu erstellte Ressourcengruppe darstellt.
 
-6. Klicken Sie auf das Blatt **Zugriffssteuerung (IAM)**, und wechseln Sie dann auf die Registerkarte **Rollen**. Blättern Sie durch die große Anzahl an Rollendefinitionen, die verfügbar sind. Verwenden Sie die Informationssymbole, um eine Vorstellung von den Berechtigungen der einzelnen Rollen zu erhalten. Beachten Sie, dass es auch Informationen zur Anzahl der Benutzer und Gruppen gibt, die jeder Rolle zugewiesen sind.
+6. Klicken Sie auf das Blatt **Zugriffssteuerung (IAM)**, und wechseln Sie dann auf die Registerkarte **Rollen**. BlÃ¤ttern Sie durch die groÃŸe Anzahl an Rollendefinitionen, die verfÃ¼gbar sind. Verwenden Sie die Informationssymbole, um eine Vorstellung von den Berechtigungen der einzelnen Rollen zu erhalten. Beachten Sie, dass es auch Informationen zur Anzahl der Benutzer und Gruppen gibt, die jeder Rolle zugewiesen sind.
 
-    ![Screenshot des Blatts „IAM-Rollen“. Besitzer-, Mitwirkende- und Leserrollen werden angezeigt.](../images/1501.png)
+    ![Screenshot des Blatts â€žIAM-Rollenâ€œ. Besitzer-, Mitwirkende- und Leserrollen werden angezeigt.](../images/1501.png)
 
-7. Wechseln Sie zur Registerkarte **Rollenzuweisungen** des Blattes **myRGRBAC - Zugriffssteuerung (IAM)**, klicken Sie auf **Hinzufügen** und dann auf **Rollenzuweisung hinzufügen**. Weisen Sie Ihrem Benutzerkonto die Rolle „Mitwirkender für virtuelle Computer“ zu, und klicken Sie dann auf **Speichern**. 
+7. Wechseln Sie zur Registerkarte **Rollenzuweisungen** des Blattes **myRGRBAC - Zugriffssteuerung (IAM)**, klicken Sie auf **HinzufÃ¼gen** und dann auf **Rollenzuweisung hinzufÃ¼gen**. Weisen Sie Ihrem Benutzerkonto die Rolle â€žMitwirkender fÃ¼r virtuelle Computerâ€œ zu, und klicken Sie dann auf **Speichern**. 
 
     | Einstellung | Wert |
     | -- | -- |
-    | Rolle | **Mitwirkender für virtuelle Computer** |
+    | Rolle | **Mitwirkender fÃ¼r virtuelle Computer** |
     | Zugriff zuweisen | **Azure AD-Benutzer, -Gruppe oder -Dienstprinzipal** |
-    | Auswählen | Ihr Benutzerkonto |
+    | AuswÃ¤hlen | Ihr Benutzerkonto |
     | | |
 
-    **Hinweis:** Mit der Rolle des Mitwirkenden für virtuelle Computer können Sie virtuelle Computer verwalten, jedoch nicht auf deren Betriebssystem zugreifen oder das virtuelle Netzwerk und das Speicherkonto verwalten, mit denen sie verbunden sind.
+    **Hinweis:** Mit der Rolle des Mitwirkenden fÃ¼r virtuelle Computer kÃ¶nnen Sie virtuelle Computer verwalten, jedoch nicht auf deren Betriebssystem zugreifen oder das virtuelle Netzwerk und das Speicherkonto verwalten, mit denen sie verbunden sind.
 
-    ![Screenshot der Seite „Rollenzuweisung hinzufügen“ mit den erforderlichen Informationen.](../images/1502.png)
+    ![Screenshot der Seite â€žRollenzuweisung hinzufÃ¼genâ€œ mit den erforderlichen Informationen.](../images/1502.png)
 
-8.  **Aktualisieren** Sie die Seite „Rollenzuweisungen“ und stellen Sie sicher, dass Sie jetzt als Mitwirkender eines virtuellen Computers aufgeführt sind. 
+8.  **Aktualisieren** Sie die Seite â€žRollenzuweisungenâ€œ und stellen Sie sicher, dass Sie jetzt als Mitwirkender eines virtuellen Computers aufgefÃ¼hrt sind. 
 
-    **Hinweis**: Diese Zuweisung gewährt Ihnen keine zusätzlichen Berechtigungen, da Ihr Konto bereits über die Besitzerrolle verfügt, die alle mit der Teilnehmerrolle verbundenen Berechtigungen enthält.
+    **Hinweis**: Diese Zuweisung gewÃ¤hrt Ihnen keine zusÃ¤tzlichen Berechtigungen, da Ihr Konto bereits Ã¼ber die Besitzerrolle verfÃ¼gt, die alle mit der Teilnehmerrolle verbundenen Berechtigungen enthÃ¤lt.
 
-# Aufgabe 2: Rollenzuweisungen überwachen und eine Rolle entfernen
+# AufgabeÂ 2: Rollenzuweisungen Ã¼berwachen und eine Rolle entfernen
 
-In dieser Aufgabe überprüfen wir anhand des Aktivitätsprotokolls die Rollenzuweisung entfernen anschließend die Rolle. 
+In dieser Aufgabe Ã¼berprÃ¼fen wir anhand des AktivitÃ¤tsprotokolls die Rollenzuweisung entfernen anschlieÃŸend die Rolle. 
 
-1. Klicken Sie auf dem Blatt „myRGRBAC Ressourcengruppen“ auf **Aktivitätsprotokoll**.
+1. Klicken Sie auf dem Blatt â€žmyRGRBAC Ressourcengruppenâ€œ auf **AktivitÃ¤tsprotokoll**.
 
-2. Klicken Sie auf **Filter hinzufügen**, wählen Sie **Vorgang** und dann **Rollenzuweisung erstellen** aus.
+2. Klicken Sie auf **Filter hinzufÃ¼gen**, wÃ¤hlen Sie **Vorgang** und dann **Rollenzuweisung erstellen** aus.
 
-    ![Screenshot der Aktivitätsprotokollseite mit konfiguriertem Filter.](../images/1503.png)
+    ![Screenshot der AktivitÃ¤tsprotokollseite mit konfiguriertem Filter.](../images/1503.png)
 
-3. Überprüfen Sie, ob Ihre Rollenzuweisung im Aktivitätsprotokoll angezeigt wird. 
+3. ÃœberprÃ¼fen Sie, ob Ihre Rollenzuweisung im AktivitÃ¤tsprotokoll angezeigt wird. 
 
-    **Hinweis**: Wissen Sie, wie Sie Ihre Rollenzuweisung entfernen können?
+    **Hinweis**: Wissen Sie, wie Sie Ihre Rollenzuweisung entfernen kÃ¶nnen?
 
-Herzlichen Glückwunsch! Sie haben Rollen zugewiesen und Aktivitätsprotokolle angezeigt. 
+Herzlichen GlÃ¼ckwunsch! Sie haben Rollen zugewiesen und AktivitÃ¤tsprotokolle angezeigt. 
 
-**Hinweis**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**Hinweis**: Um zusÃ¤tzliche Kosten zu vermeiden, kÃ¶nnen Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe lÃ¶schen**. ÃœberprÃ¼fen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **LÃ¶schen**. Ãœberwachen Sie die **Benachrichtigungen**, um zu sehen, wie der LÃ¶schvorgang ablÃ¤uft.
 
 

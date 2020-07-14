@@ -1,46 +1,46 @@
 ---
 wts:
-    title: '13 – Implementieren von Azure Key Vault'
-    module: 'Modul 03 – Sicherheit, Datenschutz, Compliance und Vertrauen'
+    title: '13 â€“ Implementieren von Azure Key Vault'
+    module: 'Modul 03 â€“ Sicherheit, Datenschutz, Compliance und Vertrauen'
 ---
-# 13 – Implementieren von Azure Key Vault
+# 13 â€“ Implementieren von Azure Key Vault
 
-In dieser exemplarischen Vorgehensweise erstellen wir einen Azure Key Vault und erstellen dann ein Kennwortgeheimnis in diesem Schlüsseltresor. Dabei wird ein sicher gespeichertes, zentral verwaltetes Kennwort für die Verwendung mit Anwendungen bereitgestellt.
+In dieser exemplarischen Vorgehensweise erstellen wir einen Azure Key Vault und erstellen dann ein Kennwortgeheimnis in diesem SchlÃ¼sseltresor. Dabei wird ein sicher gespeichertes, zentral verwaltetes Kennwort fÃ¼r die Verwendung mit Anwendungen bereitgestellt.
 
-# Aufgabe 1: Einen Azure Key Vault erstellen
+# AufgabeÂ 1: Einen Azure Key Vault erstellen
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 
-2. Suchen Sie im Blatt **Alle Dienste** die Option **Schlüsseltresore**, und wählen Sie sie aus. Wählen Sie dann **+ Hinzufügen** aus.
+2. Suchen Sie im Blatt **Alle Dienste** die Option **SchlÃ¼sseltresore**, und wÃ¤hlen Sie sie aus. WÃ¤hlen Sie dann **+ HinzufÃ¼gen** aus.
 
-3. Konfigurieren Sie den Schlüsseltresor (ersetzen Sie **xxxx** im Namen des Schlüsseltresors durch Buchstaben und Ziffern, sodass der Name global eindeutig ist). Belassen Sie ansonsten die Standardeinstellungen.
+3. Konfigurieren Sie den SchlÃ¼sseltresor (ersetzen Sie **xxxx** im Namen des SchlÃ¼sseltresors durch Buchstaben und Ziffern, sodass der Name global eindeutig ist). Belassen Sie ansonsten die Standardeinstellungen.
 
     | Einstellung | Wert | 
     | --- | --- |
     | Abonnement | **Verwenden Sie Ihr Abonnement** |
     | Ressourcengruppe | **myRGKV** (Neu erstellen) |
-    | Schlüsseltresorname | **keyvaulttestxxx** |
+    | SchlÃ¼sseltresorname | **keyvaulttestxxx** |
     | Ort | **USA, Osten** |
     | Tarif | **Standard** |
     | | |
 
-4. Klicken Sie auf **Überprüfen + Erstellen **, und klicken Sie dann auf **Erstellen**. 
+4. Klicken Sie auf **ÃœberprÃ¼fen + Erstellen **, und klicken Sie dann auf **Erstellen**. 
 
-5. Wenn der neue Schlüsseltresor bereitgestellt ist, klicken Sie auf **Zu Ressource wechseln**. Sie können aber auch nach Ihrem neuen Schlüsseltresor suchen. 
+5. Wenn der neue SchlÃ¼sseltresor bereitgestellt ist, klicken Sie auf **Zu Ressource wechseln**. Sie kÃ¶nnen aber auch nach Ihrem neuen SchlÃ¼sseltresor suchen. 
 
-6. Klicken Sie auf die Schlüsseltresor-Registerkarte **Übersicht**, und beachten Sie die Angabe für **DNS-Name**. Anwendungen, die Ihren Tresor über die REST-API verwenden, werden diesen URI benötigen.
+6. Klicken Sie auf die SchlÃ¼sseltresor-Registerkarte **Ãœbersicht**, und beachten Sie die Angabe fÃ¼r **DNS-Name**. Anwendungen, die Ihren Tresor Ã¼ber die REST-API verwenden, werden diesen URI benÃ¶tigen.
 
-7. Nehmen Sie sich einen Moment Zeit, um einige der anderen wichtigen Schlüsseltresoroptionen zu durchsuchen. Prüfen Sie unter **Einstellungen** die Einträge **Schlüssel**, **Geheimnisse**, **Zertifikate**, **Zugriffsrichtlinien** und **Firewalls und virtuelle Netzwerke**.
+7. Nehmen Sie sich einen Moment Zeit, um einige der anderen wichtigen SchlÃ¼sseltresoroptionen zu durchsuchen. PrÃ¼fen Sie unter **Einstellungen** die EintrÃ¤ge **SchlÃ¼ssel**, **Geheimnisse**, **Zertifikate**, **Zugriffsrichtlinien** und **Firewalls und virtuelle Netzwerke**.
 
-    **Hinweis**: Ihr Azure-Konto ist das einzige, das berechtigt ist, Vorgänge für diesen neuen Tresor auszuführen. Wenn Sie wünschen, können Sie dies im Abschnitt **Einstellungen** unter **Zugriffsrichtlinien** ändern.
+    **Hinweis**: Ihr Azure-Konto ist das einzige, das berechtigt ist, VorgÃ¤nge fÃ¼r diesen neuen Tresor auszufÃ¼hren. Wenn Sie wÃ¼nschen, kÃ¶nnen Sie dies im Abschnitt **Einstellungen** unter **Zugriffsrichtlinien** Ã¤ndern.
 
-# Aufgabe 2: Dem Schlüsseltresor einen geheimen Schlüssel hinzufügen
+# AufgabeÂ 2: Dem SchlÃ¼sseltresor einen geheimen SchlÃ¼ssel hinzufÃ¼gen
         
-In dieser Aufgabe fügen wir dem Schlüsseltresor ein Kennwort hinzu. 
+In dieser Aufgabe fÃ¼gen wir dem SchlÃ¼sseltresor ein Kennwort hinzu. 
 
 1. Klicken Sie unter **Einstellungen** auf **Geheimnisse** und dann auf **Generieren / Importieren**.
 
-2. Konfigurieren Sie das Geheimnis. Belassen Sie für die anderen Werte die Standardeinstellungen. Beachten Sie, dass Sie ein Aktivierungs- und Ablaufdatum festlegen können. Beachten Sie, dass Sie das Geheimnis auch deaktivieren können.
+2. Konfigurieren Sie das Geheimnis. Belassen Sie fÃ¼r die anderen Werte die Standardeinstellungen. Beachten Sie, dass Sie ein Aktivierungs- und Ablaufdatum festlegen kÃ¶nnen. Beachten Sie, dass Sie das Geheimnis auch deaktivieren kÃ¶nnen.
 
     | Einstellung | Wert | 
     | --- | --- |
@@ -51,12 +51,12 @@ In dieser Aufgabe fügen wir dem Schlüsseltresor ein Kennwort hinzu.
 
 3. Klicken Sie auf **Erstellen**.
 
-4. Sobald der geheime Schlüssel erfolgreich erstellt wurde, klicken Sie auf **ExamplePassword**. Beachten Sie, dass der Status **Aktiviert** lautet.
+4. Sobald der geheime SchlÃ¼ssel erfolgreich erstellt wurde, klicken Sie auf **ExamplePassword**. Beachten Sie, dass der Status **Aktiviert** lautet.
 
-5. Klicken Sie auf die aktuelle Version, und beachten Sie die **Geheimnis-ID**. Dies ist der URL-Wert, den Sie jetzt mit Anwendungen verwenden können. Er bietet ein zentral verwaltetes und sicher gespeichertes Kennwort.
+5. Klicken Sie auf die aktuelle Version, und beachten Sie die **Geheimnis-ID**. Dies ist der URL-Wert, den Sie jetzt mit Anwendungen verwenden kÃ¶nnen. Er bietet ein zentral verwaltetes und sicher gespeichertes Kennwort.
 
-6. Klicken Sie auf die Schaltfläche **Geheimniswert anzeigen**, um das zuvor angegebene Kennwort anzuzeigen.
+6. Klicken Sie auf die SchaltflÃ¤che **Geheimniswert anzeigen**, um das zuvor angegebene Kennwort anzuzeigen.
 
-Herzlichen Glückwunsch! Sie haben einen Azure Key Vault erstellt und anschließend in diesem Schlüsseltresor ein Kennwortgeheimnis erstellt. Damit steht ein sicher gespeichertes, zentral verwaltetes Kennwort für die Nutzung mit Anwendungen zur Verfügung.
+Herzlichen GlÃ¼ckwunsch! Sie haben einen Azure Key Vault erstellt und anschlieÃŸend in diesem SchlÃ¼sseltresor ein Kennwortgeheimnis erstellt. Damit steht ein sicher gespeichertes, zentral verwaltetes Kennwort fÃ¼r die Nutzung mit Anwendungen zur VerfÃ¼gung.
 
-**Hinweis**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**Hinweis**: Um zusÃ¤tzliche Kosten zu vermeiden, kÃ¶nnen Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe lÃ¶schen**. ÃœberprÃ¼fen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **LÃ¶schen**. Ãœberwachen Sie die **Benachrichtigungen**, um zu sehen, wie der LÃ¶schvorgang ablÃ¤uft.

@@ -6,7 +6,7 @@ layout: home
 
 # Inhaltsverzeichnis
 
-Hyperlinks zu den einzelnen exemplarischen Vorgehensweisen. Die Kursleiter können die exemplarische Vorgehensweise als Demonstration oder als Kursteilnehmer-Lab verwenden. 
+Hyperlinks zu den einzelnen exemplarischen Vorgehensweisen. Die Kursleiter kÃ¶nnen die exemplarische Vorgehensweise als Demonstration oder als Kursteilnehmer-Lab verwenden. 
 
 ## Exemplarische Vorgehensweisen
 

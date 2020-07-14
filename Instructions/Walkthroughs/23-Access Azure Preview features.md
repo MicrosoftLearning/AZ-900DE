@@ -1,51 +1,51 @@
 ---
 wts:
-    title: '23 – Zugriff auf Azure-Vorschaufunktionen'
-    module: 'Modul 04 – Azure-Preise und -Support'
+    title: '23 â€“ Zugriff auf Azure-Vorschaufunktionen'
+    module: 'Modul 04 â€“ Azure-Preise und -Support'
 ---
 
-# 23 – Zugriff auf Azure-Vorschaufunktionen
+# 23 â€“ Zugriff auf Azure-Vorschaufunktionen
 
 In dieser exemplarischen Vorgehensweise greifen wir auf Azure-Vorschaudienste und -funktionen zu, identifizieren sie und zeigen Informationen zu den neuesten Azure-Updates an.
 
-# Aufgabe 1: Zugreifen auf Vorschaudienste und -funktionen
+# AufgabeÂ 1: Zugreifen auf Vorschaudienste und -funktionen
 
 In dieser Aufgabe werden wir die Features der Marktplatzvorschau durchgehen. 
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 
-2. Suchen und wählen Sie im Blatt **Alle Dienstleistungen** **Marketplace** aus. 
+2. Suchen und wÃ¤hlen Sie im Blatt **Alle Dienstleistungen** **Marketplace** aus. 
 
-3. Durchsuchen Sie Marketplace nach **Vorschau**. Überprüfen Sie alle Vorschauprodukte, die Sie interessieren. 
+3. Durchsuchen Sie Marketplace nach **Vorschau**. ÃœberprÃ¼fen Sie alle Vorschauprodukte, die Sie interessieren. 
 
-4. Suchen Sie im Marketplace nach **Kubernetes Service**. Wählen Sie Kubernetes Service und klicken Sie auf **Erstellen**.
+4. Suchen Sie im Marketplace nach **Kubernetes Service**. WÃ¤hlen Sie Kubernetes Service und klicken Sie auf **Erstellen**.
 
-5. In der Dropdown-Meldung der **Kubernetes-Version** gibt es eine **Vorschau**-Version. Nicht für alle Dienste gibt es eine Vorschauversion. 
+5. In der Dropdown-Meldung der **Kubernetes-Version** gibt es eine **Vorschau**-Version. Nicht fÃ¼r alle Dienste gibt es eine Vorschauversion. 
 
-    ![Screenshot des Bereichs „Azure Kubernetes Services“ mit hervorgehobener Schaltfläche „Kubernetes Service erstellen“.](../images/2301.png)
+    ![Screenshot des Bereichs â€Azure Kubernetes Servicesâ€œ mit hervorgehobener SchaltflÃ¤che â€Kubernetes Service erstellenâ€œ.](../images/2301.png)
 
-    **Hinweis**: In diesen Szenarien, in denen neue Funktionen oder Features innerhalb eines vorhandenen allgemein verfügbaren Azure-Dienstes oder -Produkts verfügbar gemacht werden, obwohl Sie den Azure-Dienst möglicherweise in der Produktion verwenden, ist die Vorschaufunktion möglicherweise noch nicht für Produktionsbereitstellungen bereit. Sie sollten sicherstellen, dass Sie alle Einschränkungen bei der Verwendung von Vorschauversionen kennen, bevor Sie sie in der Produktion bereitstellen.
+    **Hinweis**: In diesen Szenarien, in denen neue Funktionen oder Features innerhalb eines vorhandenen allgemein verfÃ¼gbaren Azure-Dienstes oder -Produkts verfÃ¼gbar gemacht werden, obwohl Sie den Azure-Dienst mÃ¶glicherweise in der Produktion verwenden, ist die Vorschaufunktion mÃ¶glicherweise noch nicht fÃ¼r Produktionsbereitstellungen bereit. Sie sollten sicherstellen, dass Sie alle EinschrÃ¤nkungen bei der Verwendung von Vorschauversionen kennen, bevor Sie sie in der Produktion bereitstellen.
 
-# Aufgabe 2: Überprüfung der Seite „Azure Updates“
+# AufgabeÂ 2: ÃœberprÃ¼fung der Seite â€Azure Updatesâ€œ
 
-In dieser Aufgabe gehen wir die Seite „Azure Updates“ durch.
+In dieser Aufgabe gehen wir die Seite â€Azure Updatesâ€œ durch.
 
 1. Navigieren Sie in einem Browser zur Seite [Azure-Updates](https://azure.microsoft.com/de-de/updates/). 
 
-2. Beachten Sie , dass es statusbasierte Filteroptionen namens **Jetzt erhältlich**, **Vorschau** und **In Entwicklung** gibt.
+2. Beachten Sie , dass es statusbasierte Filteroptionen namens **Jetzt erhÃ¤ltlich**, **Vorschau** und **In Entwicklung** gibt.
 
-3. Aktivieren Sie das Kontrollkästchen **In der Vorschau**, geben Sie **Kubernetes** in das Textfeld der Schlüsselwortsuche ein, und drücken Sie dann auf die **EINGABETASTE**. 
+3. Aktivieren Sie das KontrollkÃ¤stchen **In der Vorschau**, geben Sie **Kubernetes** in das Textfeld der SchlÃ¼sselwortsuche ein, und drÃ¼cken Sie dann auf die **EINGABETASTE**. 
 
-    **Hinweis**: Die Seite gibt eine Liste der Elemente in der Vorschau zurück, die sich auf Kubernetes beziehen. Ihre Ergebnisliste kann unterschiedlich sein. 
+    **Hinweis**: Die Seite gibt eine Liste der Elemente in der Vorschau zurÃ¼ck, die sich auf Kubernetes beziehen. Ihre Ergebnisliste kann unterschiedlich sein. 
 
-    ![Screenshot der Seite „Azure-Updates“ mit Details zu „Kubernetes“ und „In Vorschau“ zurückgegeben.](../images/2302.png)
+    ![Screenshot der Seite â€Azure-Updatesâ€œ mit Details zu â€Kubernetesâ€œ und â€In Vorschauâ€œ zurÃ¼ckgegeben.](../images/2302.png)
 
 4. Klicken Sie auf ein Element in der Ergebnisliste, um detaillierte Informationen zu erhalten. 
 
-5. Wechseln Sie zurück zur Seite **Azure-Updates**, zeigen Sie Elemente an, die jetzt den Status **Allgemeine Verfügbarkeit** haben, indem Sie das Kontrollkästchen **Jetzt verfügbar** aktivieren und das Kontrollkästchen **Vorschau** deaktivieren. Überprüfen Sie alle von der Suche zurückgegebenen Elemente, die für Sie von Interesse sind.
+5. Wechseln Sie zurÃ¼ck zur Seite **Azure-Updates**, zeigen Sie Elemente an, die jetzt den Status **Allgemeine VerfÃ¼gbarkeit** haben, indem Sie das KontrollkÃ¤stchen **Jetzt verfÃ¼gbar** aktivieren und das KontrollkÃ¤stchen **Vorschau** deaktivieren. ÃœberprÃ¼fen Sie alle von der Suche zurÃ¼ckgegebenen Elemente, die fÃ¼r Sie von Interesse sind.
 
-6. Wechseln Sie zurück zur Seite **Azure-Updates**, aktivieren Sie das Kontrollkästchen **In Entwicklung**, und deaktivieren Sie das Kontrollkästchen **Jetzt verfügbar**. Überprüfen Sie alle von der Suche zurückgegebenen Elemente, die für Sie von Interesse sind.
+6. Wechseln Sie zurÃ¼ck zur Seite **Azure-Updates**, aktivieren Sie das KontrollkÃ¤stchen **In Entwicklung**, und deaktivieren Sie das KontrollkÃ¤stchen **Jetzt verfÃ¼gbar**. ÃœberprÃ¼fen Sie alle von der Suche zurÃ¼ckgegebenen Elemente, die fÃ¼r Sie von Interesse sind.
 
 
-Herzlichen Glückwunsch! Sie haben Azure-Vorschaudienste und -Funktionen identifiziert und darauf zugegriffen sowie Informationen zu den letzten Azure-Updates angezeigt.
+Herzlichen GlÃ¼ckwunsch! Sie haben Azure-Vorschaudienste und -Funktionen identifiziert und darauf zugegriffen sowie Informationen zu den letzten Azure-Updates angezeigt.
 

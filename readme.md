@@ -1,38 +1,38 @@
-# „AZ-900T00“ und „AZ-900T01“: Microsoft Azure Fundamentals
+# â€AZ-900T00â€œ und â€AZ-900T01â€œ: Microsoft Azure Fundamentals
 
-> **Microsoft priorisiert Cloud-Ressourcen zur Bekämpfung von Covid-19. Hier können Sie mehr lesen – [Update Nr. 2 zur Kontinuität von Microsoft Cloud Services](https://azure.microsoft.com/de-de/blog/update-2-on-microsoft-cloud-services-continuity/). Es gibt auch eine aktive Diskussion im MCT Courseware Forum.**
+> **Microsoft priorisiert Cloud-Ressourcen zur BekÃ¤mpfung von Covid-19. Hier kÃ¶nnen Sie mehr lesen â€“ [Update Nr. 2 zur KontinuitÃ¤t von Microsoft Cloud Services](https://azure.microsoft.com/de-de/blog/update-2-on-microsoft-cloud-services-continuity/). Es gibt auch eine aktive Diskussion im MCT Courseware Forum.**
 
-> **Hier finden Sie ein Repository mit [Lab-Aufzeichnungen und Demos](https://github.com/MicrosoftLearning/Lab-Demo-Recordings) mit Links zu Labvideos, die im Microsoft Official Curriculum verwendet werden. Ziel ist es, Microsoft Certified Trainern eine einfache Möglichkeit zu bieten, auf eine Nicht-Audio-Version der im Portfolio verwendeten praktischen Labs zuzugreifen.**
+> **Hier finden Sie ein Repository mit [Lab-Aufzeichnungen und Demos](https://github.com/MicrosoftLearning/Lab-Demo-Recordings) mit Links zu Labvideos, die im Microsoft Official Curriculum verwendet werden. Ziel ist es, Microsoft Certified Trainern eine einfache MÃ¶glichkeit zu bieten, auf eine Nicht-Audio-Version der im Portfolio verwendeten praktischen Labs zuzugreifen.**
 
 - **[Link zu exemplarischen Vorgehensweisen (HTML-Format)](https://microsoftlearning.github.io/AZ-900T0x-MicrosoftAzureFundamentals/)**
 - **Sind Sie ein MCT?** - Lesen Sie unseren [GitHub User Guide for MCTs](https://microsoftlearning.github.io/MCT-User-Guide-DE/)
 
 ## Was tun wir?
 
-- Wir müssen den Kursinhalt regelmäßig aktualisieren, um ihn hinsichtlich der im Kurs verwendeten Azure-Dienste auf dem neuesten Stand zu halten.  Wir veröffentlichen die Lab-Anweisungen auf GitHub, um eine offene Zusammenarbeit zwischen den Kursautoren und MCTs zu ermöglichen, damit der Inhalt hinsichtlich Änderungen der Azure-Plattform auf dem neuesten Stand bleibt.
+- Wir mÃ¼ssen den Kursinhalt regelmÃ¤ÃŸig aktualisieren, um ihn hinsichtlich der im Kurs verwendeten Azure-Dienste auf dem neuesten Stand zu halten.  Wir verÃ¶ffentlichen die Lab-Anweisungen auf GitHub, um eine offene Zusammenarbeit zwischen den Kursautoren und MCTs zu ermÃ¶glichen, damit der Inhalt hinsichtlich Ã„nderungen der Azure-Plattform auf dem neuesten Stand bleibt.
 
-- Wir hoffen, dass dies den Labs ein Klima der Zusammenarbeit verleiht, wie wir es noch nie zuvor hatten. Wenn sich Azure ändert und Ihnen die Änderung als erster auffällt, können Sie direkt im Lab-Quellcode eine Verbesserung vornehmen.  Helfen Sie Ihren MCT-Kollegen.
+- Wir hoffen, dass dies den Labs ein Klima der Zusammenarbeit verleiht, wie wir es noch nie zuvor hatten. Wenn sich Azure Ã¤ndert und Ihnen die Ã„nderung als erster auffÃ¤llt, kÃ¶nnen Sie direkt im Lab-Quellcode eine Verbesserung vornehmen.  Helfen Sie Ihren MCT-Kollegen.
 
 ## Wie soll ich diese Dateien in Bezug auf die freigegebenen MOC-Dateien verwenden?
 
-- Das Handbuch für Kursleiter und die PowerPoints werden weiterhin Ihre Hauptquelle für das Unterrichten der Kursinhalte sein.
+- Das Handbuch fÃ¼r Kursleiter und die PowerPoints werden weiterhin Ihre Hauptquelle fÃ¼r das Unterrichten der Kursinhalte sein.
 
-- Diese Dateien auf GitHub können in Verbindung mit dem Kursteilnehmer-Handbuch verwendet werden. Sie befinden sich jedoch in GitHub als zentrales Repository, sodass MCTs und Kursautoren eine gemeinsame Quelle für die neuesten Lab-Dateien haben.
+- Diese Dateien auf GitHub kÃ¶nnen in Verbindung mit dem Kursteilnehmer-Handbuch verwendet werden. Sie befinden sich jedoch in GitHub als zentrales Repository, sodass MCTs und Kursautoren eine gemeinsame Quelle fÃ¼r die neuesten Lab-Dateien haben.
 
-- Kursleiter sollten vor jedem Unterricht GitHub auf Änderungen überprüfen, die möglicherweise zur Unterstützung der neuesten Azure-Dienste vorgenommen wurden, und die neuesten Dateien für den Unterricht abrufen.
+- Kursleiter sollten vor jedem Unterricht GitHub auf Ã„nderungen Ã¼berprÃ¼fen, die mÃ¶glicherweise zur UnterstÃ¼tzung der neuesten Azure-Dienste vorgenommen wurden, und die neuesten Dateien fÃ¼r den Unterricht abrufen.
 
-## Was ist mit Änderungen am Kursteilnehmerhandbuch?
+## Was ist mit Ã„nderungen am Kursteilnehmerhandbuch?
 
-- Wir werden das Kursteilnehmerhandbuch vierteljährlich überprüfen und bei Bedarf über die regulären MOC-Veröffentlichungskanäle aktualisieren.
+- Wir werden das Kursteilnehmerhandbuch vierteljÃ¤hrlich Ã¼berprÃ¼fen und bei Bedarf Ã¼ber die regulÃ¤ren MOC-VerÃ¶ffentlichungskanÃ¤le aktualisieren.
 
 ## Wie trage ich bei?
 
-- Jeder MCT kann eine Pull-Anfrage an Code oder Inhalte im GitHub-Repository senden. Microsoft und der Kursautor prüfen den Inhalt und den Lab-Code und nehmen nach Bedarf Änderungen vor.
+- Jeder MCT kann eine Pull-Anfrage an Code oder Inhalte im GitHub-Repository senden. Microsoft und der Kursautor prÃ¼fen den Inhalt und den Lab-Code und nehmen nach Bedarf Ã„nderungen vor.
 
-- Sie können Fehler, Änderungen, Verbesserungen und Vorschläge einreichen.  Sie haben vor uns eine neue Azure-Funktion gefunden?  Reichen Sie eine neue Demo ein!
+- Sie kÃ¶nnen Fehler, Ã„nderungen, Verbesserungen und VorschlÃ¤ge einreichen.  Sie haben vor uns eine neue Azure-Funktion gefunden?  Reichen Sie eine neue Demo ein!
 
 ## Anmerkungen
 
 ### Unterrichtsmaterialien
 
-Es wird dringend empfohlen, dass MCTs und Partner auf diese Materialien zugreifen und sie den Kursteilnehmern separat zur Verfügung stellen.  Wenn Sie Kursteilnehmer direkt auf GitHub verweisen, um im Rahmen eines laufenden Kurses auf Lab-Schritte zuzugreifen, müssen sie im Rahmen des Kurses auf eine weitere Benutzeroberfläche zugreifen, was zu Verwirrung führen kann. Eine Erklärung für den Teilnehmer, warum er separate Lab-Abweisungen erhält, kann die Natur einer sich ständig ändernden cloudbasierten Schnittstelle und Plattform hervorheben. Die Microsoft Learning-Unterstützung für den Zugriff auf Dateien auf GitHub und die Unterstützung für die Navigation auf der GitHub-Website ist auf MCTs beschränkt, die diesen Kurs unterrichten.
+Es wird dringend empfohlen, dass MCTs und Partner auf diese Materialien zugreifen und sie den Kursteilnehmern separat zur VerfÃ¼gung stellen.  Wenn Sie Kursteilnehmer direkt auf GitHub verweisen, um im Rahmen eines laufenden Kurses auf Lab-Schritte zuzugreifen, mÃ¼ssen sie im Rahmen des Kurses auf eine weitere BenutzeroberflÃ¤che zugreifen, was zu Verwirrung fÃ¼hren kann. Eine ErklÃ¤rung fÃ¼r den Teilnehmer, warum er separate Lab-Abweisungen erhÃ¤lt, kann die Natur einer sich stÃ¤ndig Ã¤ndernden cloudbasierten Schnittstelle und Plattform hervorheben. Die Microsoft Learning-UnterstÃ¼tzung fÃ¼r den Zugriff auf Dateien auf GitHub und die UnterstÃ¼tzung fÃ¼r die Navigation auf der GitHub-Website ist auf MCTs beschrÃ¤nkt, die diesen Kurs unterrichten.

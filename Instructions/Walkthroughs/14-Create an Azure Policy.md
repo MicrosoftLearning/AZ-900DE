@@ -1,51 +1,51 @@
 ---
 wts:
-    title: '14 – Erstellen einer Azure-Richtlinie'
-    module: 'Modul 03 – Sicherheit, Datenschutz, Compliance und Vertrauen'
+    title: '14 â€“ Erstellen einer Azure-Richtlinie'
+    module: 'Modul 03 â€“ Sicherheit, Datenschutz, Compliance und Vertrauen'
 ---
-# 14 – Erstellen einer Azure-Richtlinie
+# 14 â€“ Erstellen einer Azure-Richtlinie
 
-In dieser exemplarischen Vorgehensweise erstellen wir eine Azure-Richtlinie, um die Bereitstellung von Azure-Ressourcen auf einen bestimmten Standort zu beschränken.
+In dieser exemplarischen Vorgehensweise erstellen wir eine Azure-Richtlinie, um die Bereitstellung von Azure-Ressourcen auf einen bestimmten Standort zu beschrÃ¤nken.
 
-# Aufgabe 1: Erstellen einer Richtlinienzuweisung
+# AufgabeÂ 1: Erstellen einer Richtlinienzuweisung
 
-In dieser Aufgabe konfigurieren wir die zulässige Standortrichtlinie und weisen sie unserem Abonnement zu. 
+In dieser Aufgabe konfigurieren wir die zulÃ¤ssige Standortrichtlinie und weisen sie unserem Abonnement zu. 
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 
-2. Suchen Sie auf dem Blatt **Alle Dienste** nach **Richtlinie**, und wählen Sie sie diese Option aus. Klicken Sie im Abschnitt **Dokumenterstellung** auf **Definitionen**.  Nehmen Sie sich einen Moment Zeit, um die Liste der integrierten Richtliniendefinitionen zu überprüfen. Wählen Sie zum Beispiel in der Dropdownliste **Kategorie** nur **Compute** aus. Beachten Sie mithilfe der Definition **Zulässige SKUs für virtuelle Computer** eine Reihe von SKUs für virtuelle Computer angeben können, die Ihre Organisation bereitstellen kann.
+2. Suchen Sie auf dem Blatt **Alle Dienste** nach **Richtlinie**, und wÃ¤hlen Sie sie diese Option aus. Klicken Sie im Abschnitt **Dokumenterstellung** auf **Definitionen**.  Nehmen Sie sich einen Moment Zeit, um die Liste der integrierten Richtliniendefinitionen zu Ã¼berprÃ¼fen. WÃ¤hlen Sie zum Beispiel in der Dropdownliste **Kategorie** nur **Compute** aus. Beachten Sie mithilfe der Definition **ZulÃ¤ssige SKUs fÃ¼r virtuelle Computer** eine Reihe von SKUs fÃ¼r virtuelle Computer angeben kÃ¶nnen, die Ihre Organisation bereitstellen kann.
 
-3. Wechseln Sie zurück zur Seite **Richtlinie**, und klicken Sie im Abschnitt **Dokumenterstellung** auf **Aufgaben**. Eine Zuweisung ist eine Richtlinie, die so zugewiesen wurde, dass sie innerhalb eines bestimmten Bereichs erfolgt. Beispielsweise könnte dem Abonnementbereich eine Definition zugewiesen werden. 
+3. Wechseln Sie zurÃ¼ck zur Seite **Richtlinie**, und klicken Sie im Abschnitt **Dokumenterstellung** auf **Aufgaben**. Eine Zuweisung ist eine Richtlinie, die so zugewiesen wurde, dass sie innerhalb eines bestimmten Bereichs erfolgt. Beispielsweise kÃ¶nnte dem Abonnementbereich eine Definition zugewiesen werden. 
 
 4. Klicken Sie auf **Richtlinie zuweisen** im oberen Bereich der Seite **Richtlinie - Aufgaben**.
 
-5. Wählen Sie auf der Seite **Richtlinie zuweisen** die Bereichsauswahl aus, indem Sie auf die Auslassungspunkte klicken.
+5. WÃ¤hlen Sie auf der Seite **Richtlinie zuweisen** die Bereichsauswahl aus, indem Sie auf die Auslassungspunkte klicken.
 
     ![Screenshot der Ausgangspunkte der Bereichsauswahl.](../images/1401.png)
 
-6. Stellen Sie sicher, dass Ihr Abonnement ausgewählt ist. Ihr Abonnementname kann abweichen. Beachten Sie, dass Sie die Richtlinie optional auf eine Ressourcengruppe beschränken können. Übernehmen Sie die Standardeinstellungen, und klicken Sie auf **Auswählen**. 
+6. Stellen Sie sicher, dass Ihr Abonnement ausgewÃ¤hlt ist. Ihr Abonnementname kann abweichen. Beachten Sie, dass Sie die Richtlinie optional auf eine Ressourcengruppe beschrÃ¤nken kÃ¶nnen. Ãœbernehmen Sie die Standardeinstellungen, und klicken Sie auf **AuswÃ¤hlen**. 
 
-    **Hinweis**: Ein Bereich bestimmt, für welche Ressourcen oder Gruppen von Ressourcen die Richtlinienzuweisung gilt. In unserem Fall könnten wir diese Richtlinie einer bestimmten Ressourcengruppe zuweisen. Wir haben uns jedoch dafür entschieden, die Richtlinie auf Abonnementebene zuzuweisen. Beachten Sie, dass Ressourcen basierend auf der Bereichskonfiguration ausgeschlossen werden können. Ausschlüsse sind optional.
+    **Hinweis**: Ein Bereich bestimmt, fÃ¼r welche Ressourcen oder Gruppen von Ressourcen die Richtlinienzuweisung gilt. In unserem Fall kÃ¶nnten wir diese Richtlinie einer bestimmten Ressourcengruppe zuweisen. Wir haben uns jedoch dafÃ¼r entschieden, die Richtlinie auf Abonnementebene zuzuweisen. Beachten Sie, dass Ressourcen basierend auf der Bereichskonfiguration ausgeschlossen werden kÃ¶nnen. AusschlÃ¼sse sind optional.
 
-    ![Screenshot des Bereichs „Bereich“ mit ausgefüllten Feldwerten und hervorgehobener Schaltfläche „Auswählen“. ](../images/1402.png)
+    ![Screenshot des Bereichs â€Bereichâ€œ mit ausgefÃ¼llten Feldwerten und hervorgehobener SchaltflÃ¤che â€AuswÃ¤hlenâ€œ. ](../images/1402.png)
 
-7. Wählen Sie die Schaltfläche mit den Auslassungspunkten **Richtliniendefinition** aus. Geben Sie in das Feld **Suche** die Zeichenfolge **Standort** ein, und klicken Sie auf die Definition **Zulässige Standorte** und dann auf **Auswählen**.
+7. WÃ¤hlen Sie die SchaltflÃ¤che mit den Auslassungspunkten **Richtliniendefinition** aus. Geben Sie in das Feld **Suche** die Zeichenfolge **Standort** ein, und klicken Sie auf die Definition **ZulÃ¤ssige Standorte** und dann auf **AuswÃ¤hlen**.
 
-    **Hinweis**: Die Richtliniendefinition **Zulässige Standorte** gibt einen Speicherort an, an dem alle Ressourcen bereitgestellt werden müssen. Wenn ein anderer Speicherort ausgewählt wird, ist die Bereitstellung nicht zulässig. Weitere Informationen finden Sie auf der Seite [Azure Policy-Beispiele](https://docs.microsoft.com/de-de/azure/governance/policy/samples/index).
+    **Hinweis**: Die Richtliniendefinition **ZulÃ¤ssige Standorte** gibt einen Speicherort an, an dem alle Ressourcen bereitgestellt werden mÃ¼ssen. Wenn ein anderer Speicherort ausgewÃ¤hlt wird, ist die Bereitstellung nicht zulÃ¤ssig. Weitere Informationen finden Sie auf der Seite [Azure Policy-Beispiele](https://docs.microsoft.com/de-de/azure/governance/policy/samples/index).
 
-   ![Screenshot des Bereichs „Verfügbare Definitionen“ mit verschiedenen hervorgehobenen Feldern und ausgewählter Option „Überwachungs-VMs, die keine verwalteten Datenträger verwenden“.](../images/1403.png)
+   ![Screenshot des Bereichs â€VerfÃ¼gbare Definitionenâ€œ mit verschiedenen hervorgehobenen Feldern und ausgewÃ¤hlter Option â€Ãœberwachungs-VMs, die keine verwalteten DatentrÃ¤ger verwendenâ€œ.](../images/1403.png)
 
-8.  Wechseln Sie im Bereich **Richtlinie zuweisen** zur Registerkarte **Parameter**, klicken Sie auf den Pfeil am Ende des Felds **Zulässige Standorte**, und wählen Sie aus der nachfolgenden Liste **Japan, Westen** aus. Lassen Sie alle anderen Werte unverändert, und klicken Sie auf **Überprüfen + Erstellen** und dann auf **Erstellen**.
+8.  Wechseln Sie im Bereich **Richtlinie zuweisen** zur Registerkarte **Parameter**, klicken Sie auf den Pfeil am Ende des Felds **ZulÃ¤ssige Standorte**, und wÃ¤hlen Sie aus der nachfolgenden Liste **Japan, Westen** aus. Lassen Sie alle anderen Werte unverÃ¤ndert, und klicken Sie auf **ÃœberprÃ¼fen + Erstellen** und dann auf **Erstellen**.
 
-    ![Screenshot des Bereichs „Richtlinie zuweisen“ mit verschiedenen Feldern, die zusammen mit dem angegebenen Standort „Japan, Westen“ und der Schaltfläche „Zuweisen“ hervorgehoben sind.](../images/1404.png)
+    ![Screenshot des Bereichs â€Richtlinie zuweisenâ€œ mit verschiedenen Feldern, die zusammen mit dem angegebenen Standort â€Japan, Westenâ€œ und der SchaltflÃ¤che â€Zuweisenâ€œ hervorgehoben sind.](../images/1404.png)
 
-9. Die Richtlinienzuweisung **Zulässige Standorte** ist jetzt auf der Liste **Richtlinie - Aufgaben** aufgeführt und in Kraft getreten und setzt die Richtlinie auf der von uns angegebenen Bereichsebene (Abonnementebene) durch.
+9. Die Richtlinienzuweisung **ZulÃ¤ssige Standorte** ist jetzt auf der Liste **Richtlinie - Aufgaben** aufgefÃ¼hrt und in Kraft getreten und setzt die Richtlinie auf der von uns angegebenen Bereichsebene (Abonnementebene) durch.
 
-# Aufgabe 2: Testen der Richtlinie für zulässige Standorte
+# AufgabeÂ 2: Testen der Richtlinie fÃ¼r zulÃ¤ssige Standorte
 
-In dieser Aufgabe testen wir die Richtlinie für zulässige Standorte. 
+In dieser Aufgabe testen wir die Richtlinie fÃ¼r zulÃ¤ssige Standorte. 
 
-1. Suchen Sie im Azure-Portal auf dem Blatt **Alle Dienste** nach **Speicherkonten**, und wählen Sie diese Option aus. Klicken Sie anschließend auf **+ Hinzufügen**.
+1. Suchen Sie im Azure-Portal auf dem Blatt **Alle Dienste** nach **Speicherkonten**, und wÃ¤hlen Sie diese Option aus. Klicken Sie anschlieÃŸend auf **+ HinzufÃ¼gen**.
 
 2. Konfigurieren Sie das Speicherkonto (ersetzen Sie **xxxx** im Namen des Speicherkontos mit Buchstaben und Ziffern, so dass der Name global eindeutig ist). Belassen Sie ansonsten die Standardeinstellungen. 
 
@@ -57,34 +57,34 @@ In dieser Aufgabe testen wir die Richtlinie für zulässige Standorte.
     | Ort | **(USA) USA, Osten** |
     | | |
 
-3. Klicken Sie auf **Überprüfen + Erstellen** und dann auf **Erstellen**. 
+3. Klicken Sie auf **ÃœberprÃ¼fen + Erstellen** und dann auf **Erstellen**. 
 
-4. Sie erhalten die Fehlermeldung „Bereitstellung fehlgeschlagen“, die besagt, dass die Ressource von der Richtlinie nicht zugelassen wurde, einschließlich des Richtliniennamens **Zulässige Standorte**.
+4. Sie erhalten die Fehlermeldung â€Bereitstellung fehlgeschlagenâ€œ, die besagt, dass die Ressource von der Richtlinie nicht zugelassen wurde, einschlieÃŸlich des Richtliniennamens **ZulÃ¤ssige Standorte**.
 
-# Aufgabe 3: Richtlinienzuweisung löschen
+# AufgabeÂ 3: Richtlinienzuweisung lÃ¶schen
 
-In dieser Aufgabe entfernen wir die Zuweisung und den Test der zulässigen Richtlinienzuweisung. 
+In dieser Aufgabe entfernen wir die Zuweisung und den Test der zulÃ¤ssigen Richtlinienzuweisung. 
 
-Wir werden die Richtlinienzuweisung löschen, um sicherzustellen, dass wir bei zukünftigen Arbeiten, die wir ausführen möchten, nicht blockiert werden.
+Wir werden die Richtlinienzuweisung lÃ¶schen, um sicherzustellen, dass wir bei zukÃ¼nftigen Arbeiten, die wir ausfÃ¼hren mÃ¶chten, nicht blockiert werden.
 
-1. Suchen Sie auf dem Blatt **Alle Dienste** nach **Richtlinie**, und wählen Sie diese Option aus. Klicken Sie anschließend auf Ihre Richtlinie **Zulässige Standorte**.
+1. Suchen Sie auf dem Blatt **Alle Dienste** nach **Richtlinie**, und wÃ¤hlen Sie diese Option aus. Klicken Sie anschlieÃŸend auf Ihre Richtlinie **ZulÃ¤ssige Standorte**.
 
-    **Hinweis**: Auf dem Blatt **Richtlinie** können Sie den Konformitätszustand der verschiedenen Richtlinien anzeigen, die Sie zugewiesen haben.
+    **Hinweis**: Auf dem Blatt **Richtlinie** kÃ¶nnen Sie den KonformitÃ¤tszustand der verschiedenen Richtlinien anzeigen, die Sie zugewiesen haben.
 
-    **Hinweis**: Mit der Richtlinie „Zulässiger Standort“ werden möglicherweise nicht konforme Ressourcen angezeigt. In diesem Fall handelt es sich um Ressourcen, die vor der Richtlinienzuweisung erstellt wurden.
+    **Hinweis**: Mit der Richtlinie â€ZulÃ¤ssiger Standortâ€œ werden mÃ¶glicherweise nicht konforme Ressourcen angezeigt. In diesem Fall handelt es sich um Ressourcen, die vor der Richtlinienzuweisung erstellt wurden.
 
-2. Klicken Sie im obersten Menü auf **Arbeitsauftrag löschen**.
+2. Klicken Sie im obersten MenÃ¼ auf **Arbeitsauftrag lÃ¶schen**.
 
-   ![Screenshot des Menüelements „Zuweisung löschen“.](../images/1407.png)
+   ![Screenshot des MenÃ¼elements â€Zuweisung lÃ¶schenâ€œ.](../images/1407.png)
 
-3. Bestätigen Sie, dass Sie die Richtlinienzuweisung löschen möchten, indem Sie im Dialogfeld **Zuweisung löschen** auf **Ja** klicken.
+3. BestÃ¤tigen Sie, dass Sie die Richtlinienzuweisung lÃ¶schen mÃ¶chten, indem Sie im Dialogfeld **Zuweisung lÃ¶schen** auf **Ja** klicken.
 
-4. Versuchen Sie, ein anderes Speicherkonto zu erstellen, um sicherzustellen, dass die Richtlinie nicht mehr gültig ist.
+4. Versuchen Sie, ein anderes Speicherkonto zu erstellen, um sicherzustellen, dass die Richtlinie nicht mehr gÃ¼ltig ist.
 
-    **Hinweis**: Häufige Szenarien, in denen die Richtlinie **Zulässige Standorte** nützlich sein kann, wären: 
-    - *Kostenverfolgung*: Sie können unterschiedliche Abonnements für unterschiedliche regionale Standorte haben. Die Richtlinie wird sicherstellen, dass alle Ressourcen in der vorgesehenen Region bereitgestellt werden, um die Kostenverfolgung zu unterstützen. 
-    - *Datenresidenz und Sicherheitskonformität*: Sie können auch Anforderungen an die Datenaufbewahrung haben und Abonnements pro Kunde oder bestimmten Workloads erstellen und festlegen, dass alle Ressourcen in einem bestimmten Rechenzentrum bereitgestellt werden müssen, um die Complianceanforderungen bezüglich Daten und Sicherheit zu gewährleisten.
+    **Hinweis**: HÃ¤ufige Szenarien, in denen die Richtlinie **ZulÃ¤ssige Standorte** nÃ¼tzlich sein kann, wÃ¤ren: 
+    - *Kostenverfolgung*: Sie kÃ¶nnen unterschiedliche Abonnements fÃ¼r unterschiedliche regionale Standorte haben. Die Richtlinie wird sicherstellen, dass alle Ressourcen in der vorgesehenen Region bereitgestellt werden, um die Kostenverfolgung zu unterstÃ¼tzen. 
+    - *Datenresidenz und SicherheitskonformitÃ¤t*: Sie kÃ¶nnen auch Anforderungen an die Datenaufbewahrung haben und Abonnements pro Kunde oder bestimmten Workloads erstellen und festlegen, dass alle Ressourcen in einem bestimmten Rechenzentrum bereitgestellt werden mÃ¼ssen, um die Complianceanforderungen bezÃ¼glich Daten und Sicherheit zu gewÃ¤hrleisten.
 
-Herzlichen Glückwunsch! Sie haben eine Azure-Richtlinie erstellt, die die Bereitstellung von Azure-Ressourcen auf ein bestimmtes Rechenzentrum beschränkt.
+Herzlichen GlÃ¼ckwunsch! Sie haben eine Azure-Richtlinie erstellt, die die Bereitstellung von Azure-Ressourcen auf ein bestimmtes Rechenzentrum beschrÃ¤nkt.
 
-**Hinweis**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**Hinweis**: Um zusÃ¤tzliche Kosten zu vermeiden, kÃ¶nnen Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe lÃ¶schen**. ÃœberprÃ¼fen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **LÃ¶schen**. Ãœberwachen Sie die **Benachrichtigungen**, um zu sehen, wie der LÃ¶schvorgang ablÃ¤uft.
