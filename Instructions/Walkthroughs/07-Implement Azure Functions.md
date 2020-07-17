@@ -55,7 +55,7 @@ In dieser Aufgabe verwenden wir die Webhook + API-Funktion, um eine Nachricht an
 
 1. Klicken Sie im Blatt **HttpTrigger1** im Abschnitt **Entwickler** auf **Code + Test**. 
 
-1. Prüfen Sie unter **HttpTrigger1 \| **Überprüfen Sie im Blatt **Code + Test** den automatisch generierten Code und beachten Sie, dass der Code auf das Ausführen einer HTTP-Anforderung und das Protokollieren von Informationen ausgelegt ist. Beachten Sie außerdem, dass die Funktion eine Hello-Meldung mit einem Namen zurückgibt. 
+1. Prüfen Sie unter **HttpTrigger1 \|** Überprüfen Sie im Blatt **Code + Test** den automatisch generierten Code und beachten Sie, dass der Code auf das Ausführen einer HTTP-Anforderung und das Protokollieren von Informationen ausgelegt ist. Beachten Sie außerdem, dass die Funktion eine Hello-Meldung mit einem Namen zurückgibt. 
 
     ![Screenshot des Funktionscodes. Die „Hallo“-Meldung ist hervorgehoben.](../images/0704.png)
 

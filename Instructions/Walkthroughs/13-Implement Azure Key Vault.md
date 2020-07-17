@@ -24,7 +24,7 @@ In dieser exemplarischen Vorgehensweise erstellen wir einen Azure Key Vault und 
     | Tarif | **Standard** |
     | | |
 
-4. Klicken Sie auf **Überprüfen + Erstellen **, und klicken Sie dann auf **Erstellen**. 
+4. Klicken Sie auf **Überprüfen + Erstellen**, und klicken Sie dann auf **Erstellen**. 
 
 5. Wenn der neue Schlüsseltresor bereitgestellt ist, klicken Sie auf **Zu Ressource wechseln**. Sie können aber auch nach Ihrem neuen Schlüsseltresor suchen. 
 
