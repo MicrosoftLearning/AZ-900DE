@@ -1,4 +1,4 @@
-﻿---
+---
 title: Online gehostete Anweisungen
 permalink: index.html
 layout: home
