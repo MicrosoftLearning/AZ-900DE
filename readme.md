@@ -5,7 +5,7 @@
 > **Hier finden Sie ein Repository mit [Lab-Aufzeichnungen und Demos](https://github.com/MicrosoftLearning/Lab-Demo-Recordings) mit Links zu Labvideos, die im Microsoft Official Curriculum verwendet werden. Ziel ist es, Microsoft Certified Trainern eine einfache Möglichkeit zu bieten, auf eine Nicht-Audio-Version der im Portfolio verwendeten praktischen Labs zuzugreifen.**
 
 - **[Link zu exemplarischen Vorgehensweisen (HTML-Format)](https://microsoftlearning.github.io/AZ-900T0x-MicrosoftAzureFundamentals/)**
-- **Sind Sie ein MCT?** - Lesen Sie unseren [GitHub User Guide for MCTs](https://github.com/MicrosoftLearning/MCT-User-Guide-DE/)
+- **Sind Sie ein MCT?** - Lesen Sie unseren [GitHub-Benutzerhandbuch für MCTs](https://microsoftlearning.github.io/MCT-User-Guide-DE/)
 
 ## Was tun wir?
 
