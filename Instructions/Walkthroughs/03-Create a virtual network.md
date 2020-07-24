@@ -1,4 +1,4 @@
-﻿---
+---
 wts:
     title: '03 – Erstellen eines virtuellen Netzwerks'
     module: 'Modul 02 – Core Azure Services'
