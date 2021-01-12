@@ -23,17 +23,18 @@ In dieser Aufgabe erstellen wir ein virtuelles Netzwerk.
     | Adressraum |**10.1.0.0/16** |
     | Abonnement | **Wählen Sie Ihr Abonnement** |
     | Ressourcengruppe | **myRGVNet** (Neu erstellen) |
-    | Ort | **(USA) USA, Osten** |
+    | Standort | **(USA) USA, Osten** |
     | Subnetzname | **Standard** |
     | Subnetzadressbereich | **10.1.0.0/24** |
 
-    ![Screenshot des Blattes „Virtuelles Netzwerk erstellen“ mit den Standardfeldern.](../images/0301.png)
+    ![Screenshot des Schrittes „Einfach“ auf dem Blatt „Virtuelles Netzwerk erstellen“ mit den Standardfeldern.](../images/0301a.png)
+    ![Screenshot des Schrittes „IP-Adressen“ auf dem Blatt „Virtuelles Netzwerk erstellen“ mit den Standardfeldern.](../images/0301b.png)
 
 5. Klicken Sie auf die Schaltfläche **Überprüfen + Erstellen**. Stellen Sie sicher, dass die Prüfung erfolgreich ist.
 
 6. Klicken Sie zum Bereitstellen des virtuellen Netzwerks auf die Schaltfläche **Erstellen**. 
 
-    **Hinweis**: Woher wissen Sie in Ihrem Unternehmen, welche virtuellen Netzwerke und IP-Adressen Sie benötigen?
+    **HINWEIS**: Woher wissen Sie in Ihrem Unternehmen, welche virtuellen Netzwerke und IP-Adressen Sie benötigen?
 
 # Aufgabe 2: Zwei virtuelle Computer erstellen
 
@@ -87,19 +88,19 @@ In dieser Aufgabe werden wir ICMP-Verbindungen zulassen und testen, ob die Virtu
 
 2. Klicken Sie auf dem Blatt **Überblick** auf die Schaltfläche **Verbinden**.
 
-    **Hinweis**: In den folgenden Anweisungen erfahren Sie, wie Sie von einem Windows-Computer aus eine Verbindung zu Ihrem virtuellen Computer herstellen. 
+    **HINWEIS**: In den folgenden Anweisungen erfahren Sie, wie Sie von einem Windows-Computer aus eine Verbindung zu Ihrem virtuellen Computer herstellen. 
 
 3. Behalten Sie auf dem Blatt **Verbindung mit virtueller Maschine herstellen** die Standardoptionen für die Verbindung per IP-Adresse über Port 3389 bei, und klicken Sie auf **RDP-Datei herunterladen**.
 
 4. Öffnen Sie die heruntergeladene RDP-Datei und klicken Sie auf **Verbinden**, wenn Sie dazu aufgefordert werden. 
 
-5. Geben Sie im Fenster **Windows-Sicherheit** den Benutzernamen **azureuser** und das Kennwort **Pa$$$w0rd1234** ein, und klicken Sie dann auf **OK**.
+5. Geben Sie im Fenster **Windows-Sicherheit** den Benutzernamen **azureuser** und das Kennwort **Pa$$w0rd1234** ein, und klicken Sie dann auf **OK**.
 
 6. Möglicherweise erhalten Sie während des Anmeldevorgangs eine Zertifikatwarnung. Klicken Sie auf **Ja**, um die Verbindung herzustellen und eine Verbindung zu Ihrem bereitgestellten virtuellen Computer herzustellen. Sie sollten erfolgreich eine Verbindung herstellen.
 
 7. Öffnen Sie eine PowerShell-Eingabeaufforderung auf dem virtuellen Computer, indem Sie auf die Schaltfläche **Start** klicken, **PowerShell** eingeben, mit der rechten Maustaste auf **Windows PowerShell** im Rechtsklickmenü klicken und auf **Als Administrator ausführen** klicken.
 
-8. Versuchen Sie, vm2 zu pingen (stellen Sie sicher, dass vm2 ausgeführt wird). Sie erhalten eine Fehlermeldung, dass das Zeitlimit für die Anforderung abgelaufen ist.  Der `ping` schlägt fehl, weil `ping` das **ICMP (Internet Control Message Protocol)** verwendet. Standardmäßig wird ICMP durch die Windows-Firewall nicht zugelassen.
+8. Versuchen Sie, vm2 zu pingen (stellen Sie sicher, dass vm2 ausgeführt wird). Sie erhalten eine Fehlermeldung, dass das Zeitlimit für die Anforderung abgelaufen ist.  Der Ping schlägt fehl, weil Ping das **ICMP (Internet Control Message Protocol)** verwendet. Standardmäßig wird ICMP durch die Windows-Firewall nicht zugelassen.
 
 
    ```PowerShell
@@ -108,7 +109,7 @@ In dieser Aufgabe werden wir ICMP-Verbindungen zulassen und testen, ob die Virtu
    
    ![Screenshot der PowerShell-Eingabeaufforderung mit dem Befehl „ping vm2“ nach dessen Abschluss und der Ausgabe, die angibt, dass der Befehl nicht erfolgreich war.](../images/0302.png)
 
-    **Hinweis**: Sie öffnen jetzt eine RDP-Sitzung für vm2 und lassen eingehende ICMP-Verbindungen zu.
+    **HINWEIS**: Sie öffnen jetzt eine RDP-Sitzung für vm2 und lassen eingehende ICMP-Verbindungen zu.
 
 9. Stellen Sie mithilfe von RDP eine Verbindung mit **vm2** her. Sie können die Schritte **2 bis 6** ausführen.
 
@@ -119,7 +120,7 @@ In dieser Aufgabe werden wir ICMP-Verbindungen zulassen und testen, ob die Virtu
    ```
    ![Screenshot der PowerShell-Eingabeaufforderung mit dem Befehl „New-NetFirewallRule DisplayName Allow ICMPv4-In -Protocol ICMPv4“ nach seiner Fertigstellung und der Ausgabe, die angibt, dass der Befehl erfolgreich war.](../images/0303.png)
 
-   **Hinweis**: Sie wechseln jetzt zur RDP-Sitzung zu VM1 und versuchen den Ping erneut
+   **HINWEIS**: Sie wechseln jetzt zur RDP-Sitzung zu VM1 und versuchen den Ping erneut
 
 11. Kehren Sie zur RDP-Sitzung zu vm1 zurück und versuchen Sie den Ping erneut. Sie sollten jetzt erfolgreich sein. 
 
@@ -129,4 +130,4 @@ In dieser Aufgabe werden wir ICMP-Verbindungen zulassen und testen, ob die Virtu
 
 Herzlichen Glückwunsch! Sie haben zwei virtuelle Computer in einem virtuellen Netzwerk konfiguriert und bereitgestellt. Sie haben auch die Windows-Firewall so konfiguriert, dass einer der virtuellen Computer eingehende Ping-Anforderungen zulässt. 
 
-**Hinweis**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.

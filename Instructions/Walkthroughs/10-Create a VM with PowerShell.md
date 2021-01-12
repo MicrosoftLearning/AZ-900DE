@@ -53,6 +53,7 @@ In dieser Übung erstellen Sie mithilfe von PowerShell eine Ressourcengruppe und
     -SecurityGroupName "myNSGPS" `
     -PublicIpAddressName "myPublicIpPS"
     ```
+** Warten Sie, bis die VM bereitgestellt wurde, bevor Sie PowerShell schließen.
 
 5. Schließen Sie den Cloud Shell-Bereich der PowerShell-Sitzung.
 
@@ -98,13 +99,13 @@ In dieser Aufgabe überprüfen wir die Azure Advisor-Empfehlungen für unseren v
 
 2. Wählen Sie im Blatt **Advisor** den Eintrag **Überblick** aus. Beachten Sie, dass Empfehlungen nach Hochverfügbarkeit, Sicherheit, Leistung und Kosten gruppiert sind. 
 
-    ![Screenshot der Seite „Advisor-Übersicht“. ](../images/1003.png)
+    ![Screenshot der Seite „Advisor-Übersicht“.](../images/1003.png)
 
 3. Wählen Sie **Alle Empfehlungen** aus und Sie sich Zeit, um die einzelnen Empfehlungen und vorgeschlagenen Maßnahmen anzuzeigen. 
 
     **Hinweis:** Die Empfehlungen sind je nach Ihren Ressourcen unterschiedlich. 
 
-    ![Screenshot der Advisor-Seite „Alle Empfehlungen“. ](../images/1004.png)
+    ![Screenshot der Advisor-Seite „Alle Empfehlungen“.](../images/1004.png)
 
 4. Beachten Sie, dass Sie die Empfehlungen als CSV- oder PDF-Datei herunterladen können. 
 
@@ -114,4 +115,4 @@ In dieser Aufgabe überprüfen wir die Azure Advisor-Empfehlungen für unseren v
 
 Herzlichen Glückwunsch! Sie haben Cloud Shell konfiguriert, mithilfe von PowerShell einen virtuellen Computer erstellt, PowerShell-Befehle geübt und Advisor-Empfehlungen angesehen.
 
-**Hinweis**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.

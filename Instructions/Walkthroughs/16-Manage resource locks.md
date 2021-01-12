@@ -7,7 +7,7 @@ wts:
 
 In dieser exemplarischen Vorgehensweise erstellen wir eine Ressourcengruppe, fügen der Ressourcengruppe eine Sperre hinzu und testen das Löschen, testen das Löschen einer Ressource in der Ressourcengruppe und entfernen die Ressourcensperre. 
 
-# Aufgabe 1: Erstellen einer Ressourcengruppe
+# Aufgabe 1: Ressourcengruppe erstellen
 
 In dieser Aufgabe erstellen wir für diese Übung eine Ressourcengruppe. 
 
@@ -61,7 +61,7 @@ In dieser Aufgabe testen wir, ob die Ressourcensperre ein Speicherkonto in der R
     | Abonnement | **Wählen Sie Ihr Abonnement** |
     | Ressourcengruppe | **myRGLocks** |
     | Name des Speicherkontos | **storageaccountxxxx** |
-    | Ort | **(USA) USA, Osten**  |
+    | Standort | **(USA) USA, Osten**  |
     | Leistung | **Standard** |
     | Kontotyp | **StorageV2 (universell v2)** |
     | Replikation | **Lokal redundanter Speicher (LRS)** |
@@ -78,9 +78,9 @@ In dieser Aufgabe testen wir, ob die Ressourcensperre ein Speicherkonto in der R
 
     ![Screenshot der Meldung bezüglich eines Fehlers beim Löschen des Speicherkontos.](../images/1603.png)
 
-    **Hinweis**: Obwohl wir keine Sperre speziell für das Speicherkonto erstellt haben, haben wir eine Sperre auf der Ressourcengruppenebene erstellt, die das Speicherkonto enthält. Als solches verhindert die *übergeordnete* Ebenensperre, dass wir die Ressource löschen, und das Speicherkonto übernimmt die Sperre vom übergeordneten Element.
+    **HINWEIS**: Obwohl wir keine Sperre speziell für das Speicherkonto erstellt haben, haben wir eine Sperre auf der Ressourcengruppenebene erstellt, die das Speicherkonto enthält. Als solches verhindert die *übergeordnete* Ebenensperre, dass wir die Ressource löschen, und das Speicherkonto übernimmt die Sperre vom übergeordneten Element.
 
-# Aufgabe 4:  Ressourcensperre entfernen
+# Aufgabe 4: Ressourcensperre entfernen
 
 In dieser Aufgabe entfernen wir die Ressourcensperre und testen. 
 
@@ -94,4 +94,4 @@ In dieser Aufgabe entfernen wir die Ressourcensperre und testen.
 
 Herzlichen Glückwunsch! Sie haben eine Ressourcengruppe erstellt, der Ressourcengruppe eine Sperre hinzugefügt und das Löschen getestet, das Löschen einer Ressource in der Ressourcengruppe getestet und die Ressourcensperre entfernt. 
 
-**Hinweis**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.

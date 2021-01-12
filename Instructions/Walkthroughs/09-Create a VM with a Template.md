@@ -7,7 +7,7 @@ wts:
 
 In dieser exemplarischen Vorgehensweise stellen wir einen virtuellen Computer mit einer Schnellstartvorlage bereit und untersuchen Überwachungsfunktionen.
 
-# Aufgabe1: Durchsuchen Sie die Galerie und suchen Sie eine Vorlage.
+# Task1: Durchsuchen Sie die Galerie und suchen Sie eine Vorlage.
 
 In dieser Aufgabe durchsuchen wir die Azure-Schnellstartgalerie und stellen eine Vorlage bereit, mit der ein virtueller Computer erstellt wird. 
 
@@ -15,17 +15,17 @@ In dieser Aufgabe durchsuchen wir die Azure-Schnellstartgalerie und stellen eine
 
 2. Durchsuchen Sie die vielen verschiedenen Arten von Vorlagen, die verfügbar sind. 
 
-    **Hinweis**: Gibt es Vorlagen, die Sie interessieren?
+    **HINWEIS**: Gibt es Vorlagen, die Sie interessieren?
 
-3. Suchen Sie die Vorlage [Einfache Windows-VM bereitstellen](https://azure.microsoft.com/resources/templates/101-vm-simple-windows?azure-portal=true), oder greifen Sie direkt auf diese zu.
+3. Suchen Sie die Vorlage [VM bereitstellen](https://azure.microsoft.com/resources/templates/101-vm-simple-windows?azure-portal=true), oder greifen Sie direkt darauf zu.
 
-    **Hinweis**: Die Schaltfläche **Bereitstellung in Azure** ermöglicht es Ihnen, die Vorlage über das Azure-Portal bereitzustellen. Während einer solchen Bereitstellung werden Sie nur zur Eingabe eines kleinen Satzes von Konfigurationsparametern aufgefordert. 
+    **HINWEIS**: Die Schaltfläche **Bereitstellung in Azure** ermöglicht es Ihnen, die Vorlage über das Azure-Portal bereitzustellen. Während einer solchen Bereitstellung werden Sie nur zur Eingabe eines kleinen Satzes von Konfigurationsparametern aufgefordert. 
 
 4. Klicken Sie auf die Schaltfläche **In Azure bereitstellen**. Ihre Browsersitzung wird automatisch zum [Azure-Portal](http://portal.azure.com/) umgeleitet.
 
 5. Melden Sie sich nach Aufforderung bei dem Azure-Abonnement an, das Sie in diesem Lab verwenden möchten.
 
-6. Klicken Sie auf **Vorlage bearbeiten**. Die Resource Manager-Vorlage verwendet das JSON-Format. Überprüfen Sie die Variablen, und suchen Sie den Namen des virtuellen Computers. Ändern Sie den Namen zu **myVMTemplate**. **Speichern** Sie Ihre Änderungen. Sie kehren zurück zum Blatt **Benutzerdefinierte Bereitstellung** im Azure-Portal.
+6. Klicken Sie auf **Vorlage bearbeiten**. Die Resource Manager-Vorlage verwendet das JSON-Format. Überprüfen Sie die Parameter und Variablen.  Suchen Sie anschließend den Parameter für den Namen des virtuellen Computers. Ändern Sie den Namen zu **myVMTemplate**. **Speichern** Sie Ihre Änderungen. Sie kehren zurück zum Blatt **Benutzerdefinierte Bereitstellung** im Azure-Portal.
 
     ![Screenshot der Vorlage mit der hervorgehobenen Änderung des VM-Namens.](../images/0901.png)
 
@@ -35,18 +35,18 @@ In dieser Aufgabe durchsuchen wir die Azure-Schnellstartgalerie und stellen eine
     |----|----|
     | Abonnement | **Wählen Sie Ihr Abonnement**|
     | Ressourcengruppe | **myRGTemplate** (Neu erstellen) |
-    | Ort | **(USA) USA, Osten** |
+    | Standort | **(USA) USA, Osten** |
     | Admin-Benutzername | **azureuser** |
     | Admin-Kennwort | **Pa$$w0rd1234** |
     | Präfix der DNS-Bezeichnung | **myvmtemplate*xxxx*** |
     | Windows-Betriebssystemversion | **2019-Datencenter** |
     | | |
 
-8. Aktivieren Sie das Kontrollkästchen **Ich stimme den oben genannten Bedingungen zu**, und klicken Sie dann auf **Kaufen**.
+8. Aktivieren Sie das Kontrollkästchen „Ich stimme den oben genannten Bedingungen zu“, und klicken Sie dann auf „Kaufen“. 
+** Hinweis: Bei der Nutzung dieser Vorlage fallen keine Kosten an.
+9. Klicken Sie auf **Überprüfen + Erstellen**.
 
-    **Hinweis**: Bei der Nutzung dieser Vorlage fallen keine Kosten an.
-
-9. Überwachen Sie Ihre Bereitstellung. 
+10. Überwachen Sie Ihre Bereitstellung. 
 
 # Aufgabe 2: Überprüfen und Überwachen der Bereitstellung Ihres virtuellen Computers
 
@@ -60,7 +60,7 @@ In dieser Aufgabe überprüfen wir, ob der virtuelle Computer ordnungsgemäß be
 
 3. Wählen Sie Ihren virtuellen Computer aus, und scrollen Sie im Bereich **Übersicht** nach unten, um die Überwachungsdaten anzuzeigen.
 
-    **Hinweis**: Der Überwachungszeitraum kann von einer Stunde bis zu 30 Tagen angepasst werden.
+    **HINWEIS**: Der Überwachungszeitraum kann von einer Stunde bis zu 30 Tagen angepasst werden.
 
 4. Überprüfen Sie verschiedene Diagramme, einschließlich **CPU (Durchschnitt)**, **Netzwerk (gesamt)**, und **Festplattenbytes (gesamt)**. 
 
@@ -76,4 +76,4 @@ In dieser Aufgabe überprüfen wir, ob der virtuelle Computer ordnungsgemäß be
 
     ![Screenshot der Seite „Filter hinzufügen“ mit ausgewähltem Ereignistyp.](../images/0904.png)
 
-**Hinweis**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.

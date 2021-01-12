@@ -22,7 +22,7 @@ In dieser Aufgabe erstellen wir einen virtuellen Windows Server 2019 Datacenter-
     | Abonnement | **Wählen Sie Ihr Abonnement**|
     | Ressourcengruppe | **myRGSecure** (Neu erstellen) |
     | Name des virtuellen Computers | **SimpleWinVM** |
-    | Ort | **(US) East US**|
+    | Standort | **(US) East US**|
     | Bild | **Windows Server 2019 Datacenter**|
     | Größe | **Standard D2s v3**|
     | Benutzername des Administratorkontos | **azureuser** |
@@ -41,7 +41,7 @@ In dieser Aufgabe erstellen wir einen virtuellen Windows Server 2019 Datacenter-
 
     | Einstellungen | Werte |
     | -- | -- |
-    | Startdiagnose | **Aus**|
+    | Startdiagnose | **Deaktivieren**|
     | | |
 
 6. Übernehmen Sie die verbleibenden Standardeinstellungen, und klicken Sie dann auf die Schaltfläche **Überprüfen + Erstellen** am unteren Rand der Seite.
@@ -54,7 +54,7 @@ In dieser Aufgabe erstellen wir einen virtuellen Windows Server 2019 Datacenter-
 
 10. Klicken Sie auf dem **SimpleWinVM**-Blatt des virtuellen Computers auf **Netzwerk** und überprüfen Sie die Registerkarte **Regeln für eingehende Ports**. Beachten Sie, dass der Netzwerkschnittstelle des virtuellen Computers oder dem Subnetz, an das die Netzwerkschnittstelle angeschlossen ist, keine Netzwerksicherheitsgruppe zugeordnet ist.
 
-    **Hinweis**: Identifizieren Sie den Namen der Netzwerkschnittstelle. Sie werden dies in der nächsten Aufgabe benötigen.
+    **HINWEIS**: Identifizieren Sie den Namen der Netzwerkschnittstelle. Sie werden dies in der nächsten Aufgabe benötigen.
 
 # Aufgabe 2: Netzwerksicherheitsgruppe erstellen
 
@@ -80,7 +80,7 @@ In dieser Aufgabe erstellen wir eine Netzwerksicherheitsgruppe und ordnen sie de
 
 6. Wählen Sie die in der vorherigen Aufgabe identifizierte Netzwerkschnittstelle aus. 
 
-# Aufgabe 3: Eingehende Sicherheitsportregel konfigurieren, um RDP zuzulassen
+# Aufgabe 3: Portregel für die Sicherheit eingehender Verbindungen konfigurieren, um RDP zuzulassen
 
 In dieser Aufgabe erlauben wir den RDP-Verkehr zum virtuellen Computer, indem wir eine eingehende Sicherheitsportregel konfigurieren. 
 
@@ -120,7 +120,7 @@ In dieser Aufgabe erstellen wir eine NSG-Regel für ausgehende Ports, die den In
 
 3. Stellen Sie sicher, dass Sie auf **https://www.bing.com** zugreifen können, und schließen Sie dann Internet Explorer. Sie müssen sich durch die erweiterten Sicherheits-Popups von IE durcharbeiten. 
 
-    **Hinweis**: Wir konfigurieren nun eine Regel, um den ausgehenden Internetzugang zu verweigern. 
+    **HINWEIS**: Wir konfigurieren nun eine Regel, um den ausgehenden Internetzugang zu verweigern. 
 
 4. Navigieren Sie im Azure-Portal zurück zum Blatt des virtuellen Computers **SimpleWinVM**. 
 
@@ -147,4 +147,4 @@ In dieser Aufgabe erstellen wir eine NSG-Regel für ausgehende Ports, die den In
 
 9. Wechseln Sie zu **https://www.microsoft.com**. Die Seite sollte nicht angezeigt werden. Möglicherweise müssen Sie sich durch zusätzliche erweiterte Sicherheits-Popups im IE durcharbeiten.  
 
-**Hinweis**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.

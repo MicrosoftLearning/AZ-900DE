@@ -1,21 +1,21 @@
 ---
 wts:
     title: '01 – Erstellen eines virtuellen Computers im Portal'
-    module: 'Modul 02 – Core Azure Services'
+    module: 'Modul 02 – Azure-Kerndienste (Workloads)'
 ---
 # 01 – Erstellen eines virtuellen Computers im Portal
 
 In dieser schrittweisen Anleitung erstellen wir einen virtuellen Computer im Azure-Portal, stellen eine Verbindung zum virtuellen Computer her, installieren die Webserverrolle und testen dann. 
 
-**Hinweis**: Nehmen Sie sich bei dieser exemplarischen Vorgehensweise die Zeit, auf die Informationssymbole zu klicken und diese zu lesen. 
+**HINWEIS**: Nehmen Sie sich bei dieser exemplarischen Vorgehensweise die Zeit, auf die Informationssymbole zu klicken und diese zu lesen. 
 
 # Aufgabe 1: Den virtuellen Computer erstellen
 
-In dieser Aufgabe erstellen wir einen virtuellen Windows Server 2019 Datacenter-Computer. 
+In dieser Aufgabe erstellen wir einen virtuellen Windows Server 2019 Datacenter Gen1-Computer. 
 
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+1. Melden Sie sich beim [Azure-Portal an (https://portal.azure.com)](https://portal.azure.com?azure-portal=true).
 
-2. Suchen Sie auf dem Blatt **Alle Dienste** nach **Virtuelle Computer**, und wählen Sie diese Option aus. Klicken Sie dann auf **+ Hinzufügen**.
+2. Suchen Sie auf dem Blatt **Alle Dienste** nach **Virtuelle Computer**, und wählen Sie diese Option aus. Klicken Sie dann auf **+ Hinzufügen** und wählen Sie **+Virtueller Computer** aus.
 
 3. Auf der Registerkarte **Grundlagen** geben Sie die folgenden Informationen ein (belassen Sie ansonsten die Standardeinstellungen):
 
@@ -24,40 +24,48 @@ In dieser Aufgabe erstellen wir einen virtuellen Windows Server 2019 Datacenter-
     | Abonnement | **Wählen Sie Ihr Abonnement**|
     | Ressourcengruppe | **myRGVM** (Neu erstellen) |
     | Name des virtuellen Computers | **myVM** |
-    | Ort | **(US) East US**|
-    | Bild | **Windows Server 2019 Datacenter**|
+    | Standort | **(US) East US**|
+    | Bild | **Windows Server 2019 Datacenter - Gen1**|
     | Größe | Standard D2s v3|
     | Benutzername des Administratorkontos | **azureuser** |
     | Kennwort für das Administratorkonto | **Pa$$w0rd1234**|
     | Regeln für eingehende Ports – Ports auswählen zulassen | **RDP (3389)** und **HTTP (80)**|
     | | |
 
-4. Wechseln Sie zur Registerkarte „Verwaltung“, und wählen Sie im Abschnitt **Überwachung** die folgende Einstellung aus:
+4. Wechseln Sie zur Registerkarte „Netzwerk“, und suchen Sie nach der Option **Eingangsports auswählen**:
 
     | Einstellungen | Werte |
     | -- | -- |
-    | Startdiagnose | **Aus**|
+    | Eingangsports auswählen | **HTTP (80), RDP (3389)**|
     | | |
 
-5. Übernehmen Sie die verbleibenden Standardeinstellungen, und klicken Sie dann auf die Schaltfläche **Überprüfen + Erstellen** am unteren Rand der Seite.
+5. Wechseln Sie zur Registerkarte „Verwaltung“, und wählen Sie im Abschnitt **Überwachung** die folgende Einstellung aus:
 
-6. Sobald die Validierung bestanden ist, klicken Sie auf die Schaltfläche **Erstellen**. Die Bereitstellung des virtuellen Computers kann zwischen fünf und sieben Minuten dauern.
+    | Einstellungen | Werte |
+    | -- | -- |
+    | Startdiagnose | **Deaktivieren**|
+    | | |
 
-7. Sie erhalten Updates auf der Bereitstellungsseite und über den Bereich **Benachrichtigungen** (das Glockensymbol im obersten Menü).
+6. Übernehmen Sie die verbleibenden Standardeinstellungen, und klicken Sie dann auf die Schaltfläche **Überprüfen + Erstellen** am unteren Rand der Seite.
 
-# Aufgabe 2: Eine Verbindung zum virtuellen Computer herstellen
+7. Sobald die Validierung bestanden ist, klicken Sie auf die Schaltfläche **Erstellen**. Die Bereitstellung des virtuellen Computers kann zwischen fünf und sieben Minuten dauern.
+
+8. Sie erhalten Updates auf der Bereitstellungsseite und über den Bereich **Benachrichtigungen** (das Glockensymbol im obersten Menü).
+* Überprüfen, ob Port 80 geöffnet wurde 
+
+# Aufgabe 2: Verbindung zum virtuellen Computer herstellen
 
 In dieser Aufgabe stellen wir über RDP eine Verbindung zu unserem neuen virtuellen Computer her. 
 
 1. Suchen Sie nach **myVM**, und wählen Sie Ihren neuen virtuellen Computer aus.
 
-    **Hinweis**: Sie können auch den Link **Zu Ressource wechseln** auf der Bereitstellungsseite oder den Link zu der Ressource im Bereich **Benachrichtigung** verwenden.
+    **HINWEIS**: Sie können auch den Link **Zu Ressource wechseln** auf der Bereitstellungsseite oder den Link zu der Ressource im Bereich **Benachrichtigung** verwenden.
 
-2. Klicken Sie auf dem Blatt **Überblick** des virtuellen Computers auf die Schaltfläche **Verbinden**.
+2. Klicken Sie auf dem Blatt **Überblick** des virtuellen Computers auf die Schaltfläche **Verbinden** und wählen Sie **RDP** aus.
 
     ![Screenshot der Eigenschaften des virtuellen Computers mit hervorgehobener Schaltfläche „Verbinden“.](../images/0101.png)
 
-    **Hinweis**: In den folgenden Anweisungen erfahren Sie, wie Sie von einem Windows-Computer aus eine Verbindung zu Ihrem virtuellen Computer herstellen. Auf einem Mac benötigen Sie einen RDP-Client wie diesen Remotedesktopclient aus dem Mac App Store. Auf einem Linux-Computer können Sie einen Open Source-RDP-Client verwenden.
+    **HINWEIS**: In den folgenden Anweisungen erfahren Sie, wie Sie von einem Windows-Computer aus eine Verbindung zu Ihrem virtuellen Computer herstellen. Auf einem Mac benötigen Sie einen RDP-Client wie diesen Remotedesktopclient aus dem Mac App Store. Auf einem Linux-Computer können Sie einen Open Source-RDP-Client verwenden.
 
 2. Auf der Seite **Verbindung zum virtuellen Computer herstellen** behalten Sie die Standardoptionen für die Verbindung mit der öffentlichen IP-Adresse über Port 3389 bei und klicken auf **RDP-Datei herunterladen**.
 
@@ -104,4 +112,4 @@ In dieser Aufgabe werden Sie die Webserverrolle auf dem Server installieren und 
 Herzlichen Glückwunsch! Sie haben einen Webserver erstellt, auf den über seine öffentliche IP-Adresse zugegriffen werden kann. Wenn Sie eine Webanwendung hosten müssen, können Sie Anwendungsdateien auf dem virtuellen Computer bereitstellen und sie für den öffentlichen Zugriff auf dem bereitgestellten virtuellen Computer hosten.
 
 
-**Hinweis**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu überprüfen, ob der Löschvorgang erfolgreich abgeschlossen wurde. 
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu überprüfen, ob der Löschvorgang erfolgreich abgeschlossen wurde. 

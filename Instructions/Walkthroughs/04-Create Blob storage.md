@@ -22,7 +22,7 @@ In dieser Übung erstellen wir ein neues Speicherkonto.
     | Abonnement | **Wählen Sie Ihr Abonnement** |
     | Ressourcengruppe | **myRGStorage** (Neu erstellen) |
     | Name des Speicherkontos | **storageaccountxxxx** |
-    | Ort | **(USA) USA, Osten**  |
+    | Standort | **(USA) USA, Osten**  |
     | Leistung | **Standard** |
     | Kontotyp | **StorageV2 (universell v2)** |
     | Replikation | **Lokal redundanter Speicher (LRS)** |
@@ -58,11 +58,11 @@ In dieser Aufgabe erstellen wir einen Blob-Container und laden eine Blob-Datei h
 
 5. Navigieren Sie zu einer Datei auf Ihrem lokalen Computer. 
 
-    **Hinweis**: Sie können eine leere `.txt`-Datei erstellen oder eine vorhandene Datei verwenden. Wählen Sie eine kleine Datei, um die Uploadzeit zu minimieren.
+    **HINWEIS**: Sie können eine leere TXT-Datei erstellen oder eine vorhandene Datei verwenden. Wählen Sie eine kleine Datei, um die Uploadzeit zu minimieren.
 
 6. Klicken Sie auf den Pfeil **Erweitert**, übernehmen Sie die Standardwerte, überprüfen Sie die verfügbaren Optionen, und klicken Sie dann auf **Hochladen**.
 
-    **Hinweis**: Auf diese Weise können Sie beliebig viele Blobs hochladen. Neue BLOBs werden im Container aufgelistet.
+    **HINWEIS**: Auf diese Weise können Sie beliebig viele Blobs hochladen. Neue BLOBs werden im Container aufgelistet.
 
 7. Klicken Sie nach dem Hochladen der Datei mit der rechten Maustaste auf die Datei und beachten Sie die Optionen „Anzeigen/Bearbeiten“, „Herunterladen“, „Eigenschaften“ und „Löschen“. 
 
@@ -70,14 +70,14 @@ In dieser Aufgabe erstellen wir einen Blob-Container und laden eine Blob-Datei h
 
 # Aufgabe 3: Überwachung des Speicherkontos
 
-1. Wenn erforderlich, kehren Sie zum Speicherkonto-Blatt zurück, und klicken Sie auf **Diagnose und Problembehandlung**. 
+1. Kehren Sie bei Bedarf zum Blatt „Speicherkonto“ zurück, und klicken Sie auf **Diagnose und Problembehandlung**. 
 
 2. Erkunden Sie einige der häufigsten Speicherprobleme. Beachten Sie, dass es mehrere Maßnahmen zur Fehlerbehebung gibt.
 
-3. Scrollen Sie auf dem Blatt „Speicherkonten“ nach unten zum Abschnitt **Überwachung**, und klicken Sie auf **Insights (Vorschau)**. Beachten Sie, dass Informationen zu Fehlern, Leistung, Verfügbarkeit und Kapazität vorhanden sind. Ihre Informationen werden davon abweichen.
+3. Scrollen Sie auf dem Blatt „Speicherkonten“ nach unten zum Abschnitt **Überwachung**, und klicken Sie auf **Insights**. Beachten Sie, dass Informationen zu Fehlern, Leistung, Verfügbarkeit und Kapazität vorhanden sind. Ihre Informationen werden davon abweichen.
 
-    ![Screenshot der Seite „Insights“ des Speicherkontos.](../images/0403.png)
+    ![Screenshot der Seite „Insights“ des Speicherkontos.](../images/0403.PNG)
 
 Herzlichen Glückwunsch! Sie haben ein Speicherkonto erstellt und dann mit Speicherblobs gearbeitet.
 
-**Hinweis**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.

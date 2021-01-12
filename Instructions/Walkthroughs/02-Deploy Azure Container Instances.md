@@ -1,10 +1,10 @@
 ---
 wts:
-    title: '02 – Bereitstellen von Azure Container Instances'
-    module: 'Modul 02 – Core Azure Services'
+    title: '03 – Bereitstellen von Azure Container Instances'
+    module: 'Modul 02 – Azure-Kerndienste (Workloads)'
 ---
 
-# 02 – Bereitstellen von Azure Container Instances
+# 03 – Bereitstellen von Azure Container Instances
 
 In dieser exemplarischen Vorgehensweise erstellen, konfigurieren und stellen wir einen Docker-Container mithilfe von Azure Container Instances (ACI) im Azure-Portal bereit. Der Container ist eine „Welcome to ACI“-Webanwendung, die eine statische HTML-Seite anzeigt. 
 
@@ -39,7 +39,7 @@ In dieser Aufgabe erstellen wir eine neue Containerinstanz für die Webanwendung
 	| DNS-Namensbezeichnung| **mycontainerdnsxxxx** |
 	|||
 	
-	**Hinweis**: Ihr Container ist unter „dns-name-label.region.azurecontainer.io“ öffentlich erreichbar. Wenn Sie die Fehlermeldung **DNS-Namensbezeichnung nicht verfügbar** nach der Bereitstellung erhalten, geben Sie eine andere DNS-Namensbezeichnung an und stellen Sie sie erneut bereit.
+	**HINWEIS**: Ihr Container ist unter „dns-name-label.region.azurecontainer.io“ öffentlich erreichbar. Wenn Sie die Fehlermeldung **DNS-Namensbezeichnung nicht verfügbar** nach der Bereitstellung erhalten, geben Sie eine andere DNS-Namensbezeichnung an und stellen Sie sie erneut bereit.
 
 	![Screenshot des Konfigurationsbereichs des Blatts zum Erstellen von Container Instances im Azure-Portal mit eingegebener DNS-Namensbezeichnung. ](../images/0201.png)
 
@@ -63,12 +63,12 @@ In dieser Aufgabe überprüfen wir, ob die Containerinstanz ausgeführt wird, in
 
 	![Screenshot des Übersichtsbereichs für den neu erstellten Container im Azure-Portal mit hervorgehobenem FQDN. ](../images/0202.png)
 
-2. Kopieren Sie den vollqualifizierten Domänennamen des Containers in das URL-Textfeld des Webbrowsers, und drücken Sie die **EINGABETASTE**. Die Startseite sollte angezeigt werden. 
+2. Kopieren Sie den vollqualifizierten Domänennamen des Containers in das URL-Textfeld des Webbrowsers, und drücken Sie die EINGABETASTE****. Die Startseite sollte angezeigt werden. 
 
 	![Screenshot der ACI-Begrüßungsnachricht, die in einem Webbrowser angezeigt wird.](../images/0203.png)
 
-**Hinweis**: Sie können auch die Container-IP-Adresse in Ihrem Browser verwenden. 
+**HINWEIS**: Sie können auch die Container-IP-Adresse in Ihrem Browser verwenden. 
 
 Herzlichen Glückwunsch! Sie haben Azure-Portal verwendet, um eine Anwendung erfolgreich in einem Container in Azure Containerinstanz bereitzustellen.
 
-**Hinweis**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.

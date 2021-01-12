@@ -1,9 +1,9 @@
 ---
 wts:
-    title: '08 – Erstellen einer Web-App'
-    module: 'Modul 02 – Core Azure Services'
+    title: '02 – Erstellen einer Web-App'
+    module: 'Modul 02 – Azure-Kerndienste (Workloads)'
 ---
-# 08 – Erstellen einer Web-App
+# 02 – Erstellen einer Web-App
 
 In dieser exemplarischen Vorgehensweise erstellen wir eine neue Web-App, in der ein Docker-Container ausgeführt wird. Der Container zeigt eine Begrüßungsnachricht an. 
 
@@ -42,7 +42,7 @@ In dieser Aufgabe erstellen Sie eine Azure App Service-Web-App.
     | | |	
 
 
-5. Klicken Sie auf **Überprüfen + Erstellen**, und klicken Sie dann auf **Erstellen**. 
+5. Klicken Sie auf **Überprüfen + Erstellen **, und klicken Sie dann auf **Erstellen**. 
 
 # Aufgabe 2: Web-App testen
 
@@ -62,5 +62,5 @@ In dieser Aufgabe testen wir die Web-App.
 
 5. Wechseln Sie wieder zum Blatt **Übersicht** Ihrer Web-App, und beachten Sie, dass es mehrere Diagramme enthält. Wenn Sie Schritt 4 einige Male wiederholen, sollte die entsprechende Telemetrie in den Diagrammen angezeigt werden. Dies umfasst die Anzahl der Anfragen und die durchschnittliche Antwortzeit. 
 
-**Hinweis**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
 
