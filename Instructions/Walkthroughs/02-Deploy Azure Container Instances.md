@@ -63,7 +63,7 @@ In dieser Aufgabe überprüfen wir, ob die Containerinstanz ausgeführt wird, in
 
 	![Screenshot des Übersichtsbereichs für den neu erstellten Container im Azure-Portal mit hervorgehobenem FQDN. ](../images/0202.png)
 
-2. Kopieren Sie den vollqualifizierten Domänennamen des Containers in das URL-Textfeld des Webbrowsers, und drücken Sie die EINGABETASTE****. Die Startseite sollte angezeigt werden. 
+2. Kopieren Sie den vollqualifizierten Domänennamen des Containers in das URL-Textfeld des Webbrowsers, und drücken Sie die **EINGABETASTE**. Die Startseite sollte angezeigt werden. 
 
 	![Screenshot der ACI-Begrüßungsnachricht, die in einem Webbrowser angezeigt wird.](../images/0203.png)
 

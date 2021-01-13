@@ -42,7 +42,7 @@ In dieser Aufgabe erstellen Sie eine Azure App Service-Web-App.
     | | |	
 
 
-5. Klicken Sie auf **Überprüfen + Erstellen **, und klicken Sie dann auf **Erstellen**. 
+5. Klicken Sie auf **Überprüfen + Erstellen**, und klicken Sie dann auf **Erstellen**. 
 
 # Aufgabe 2: Web-App testen
 
