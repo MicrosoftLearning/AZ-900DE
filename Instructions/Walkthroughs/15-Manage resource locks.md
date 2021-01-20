@@ -1,13 +1,13 @@
 ---
 wts:
-    title: '16 – Verwalten von Ressourcensperren'
-    module: 'Modul 03 – Sicherheit, Datenschutz, Compliance und Vertrauen'
+    title: '15 – Verwalten von Ressourcensperren (5 Min.)'
+    module: 'Modul 05: Beschreiben der Features für Identität, Governance, Datenschutz und Compliance'
 ---
-# 16 – Verwalten von Ressourcensperren
+# 15 – Verwalten von Ressourcensperren
 
 In dieser exemplarischen Vorgehensweise erstellen wir eine Ressourcengruppe, fügen der Ressourcengruppe eine Sperre hinzu und testen das Löschen, testen das Löschen einer Ressource in der Ressourcengruppe und entfernen die Ressourcensperre. 
 
-# Aufgabe 1: Ressourcengruppe erstellen
+# Aufgabe 1: Ressourcengruppe erstellen (5 Min.)
 
 In dieser Aufgabe erstellen wir für diese Übung eine Ressourcengruppe. 
 

@@ -1,13 +1,13 @@
 ---
 wts:
-    title: '12 – Sicherer Netzwerkdatenverkehr'
-    module: 'Modul 03 – Sicherheit, Datenschutz, Compliance und Vertrauen'
+    title: '13 – Sicherer Netzwerkdatenverkehr (10 Min.)'
+    module: 'Modul 04: Beschreiben der allgemeinen Sicherheit und von Netzwerksicherheitsfeatures'
 ---
-# 12 – Sicherer Netzwerkdatenverkehr
+# 13 – Sicherer Netzwerkdatenverkehr
 
 In dieser Anleitung konfigurieren wir eine Netzwerksicherheitsgruppe.
 
-# Aufgabe 1: Erstellen eines virtuellen Computers
+# Aufgabe 1: Erstellen eines virtuellen Computers (10 Min.)
 
 In dieser Aufgabe erstellen wir einen virtuellen Windows Server 2019 Datacenter-Computer. 
 

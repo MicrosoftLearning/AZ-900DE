@@ -1,14 +1,13 @@
 ---
 wts:
-    title: '21 – Öffnen einer Supportanfrage'
-    module: 'Modul 04 – Azure-Preise und -Support'
+    title: '22 – Öffnen einer Supportanfrage (5 Min.)'
+    module: 'Wird im aktuellen Examen zurzeit nicht verwendet'
 ---
-# 21 – Öffnen einer Supportanfrage
-
+# 22 – Öffnen einer Supportanfrage
 
 In dieser exemplarischen Vorgehensweise werden wir die verfügbaren Supportplanoptionen aufzeigen und anschließend das Erstellen und Überwachen einer neuen Supportanfrage üben.
 
-# Aufgabe 1: Anzeigen der verfügbaren Supportplanoptionen und einer technischen Supportanfrage
+# Aufgabe 1: Anzeigen der verfügbaren Supportplanoptionen und einer technischen Supportanfrage (5 Min.)
 
 1. Melden Sie sich im [**Azure-Portal**](https://portal.azure.com) an.
 

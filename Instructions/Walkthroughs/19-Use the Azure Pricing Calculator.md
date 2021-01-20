@@ -1,13 +1,13 @@
 ---
 wts:
-    title: '19 – Verwenden des Azure-Preisrechners'
-    module: 'Modul 04 – Azure-Preise und -Support'
+    title: '19 – Verwenden des Azure-Preisrechners (10 Min.)'
+    module: 'Modul 06: Beschreiben von Azure Cost Management und der Vereinbarungen zum Servicelevel'
 ---
 # 19 – Verwenden des Preisrechners
 
 In dieser exemplarischen Vorgehensweise verwenden wir den Azure-Preisrechner, um einen Kostenvoranschlag für einen virtuellen Azure-Computer und zugehörige Netzwerkressourcen zu erstellen.
 
-# Aufgabe 1: Konfigurieren des Preisrechners
+# Aufgabe 1: Konfigurieren des Preisrechners (10 Min.)
 
 In dieser Aufgabe schätzen wir die Kosten einer Infrastruktur-Stichprobe mithilfe des Azure-Preisrechners ab. 
 

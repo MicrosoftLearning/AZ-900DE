@@ -1,14 +1,14 @@
 ---
 wts:
-    title: '05 – Erstellen einer SQL-Datenbank'
-    module: 'Modul 02 – Core Azure Services'
+    title: '06 – Erstellen einer SQL-Datenbank (5 Min.)'
+    module: 'Modul 02 – Azure-Kerndienste (Workloads)'
 ---
 
-# 05 – Erstellen einer SQL-Datenbank
+# 06 – Erstellen einer SQL-Datenbank
 
 In dieser exemplarischen Vorgehensweise erstellen wir eine SQL-Datenbank in Azure und fragen dann die Daten in dieser Datenbank ab.
 
-# Aufgabe 1: Erstellen der Datenbank
+# Aufgabe 1: Erstellen der Datenbank (5 Min.)
 
 In dieser Aufgabe werden wir eine SQL-Datenbank auf der Grundlage der AdventureWorksLT-Beispieldatenbank erstellen. 
 
@@ -62,7 +62,7 @@ In dieser Aufgabe werden wir eine SQL-Datenbank auf der Grundlage der AdventureW
 
 6. Klicken Sie auf **Überprüfen + Erstellen** und dann auf **Erstellen**, um die Ressourcengruppe, den Server und die Datenbank bereitzustellen. Die Bereitstellung kann etwa 2 bis 5 Minuten dauern.
 
-7. Überwachen Sie Ihre Bereitstellung. 
+7. Navigieren Sie zum Tab „Ressource“, um die SQL-Datenbank zu suchen, die Sie erstellt haben. Möglicherweise müssen Sie aktualisieren.
 
 # Aufgabe 2: Datenbank testen.
 

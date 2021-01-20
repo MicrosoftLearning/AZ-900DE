@@ -1,13 +1,13 @@
 ---
 wts:
-    title: '18 – Erkunden des Trust Center'
-    module: 'Modul 03 – Sicherheit, Datenschutz, Compliance und Vertrauen'
+    title: '18 – Erkunden des Trust Center (5 Min.)'
+    module: 'Modul 05: Beschreiben der Features für Identität, Governance, Datenschutz und Compliance'
 ---
 # 18 – Erkunden des Trust Center
 
 In dieser schrittweisen Anleitung greifen wir auf Trust Center, Service Trust Portal (STP) und Compliance-Manager zu.
 
-# Aufgabe 1: Zugreifen auf das Trust Center
+# Aufgabe 1: Zugreifen auf das Trust Center (5 Min.)
 
 1. Greifen Sie in einem Browser auf die Seite mit [Microsoft Trust Center-Compliance-Angeboten](https://docs.microsoft.com/de-de/microsoft-365/compliance/offering-home) zu.
 

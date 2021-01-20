@@ -1,13 +1,13 @@
 ---
 wts:
-    title: '04 – Blob-Speicher erstellen'
-    module: 'Modul 02 – Core Azure Services'
+    title: '05 – Blob-Speicher erstellen (5 Min.)'
+    module: 'Modul 02 – Azure-Kerndienste (Workloads)'
 ---
-# 04 – Erstellen von Blob-Speicher
+# 05 – Blob-Speicher erstellen
 
 In dieser exemplarischen Vorgehensweise erstellen wir ein Speicherkonto und arbeiten dann mit Blob Storage-Dateien.
 
-# Aufgabe 1: Speicherkonto erstellen
+# Aufgabe 1: Speicherkonto erstellen (5 Min.)
 
 In dieser Übung erstellen wir ein neues Speicherkonto. 
 
@@ -26,8 +26,9 @@ In dieser Übung erstellen wir ein neues Speicherkonto.
     | Leistung | **Standard** |
     | Kontotyp | **StorageV2 (universell v2)** |
     | Replikation | **Lokal redundanter Speicher (LRS)** |
-    | Zugriffsebene (Standard) | **Heiße Ebene** |
     | | |
+
+    **Hinweis** – Denken Sie daran, **xxxx** zu ändern, sodass sich ein eindeutiger **Speicherkontoname** ergibt
 
 5. Klicken Sie auf **Überprüfen + Erstellen** um die Einstellungen Ihres Speicherkontos zu überprüfen und Azure die Überprüfung der Konfiguration zu ermöglichen. 
 
@@ -76,7 +77,7 @@ In dieser Aufgabe erstellen wir einen Blob-Container und laden eine Blob-Datei h
 
 3. Scrollen Sie auf dem Blatt „Speicherkonten“ nach unten zum Abschnitt **Überwachung**, und klicken Sie auf **Insights**. Beachten Sie, dass Informationen zu Fehlern, Leistung, Verfügbarkeit und Kapazität vorhanden sind. Ihre Informationen werden davon abweichen.
 
-    ![Screenshot der Seite „Insights“ des Speicherkontos.](../images/0403.png)
+    ![Screenshot der Seite „Insights“ des Speicherkontos.](../images/0403.PNG)
 
 Herzlichen Glückwunsch! Sie haben ein Speicherkonto erstellt und dann mit Speicherblobs gearbeitet.
 

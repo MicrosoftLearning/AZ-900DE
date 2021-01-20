@@ -1,10 +1,9 @@
 ---
 wts:
-    title: '22 – Berechnen zusammengesetzter SLAs'
-    module: 'Modul 04 – Azure-Preise und -Support'
+    title: '21 – Berechnen zusammengesetzter SLAs (5 Min.)'
+    module: 'Modul 06: Beschreiben von Azure Cost Management und der Vereinbarungen zum Servicelevel'
 ---
-# 22 – Berechnen von Verbund-SLAs
-
+# 21 – Berechnen von Verbund-SLAs
 
 In dieser exemplarischen Vorgehensweise ermitteln wir das Verfügbarkeits-SLA von Azure-Diensten und berechnen dann die SLA-basierte erwartete Verfügbarkeit auf Anwendungsbasis.
 
@@ -15,7 +14,7 @@ Unsere Beispielanwendung besteht aus diesen Azure-Diensten. Wir wollen hier nich
 + **Application Gateway**: So verwalten Sie den Anwendungszugriff und die Skalierung. 
 + **Azure SQL-Datenbank**: So speichern Sie Anwendungsdaten. 
 
-# Aufgabe 1: Bestimmen der prozentualen SLA-Verfügbarkeitswerte für unsere Anwendung
+# Aufgabe 1: Bestimmen der prozentualen SLA-Verfügbarkeitswerte für unsere Anwendung (5 Min.)
 
 1. Navigieren Sie in einem Browser zur Seite [DLV-Übersicht für Azure-Dienste](https://azure.microsoft.com/de-de/support/legal/sla/summary/).
 

@@ -1,6 +1,6 @@
 ---
 wts:
-    title: '03 – Bereitstellen von Azure Container Instances'
+    title: '03 – Bereitstellen von Azure Container Instances (10 Min.)'
     module: 'Modul 02 – Azure-Kerndienste (Workloads)'
 ---
 
@@ -8,7 +8,7 @@ wts:
 
 In dieser exemplarischen Vorgehensweise erstellen, konfigurieren und stellen wir einen Docker-Container mithilfe von Azure Container Instances (ACI) im Azure-Portal bereit. Der Container ist eine „Welcome to ACI“-Webanwendung, die eine statische HTML-Seite anzeigt. 
 
-# Aufgabe 1: Containerinstanz erstellen
+# Aufgabe 1: Containerinstanz erstellen (10 Min.)
 
 In dieser Aufgabe erstellen wir eine neue Containerinstanz für die Webanwendung. 
 
@@ -31,7 +31,6 @@ In dieser Aufgabe erstellen wir eine neue Containerinstanz für die Webanwendung
 	| Größe| ***Belassen Sie die Standardeinstellung***|
 	|||
 
-
 4. Konfigurieren Sie die Registerkarte „Netzwerk“ (ersetzen Sie **xxxx** durch Buchstaben und Ziffern, sodass der Name global eindeutig ist). Belassen Sie für alle anderen Einstellungen die Standardwerte.
 
 	| Einstellung| Wert|
@@ -39,7 +38,8 @@ In dieser Aufgabe erstellen wir eine neue Containerinstanz für die Webanwendung
 	| DNS-Namensbezeichnung| **mycontainerdnsxxxx** |
 	|||
 	
-	**HINWEIS**: Ihr Container ist unter „dns-name-label.region.azurecontainer.io“ öffentlich erreichbar. Wenn Sie die Fehlermeldung **DNS-Namensbezeichnung nicht verfügbar** nach der Bereitstellung erhalten, geben Sie eine andere DNS-Namensbezeichnung an und stellen Sie sie erneut bereit.
+	**HINWEIS**: Ihr Container ist unter „dns-name-label.region.azurecontainer.io“ öffentlich erreichbar. Wenn Sie die Fehlermeldung **DNS-Namensbezeichnung nicht verfügbar** nach der Bereitstellung erhalten, geben Sie eine andere DNS-Namensbezeichnung an (verwenden Sie nicht „xxxx“) und stellen Sie sie erneut bereit.
+
 
 	![Screenshot des Konfigurationsbereichs des Blatts zum Erstellen von Container Instances im Azure-Portal mit eingegebener DNS-Namensbezeichnung. ](../images/0201.png)
 

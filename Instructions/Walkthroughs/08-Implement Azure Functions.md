@@ -1,13 +1,13 @@
 ---
 wts:
-    title: '07 – Implementieren von Azure Functions'
-    module: 'Modul 02 – Core Azure Services'
+    title: '08 – Implementieren von Azure Functions (5 Min.)'
+    module: 'Modul 03: Kernlösungen und Verwaltungstools beschreiben'
 ---
-# 07 – Implementieren von Azure Functions
+# 08 – Implementieren von Azure Functions
 
 In dieser exemplarischen Vorgehensweise erstellen wir eine Funktions-App, um eine Hello-Meldung anzuzeigen, wenn eine HTTP-Anforderung vorliegt. 
 
-# Aufgabe 1: Eine Funktions-App erstellen
+# Aufgabe 1: Eine Funktions-App erstellen (5 Min.)
 
 In dieser Aufgabe erstellen wir eine Funktions-App.
 
@@ -24,8 +24,11 @@ In dieser Aufgabe erstellen wir eine Funktions-App.
     | Name der Funktions-App | **Funktion-xxxx** |
     | Veröffentlichen | **Code** |
     | Runtime-Stapel | **NET Core** |
+    | Version | **3.1** |
     | Region | **USA, Osten** |
-    | | |	
+    | | |
+
+    **Hinweis** – Denken Sie daran, **xxxx** zu ändern, sodass sich ein eindeutiger **Funktions-App-Name** ergibt
 
 1. Klicken Sie auf **Überprüfen + Erstellen**. Klicken Sie nach erfolgreicher Validierung auf **Erstellen**, um mit der Bereitstellung Ihrer neuen Azure Funktions-App zu beginnen.
 

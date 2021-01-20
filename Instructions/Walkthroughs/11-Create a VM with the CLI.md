@@ -1,13 +1,13 @@
 ---
 wts:
-    title: '11 – Erstellen eines virtuellen Computers mithilfe der CLI'
-    module: 'Modul 02 – Core Azure Services'
+    title: '11 – Erstellen eines virtuellen Computers mithilfe der CLI (10 Min.)'
+    module: 'Modul 03: Kernlösungen und Verwaltungstools beschreiben'
 ---
 # 11 – Erstellen eines virtuellen Computers mithilfe der CLI
 
 In dieser exemplarischen Vorgehensweise konfigurieren wir die Cloud Shell, erstellen mithilfe von Azure CLI eine Ressourcengruppe und einen virtuellen Computer und überprüfen die Empfehlungen von Azure Advisor. 
 
-# Aufgabe 1: Die Cloud Shell konfigurieren
+# Aufgabe 1: Die Cloud Shell konfigurieren (10 Min.)
 
 In dieser Aufgabe konfigurieren wir Cloud Shell. 
 

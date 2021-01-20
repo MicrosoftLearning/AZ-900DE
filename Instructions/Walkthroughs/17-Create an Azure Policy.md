@@ -1,13 +1,13 @@
 ---
 wts:
-    title: '14 – Erstellen einer Azure-Richtlinie'
-    module: 'Modul 03 – Sicherheit, Datenschutz, Compliance und Vertrauen'
+    title: '17 – Erstellen einer Azure-Richtlinie (10 Min.)'
+    module: 'Modul 05: Beschreiben der Features für Identität, Governance, Datenschutz und Compliance'
 ---
-# 14 – Erstellen einer Azure-Richtlinie
+# 17 – Erstellen einer Azure-Richtlinie
 
 In dieser exemplarischen Vorgehensweise erstellen wir eine Azure-Richtlinie, um die Bereitstellung von Azure-Ressourcen auf einen bestimmten Standort zu beschränken.
 
-# Aufgabe 1: Erstellen einer Richtlinienzuweisung
+# Aufgabe 1: Erstellen einer Richtlinienzuweisung (10 Min.)
 
 In dieser Aufgabe konfigurieren wir die zulässige Standortrichtlinie und weisen sie unserem Abonnement zu. 
 

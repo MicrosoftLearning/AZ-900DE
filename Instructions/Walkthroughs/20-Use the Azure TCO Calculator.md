@@ -1,7 +1,7 @@
 ---
 wts:
-    title: '20 – Verwenden des Azure-TCO-Rechners'
-    module: 'Modul 04 – Azure-Preise und -Support'
+    title: '20 – Verwenden des Azure-TCO-Rechners (10 Min.)'
+    module: 'Modul 06: Beschreiben von Azure Cost Management und der Vereinbarungen zum Servicelevel'
 ---
 # 20 – Verwenden des Azure-Gesamtbetriebskostenrechners
 
@@ -10,7 +10,7 @@ In dieser exemplarischen Vorgehensweise verwenden Sie den Gesamtbetriebskostenre
 
 **Hinweis**: Diese exemplarische Vorgehensweise enthält Beispieldefinitionen der lokalen Infrastruktur und Workloads für ein typisches Rechenzentrum. Verwenden Sie zum Erstellen eines Gesamtbetriebskosten-Rechner-Berichts die Beispieldefinitionen, oder geben Sie Details Ihrer *tatsächlich* lokalen Infrastruktur und Arbeitsauslastungen an.
 
-# Aufgabe 1: Konfigurieren des Gesamtbetriebskostenrechners
+# Aufgabe 1: Konfigurieren des Gesamtbetriebskostenrechners (10 Min.)
 
 In dieser Aufgabe fügen wir dem Rechner Infrastrukturinformationen hinzu. 
 

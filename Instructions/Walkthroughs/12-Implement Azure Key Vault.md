@@ -1,13 +1,13 @@
 ---
 wts:
-    title: '13 – Implementieren von Azure Key Vault'
-    module: 'Modul 03 – Sicherheit, Datenschutz, Compliance und Vertrauen'
+    title: '12 – Implementieren von Azure Key Vault (5 Min.)'
+    module: 'Modul 04: Beschreiben der allgemeinen Sicherheit und von Netzwerksicherheitsfeatures'
 ---
-# 13 – Implementieren von Azure Key Vault
+# 12 – Implementieren von Azure Key Vault
 
 In dieser exemplarischen Vorgehensweise erstellen wir einen Azure Key Vault und erstellen dann ein Kennwortgeheimnis in diesem Schlüsseltresor. Dabei wird ein sicher gespeichertes, zentral verwaltetes Kennwort für die Verwendung mit Anwendungen bereitgestellt.
 
-# Aufgabe 1: Einen Azure Key Vault erstellen
+# Aufgabe 1: Einen Azure Key Vault erstellen (5 Min.)
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 

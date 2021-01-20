@@ -1,6 +1,6 @@
 ---
 wts:
-    title: '01 – Erstellen eines virtuellen Computers im Portal'
+    title: '01 – Erstellen eines virtuellen Computers im Portal (10 Min.)'
     module: 'Modul 02 – Azure-Kerndienste (Workloads)'
 ---
 # 01 – Erstellen eines virtuellen Computers im Portal
@@ -9,7 +9,7 @@ In dieser schrittweisen Anleitung erstellen wir einen virtuellen Computer im Azu
 
 **HINWEIS**: Nehmen Sie sich bei dieser exemplarischen Vorgehensweise die Zeit, auf die Informationssymbole zu klicken und diese zu lesen. 
 
-# Aufgabe 1: Den virtuellen Computer erstellen
+# Aufgabe 1: Den virtuellen Computer erstellen (10 Min.)
 
 In dieser Aufgabe erstellen wir einen virtuellen Windows Server 2019 Datacenter Gen1-Computer. 
 
@@ -25,7 +25,7 @@ In dieser Aufgabe erstellen wir einen virtuellen Windows Server 2019 Datacenter 
     | Ressourcengruppe | **myRGVM** (Neu erstellen) |
     | Name des virtuellen Computers | **myVM** |
     | Standort | **(US) East US**|
-    | Bild | **Windows Server 2019 Datacenter - Gen1**|
+    | Bild | **Windows Server 2019 Datacenter – Gen1**|
     | Größe | Standard D2s v3|
     | Benutzername des Administratorkontos | **azureuser** |
     | Kennwort für das Administratorkonto | **Pa$$w0rd1234**|
@@ -39,6 +39,8 @@ In dieser Aufgabe erstellen wir einen virtuellen Windows Server 2019 Datacenter 
     | Eingangsports auswählen | **HTTP (80), RDP (3389)**|
     | | |
 
+**Hinweis** – Stellen Sie sicher, dass die Ports 80 und 3389 ausgewählt sind.
+
 5. Wechseln Sie zur Registerkarte „Verwaltung“, und wählen Sie im Abschnitt **Überwachung** die folgende Einstellung aus:
 
     | Einstellungen | Werte |
@@ -51,7 +53,8 @@ In dieser Aufgabe erstellen wir einen virtuellen Windows Server 2019 Datacenter 
 7. Sobald die Validierung bestanden ist, klicken Sie auf die Schaltfläche **Erstellen**. Die Bereitstellung des virtuellen Computers kann zwischen fünf und sieben Minuten dauern.
 
 8. Sie erhalten Updates auf der Bereitstellungsseite und über den Bereich **Benachrichtigungen** (das Glockensymbol im obersten Menü).
-* Überprüfen, ob Port 80 geöffnet wurde 
+
+* **Stellen Sie sicher, dass die Ports 80 und 3389 geöffnet wurden**
 
 # Aufgabe 2: Verbindung zum virtuellen Computer herstellen
 

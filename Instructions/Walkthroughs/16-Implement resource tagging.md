@@ -1,13 +1,13 @@
 ---
 wts:
-    title: '17 – Implementieren von Ressourcen-Tagging'
-    module: 'Modul 03 – Sicherheit, Datenschutz, Compliance und Vertrauen'
+    title: '16 – Implementieren von Ressourcen-Tagging (5 Min.)'
+    module: 'Modul 05: Beschreiben der Features für Identität, Governance, Datenschutz und Compliance'
 ---
-# 17 – Implementieren des Ressourcentaggings
+# 16 – Implementieren des Ressourcentaggings
 
 In dieser exemplarischen Vorgehensweise erstellen wir eine Richtlinienzuweisung, für die Tagging erforderlich ist, erstellen ein Speicherkonto und testen das Tagging, zeigen Ressourcen mit einem angegebenen Tag an und entfernen die Tagging-Richtlinie.
 
-# Aufgabe 1: Erstellen einer Richtlinienzuweisung
+# Aufgabe 1: Erstellen einer Richtlinienzuweisung (5 Min.)
 
 In dieser Aufgabe konfigurieren wir die Richtlinie **Einen Tag für Ressourcen anfordern** und weisen sie unserem Abonnement zu. 
 
@@ -58,6 +58,8 @@ In dieser Aufgabe erstellen wir Speicherkonten, um das erforderliche Tagging zu 
     **Hinweis:** Wenn Sie die Registerkarte „Unformatierter Fehler“ anzeigen, wird der erforderliche spezifische Tagname angezeigt. 
 
     ![Screenshot von „aufgrund eines Richtlinienfehlers nicht zulässig“.](../images/1704.png)
+
+    **Hinweis – Sie müssen 30 Minuten warten, bis das Markieren abgeschlossen ist.** 
 
 5. Schließen Sie den Bereich **Fehler**, und klicken Sie auf **Zurück** (unterer Bildschirmrand). Geben Sie die Tagging-Informationen an. 
 

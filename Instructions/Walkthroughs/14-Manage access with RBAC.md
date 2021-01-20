@@ -1,13 +1,13 @@
 ---
 wts:
-    title: '15 – Zugriff mit RBAC verwalten'
-    module: 'Modul 03 – Sicherheit, Datenschutz, Compliance und Vertrauen'
+    title: '14 – Zugriff mit RBAC verwalten (5 Min.)'
+    module: 'Modul 05: Beschreiben der Features für Identität, Governance, Datenschutz und Compliance'
 ---
-# 15 – Verwalten des Zugriffs mit RBAC
+# 14 – Verwalten des Zugriffs mit RBAC
 
 In dieser exemplarischen Vorgehensweise werden wir Rollen zuweisen und Aktivitätsprotokolle anzeigen. 
 
-# Aufgabe 1: Anzeigen und Zuweisen von Rollen
+# Aufgabe 1: Anzeigen und Zuweisen von Rollen (5 Min.)
 
 In dieser Aufgabe weisen wir die Rolle „Mitwirkender für virtuelle Computer“ zu. 
 
@@ -37,7 +37,7 @@ In dieser Aufgabe weisen wir die Rolle „Mitwirkender für virtuelle Computer�
     | Einstellung | Wert |
     | -- | -- |
     | Rolle | **Mitwirkender für virtuelle Computer** |
-    | Zugriff zuweisen | **Azure AD-Benutzer, -Gruppe oder -Dienstprinzipal** |
+    | Zugriff zuweisen | **-Benutzer, -Gruppe oder -Dienstprinzipal** |
     | Auswählen | Ihr Benutzerkonto |
     | | |
 

@@ -1,13 +1,13 @@
 ---
 wts:
-    title: '09 – Erstellen eines virtuellen Computers mit Hilfe einer Vorlage'
-    module: 'Modul 02 – Core Azure Services'
+    title: '09 – Erstellen eines virtuellen Computers mit Hilfe einer Vorlage (10 Min.)'
+    module: 'Modul 03: Kernlösungen und Verwaltungstools beschreiben'
 ---
 # 09 – Erstellen eines virtuellen Computers mit Hilfe einer Vorlage
 
 In dieser exemplarischen Vorgehensweise stellen wir einen virtuellen Computer mit einer Schnellstartvorlage bereit und untersuchen Überwachungsfunktionen.
 
-# Task1: Durchsuchen Sie die Galerie und suchen Sie eine Vorlage.
+# Task1: Durchsuchen Sie die Galerie und suchen Sie eine Vorlage (10 Min.).
 
 In dieser Aufgabe durchsuchen wir die Azure-Schnellstartgalerie und stellen eine Vorlage bereit, mit der ein virtueller Computer erstellt wird. 
 
@@ -41,9 +41,9 @@ In dieser Aufgabe durchsuchen wir die Azure-Schnellstartgalerie und stellen eine
     | Präfix der DNS-Bezeichnung | **myvmtemplate*xxxx*** |
     | Windows-Betriebssystemversion | **2019-Datencenter** |
     | | |
+    
+    ** Hinweis: Bei der Nutzung dieser Vorlage fallen keine Kosten an.
 
-8. Aktivieren Sie das Kontrollkästchen „Ich stimme den oben genannten Bedingungen zu“, und klicken Sie dann auf „Kaufen“. 
-** Hinweis: Bei der Nutzung dieser Vorlage fallen keine Kosten an.
 9. Klicken Sie auf **Überprüfen + Erstellen**.
 
 10. Überwachen Sie Ihre Bereitstellung. 
@@ -66,7 +66,7 @@ In dieser Aufgabe überprüfen wir, ob der virtuelle Computer ordnungsgemäß be
 
     ![Screenshot der Überwachungsdiagramme zum virtuellen Computer.](../images/0903.png)
 
-5. Klicken Sie auf ein Diagramm. Beachten Sie, dass Sie eine **Metrik hinzufügen** und den Diagrammtyp ändern können. Experimentieren Sie, wenn Ihre Zeit es erlaubt. 
+5. Klicken Sie auf ein Diagramm. Beachten Sie, dass Sie eine **Metrik hinzufügen** und den Diagrammtyp ändern können.
 
 6. Kehren Sie zum Blatt **Übersicht** zurück.
 

@@ -1,13 +1,13 @@
 ---
 wts:
-    title: '02 – Erstellen einer Web-App'
+    title: '02 – Erstellen einer Web-App (10 Min.)'
     module: 'Modul 02 – Azure-Kerndienste (Workloads)'
 ---
 # 02 – Erstellen einer Web-App
 
 In dieser exemplarischen Vorgehensweise erstellen wir eine neue Web-App, in der ein Docker-Container ausgeführt wird. Der Container zeigt eine Begrüßungsnachricht an. 
 
-# Aufgabe 1: Eine Web-App erstellen
+# Aufgabe 1: Eine Web-App erstellen (10 Min.)
 
 Azure App Service ist eine Sammlung von vier Diensten, die alle zum Hosten und Ausführen von Webanwendungen dienen. Die vier Dienste (Web-Apps, Mobile Apps, API-Apps und Locic Apps) sehen unterschiedlich aus, funktionieren jedoch letztendlich alle sehr ähnlich. Web-Apps ist der am häufigsten verwendete Dienst der vier Dienste. Diesen Dienst werden wir in diesem Lab verwenden.
 
@@ -28,6 +28,8 @@ In dieser Aufgabe erstellen Sie eine Azure App Service-Web-App.
     | Betriebssystem | **Linux** |
     | Region | **USA, Osten** (ignorieren Sie alle Warnungen zur Verfügbarkeit von Dienstplänen) |
     | | |	
+    
+    **Hinweis** – Denken Sie daran, **xxxx** zu ändern, sodass sich ein eindeutiger **Name** ergibt
 
 4. Klicken Sie auf **Weiter > Docker** und konfigurieren Sie die Containerinformationen. Der Startupbefehl ist optional und wird in dieser Übung nicht benötigt. 
 

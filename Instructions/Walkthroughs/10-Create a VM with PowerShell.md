@@ -1,13 +1,13 @@
 ---
 wts:
-    title: '10 – Einen virtuellen Computer mithilfe von PowerShell erstellen'
-    module: 'Modul 02 – Core Azure Services'
+    title: '10 – Einen virtuellen Computer mithilfe von PowerShell erstellen (10 Min.)'
+    module: 'Modul 03: Kernlösungen und Verwaltungstools beschreiben'
 ---
 # 10 – Erstellen eines virtuellen Computers mithilfe von PowerShell
 
 In dieser exemplarischen Vorgehensweise konfigurieren wir die Cloud Shell, erstellen mithilfe des Azure PowerShell-Moduls eine Ressourcengruppe und einen virtuellen Computer und überprüfen die Empfehlungen von Azure Advisor. 
 
-# Aufgabe 1: Die Cloud Shell konfigurieren
+# Aufgabe 1: Die Cloud Shell konfigurieren (10 Min.)
 
 In dieser Aufgabe konfigurieren wir Cloud Shell. 
 
@@ -19,7 +19,7 @@ In dieser Aufgabe konfigurieren wir Cloud Shell.
 
 3. Wenn Sie die Cloud Shell bereits verwendet haben, fahren Sie mit der nächsten Aufgabe fort. 
 
-4. Wenn Sie aufgefordert werden, entweder **Bash** oder **PowerShell** auszuwählen, wählen Sie **PowerShell** aus. 
+4. Wenn Sie aufgefordert werden, entweder **Bash** oder **PowerShell** auszuwählen, wählen Sie **PowerShell** aus.
 
 5. Wenn Sie dazu aufgefordert werden, klicken Sie auf **Speicher erstellen**, und warten Sie, bis die Azure Cloud Shell initialisiert ist. 
 

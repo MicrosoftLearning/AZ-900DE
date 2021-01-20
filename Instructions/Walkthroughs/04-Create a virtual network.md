@@ -1,13 +1,13 @@
 ---
 wts:
-    title: '03 – Erstellen eines virtuellen Netzwerks'
-    module: 'Modul 02 – Core Azure Services'
+    title: '04 – Erstellen eines virtuellen Netzwerks (20 Min.)'
+    module: 'Modul 02 – Azure-Kerndienste (Workloads)'
 ---
-# 03 – Erstellen eines virtuellen Netzwerks
+# 04 – Erstellen eines virtuellen Netzwerks
 
 In dieser exemplarischen Vorgehensweise erstellen wir ein virtuelles Netzwerk, stellen zwei virtuelle Computer in diesem virtuellen Netzwerk bereit und konfigurieren sie dann so, dass ein virtueller Computer den anderen innerhalb dieses virtuellen Netzwerks pingen kann.
 
-# Aufgabe 1: Erstellen eines virtuellen Netzwerks
+# Aufgabe 1: Erstellen eines virtuellen Netzwerks (20 Min.)
 
 In dieser Aufgabe erstellen wir ein virtuelles Netzwerk. 
 
