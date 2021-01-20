@@ -39,7 +39,7 @@ In dieser Aufgabe erstellen wir einen virtuellen Windows Server 2019 Datacenter 
     | Eingangsports auswählen | **HTTP (80), RDP (3389)**|
     | | |
 
-**Hinweis** – Stellen Sie sicher, dass die Ports 80 und 3389 ausgewählt sind.
+    **Hinweis** – Stellen Sie sicher, dass die Ports 80 und 3389 ausgewählt sind.
 
 5. Wechseln Sie zur Registerkarte „Verwaltung“, und wählen Sie im Abschnitt **Überwachung** die folgende Einstellung aus:
 

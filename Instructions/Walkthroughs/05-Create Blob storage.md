@@ -77,7 +77,7 @@ In dieser Aufgabe erstellen wir einen Blob-Container und laden eine Blob-Datei h
 
 3. Scrollen Sie auf dem Blatt „Speicherkonten“ nach unten zum Abschnitt **Überwachung**, und klicken Sie auf **Insights**. Beachten Sie, dass Informationen zu Fehlern, Leistung, Verfügbarkeit und Kapazität vorhanden sind. Ihre Informationen werden davon abweichen.
 
-    ![Screenshot der Seite „Insights“ des Speicherkontos.](../images/0403.PNG)
+    ![Screenshot der Seite „Insights“ des Speicherkontos.](../images/0403.png)
 
 Herzlichen Glückwunsch! Sie haben ein Speicherkonto erstellt und dann mit Speicherblobs gearbeitet.
 
