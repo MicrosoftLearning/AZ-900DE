@@ -3,7 +3,7 @@ wts:
     title: '20 – Verwenden des Azure-TCO-Rechners (10 Min.)'
     module: 'Modul 06: Beschreiben von Azure Cost Management und der Vereinbarungen zum Servicelevel'
 ---
-# 20 – Verwenden des Azure-Gesamtbetriebskostenrechners
+# 20 – Verwenden des Azure-TCO-Rechners
 
 
 In dieser exemplarischen Vorgehensweise verwenden Sie den Gesamtbetriebskostenrechner, um einen Kostenvergleichsbericht für eine lokale Umgebung zu erstellen.

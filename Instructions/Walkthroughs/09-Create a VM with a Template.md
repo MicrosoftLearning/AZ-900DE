@@ -42,7 +42,7 @@ In dieser Aufgabe durchsuchen wir die Azure-Schnellstartgalerie und stellen eine
     | Windows-Betriebssystemversion | **2019-Datencenter** |
     | | |
     
-    ** Hinweis: Bei der Nutzung dieser Vorlage fallen keine Kosten an.
+    **Hinweis**: Bei der Nutzung dieser Vorlage fallen keine Kosten an.
 
 9. Klicken Sie auf **Überprüfen + Erstellen**.
 

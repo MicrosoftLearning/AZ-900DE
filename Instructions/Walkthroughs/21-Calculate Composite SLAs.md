@@ -3,7 +3,7 @@ wts:
     title: '21 – Berechnen zusammengesetzter SLAs (5 Min.)'
     module: 'Modul 06: Beschreiben von Azure Cost Management und der Vereinbarungen zum Servicelevel'
 ---
-# 21 – Berechnen von Verbund-SLAs
+# 21 – Berechnen zusammengesetzter SLAs
 
 In dieser exemplarischen Vorgehensweise ermitteln wir das Verfügbarkeits-SLA von Azure-Diensten und berechnen dann die SLA-basierte erwartete Verfügbarkeit auf Anwendungsbasis.
 

@@ -1,6 +1,6 @@
 ---
 wts:
-    title: '10 – Einen virtuellen Computer mithilfe von PowerShell erstellen (10 Min.)'
+    title: '10 – Erstellen eines virtuellen Computers mithilfe von PowerShell (10 Min.)'
     module: 'Modul 03: Kernlösungen und Verwaltungstools beschreiben'
 ---
 # 10 – Erstellen eines virtuellen Computers mithilfe von PowerShell

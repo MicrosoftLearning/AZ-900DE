@@ -1,6 +1,6 @@
 ---
 wts:
-    title: '16 – Implementieren von Ressourcen-Tagging (5 Min.)'
+    title: '16 – Implementieren des Ressourcentaggings (5 Min.)'
     module: 'Modul 05: Beschreiben der Features für Identität, Governance, Datenschutz und Compliance'
 ---
 # 16 – Implementieren des Ressourcentaggings

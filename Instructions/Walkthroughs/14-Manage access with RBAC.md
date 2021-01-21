@@ -1,6 +1,6 @@
 ---
 wts:
-    title: '14 – Zugriff mit RBAC verwalten (5 Min.)'
+    title: '14 – Verwalten des Zugriffs mit RBAC (5 Min.)'
     module: 'Modul 05: Beschreiben der Features für Identität, Governance, Datenschutz und Compliance'
 ---
 # 14 – Verwalten des Zugriffs mit RBAC
