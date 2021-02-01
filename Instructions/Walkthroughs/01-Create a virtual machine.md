@@ -15,7 +15,7 @@ In dieser Aufgabe erstellen wir einen virtuellen Windows Server 2019 Datacenter 
 
 1. Melden Sie sich beim [Azure-Portal an (https://portal.azure.com)](https://portal.azure.com?azure-portal=true).
 
-2. Suchen Sie auf dem Blatt **Alle Dienste** nach **Virtuelle Computer**, und wählen Sie diese Option aus. Klicken Sie dann auf **+ Hinzufügen** und wählen Sie **+Virtueller Computer** aus.
+2. Suchen Sie auf dem Blatt **Alle Dienste** nach **Virtuelle Computer**, und wählen Sie diese Option aus. Klicken Sie dann auf **+ Hinzufügen** und wählen Sie **+ Virtueller Computer** aus.
 
 3. Auf der Registerkarte **Grundlagen** geben Sie die folgenden Informationen ein (belassen Sie ansonsten die Standardeinstellungen):
 
