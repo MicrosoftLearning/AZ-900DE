@@ -1,7 +1,7 @@
 ---
 wts:
-    title: '14 – Verwalten des Zugriffs mit RBAC (5 Min.)'
-    module: 'Modul 05: Beschreiben der Features für Identität, Governance, Datenschutz und Compliance'
+    title: '14 – Zugriff mit RBAC verwalten (5 Min.)'
+    module: 'Modul 05: Beschreiben der Features für Identität, Governance, Datenschutz und Compliance'
 ---
 # 14 – Verwalten des Zugriffs mit RBAC
 
@@ -24,7 +24,7 @@ In dieser Aufgabe weisen wir die Rolle „Mitwirkender für virtuelle Computer�
     | Region | **(USA) USA, Osten** |
     | | |
 
-4. Erstellen Sie **Überprüfen + Erstellen**, und klicken Sie dann auf **Erstellen**.
+4. Erstellen Sie **Überprüfen + erstellen**, und klicken Sie dann auf **Erstellen**.
 
 5. **Aktualisieren** Sie die Seite „Ressourcengruppe“, und klicken Sie auf den Eintrag, der die neu erstellte Ressourcengruppe darstellt.
 
@@ -32,26 +32,26 @@ In dieser Aufgabe weisen wir die Rolle „Mitwirkender für virtuelle Computer�
 
     ![Screenshot des Blatts „IAM-Rollen“. Besitzer-, Mitwirkende- und Leserrollen werden angezeigt.](../images/1501.png)
 
-7. Wechseln Sie zur Registerkarte **Rollenzuweisungen** des Blattes **myRGRBAC - Zugriffssteuerung (IAM)**, klicken Sie auf **Hinzufügen** und dann auf **Rollenzuweisung hinzufügen**. Weisen Sie Ihrem Benutzerkonto die Rolle „Mitwirkender für virtuelle Computer“ zu, und klicken Sie dann auf **Speichern**. 
+7. Wechseln Sie zur Registerkarte **Rollenzuweisungen** des Blatts **myRGRBAC - Zugriffssteuerung (IAM)**, klicken Sie auf **Hinzufügen** und dann auf **Rollenzuweisung hinzufügen**. Weisen Sie Ihrem Benutzerkonto die Rolle „Mitwirkender für virtuelle Computer“ zu, und klicken Sie dann auf **Speichern**. 
 
     | Einstellung | Wert |
     | -- | -- |
     | Rolle | **Mitwirkender für virtuelle Computer** |
-    | Zugriff zuweisen | **-Benutzer, -Gruppe oder -Dienstprinzipal** |
+    | Zugriff zuweisen | **auf Benutzer, Gruppe oder Dienstprinzipal** |
     | Auswählen | Ihr Benutzerkonto |
     | | |
 
-    **Hinweis:** Mit der Rolle des Mitwirkenden für virtuelle Computer können Sie virtuelle Computer verwalten, jedoch nicht auf deren Betriebssystem zugreifen oder das virtuelle Netzwerk und das Speicherkonto verwalten, mit denen sie verbunden sind.
+    **Hinweis:** Mit der Rolle „Mitwirkender für virtuelle Computer“ können Sie virtuelle Computer verwalten, jedoch nicht auf deren Betriebssystem zugreifen oder das virtuelle Netzwerk und das Speicherkonto verwalten, mit denen sie verbunden sind.
 
     ![Screenshot der Seite „Rollenzuweisung hinzufügen“ mit den erforderlichen Informationen.](../images/1502.png)
 
-8.  **Aktualisieren** Sie die Seite „Rollenzuweisungen“ und stellen Sie sicher, dass Sie jetzt als Mitwirkender eines virtuellen Computers aufgeführt sind. 
+8. **Aktualisieren** Sie die Seite „Rollenzuweisungen“ und stellen Sie sicher, dass Sie jetzt als Mitwirkender eines virtuellen Computers aufgeführt sind. 
 
-    **Hinweis**: Diese Zuweisung gewährt Ihnen keine zusätzlichen Berechtigungen, da Ihr Konto bereits über die Besitzerrolle verfügt, die alle mit der Teilnehmerrolle verbundenen Berechtigungen enthält.
+    **HINWEIS**: Diese Zuweisung gewährt Ihnen keine zusätzlichen Berechtigungen, da Ihr Konto bereits über die Besitzerrolle verfügt, die alle mit der Rolle „Mitwirkender“ verbundenen Berechtigungen enthält.
 
-# Aufgabe 2: Rollenzuweisungen überwachen und eine Rolle entfernen
+# Aufgabe 2: Überwachen von Rollenzuweisungen und Entfernen einer Rolle
 
-In dieser Aufgabe überprüfen wir anhand des Aktivitätsprotokolls die Rollenzuweisung entfernen anschließend die Rolle. 
+In dieser Aufgabe werden wir anhand des Aktivitätsprotokolls die Rollenzuweisung überprüfen und anschließend die Rolle entfernen. 
 
 1. Klicken Sie auf dem Blatt „myRGRBAC Ressourcengruppen“ auf **Aktivitätsprotokoll**.
 
@@ -61,10 +61,10 @@ In dieser Aufgabe überprüfen wir anhand des Aktivitätsprotokolls die Rollenzu
 
 3. Überprüfen Sie, ob Ihre Rollenzuweisung im Aktivitätsprotokoll angezeigt wird. 
 
-    **Hinweis**: Wissen Sie, wie Sie Ihre Rollenzuweisung entfernen können?
+    **HINWEIS**: Wissen Sie, wie Sie Ihre Rollenzuweisung entfernen können?
 
 Herzlichen Glückwunsch! Sie haben Rollen zugewiesen und Aktivitätsprotokolle angezeigt. 
 
-**Hinweis**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
 
 

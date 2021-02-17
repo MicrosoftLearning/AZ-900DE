@@ -7,9 +7,9 @@ wts:
 
 In dieser exemplarischen Vorgehensweise werden wir die verfügbaren Supportplanoptionen aufzeigen und anschließend das Erstellen und Überwachen einer neuen Supportanfrage üben.
 
-# Aufgabe 1: Anzeigen der verfügbaren Supportplanoptionen und einer technischen Supportanfrage (5 Min.)
+# Aufgabe 1: Zeigen Sie die verfügbaren Supportplanoptionen und eine technische Supportanfrage an (5 Min.)
 
-1. Melden Sie sich im [**Azure-Portal**](https://portal.azure.com) an.
+1. Melden Sie sich beim [**Azure-Portal**](https://portal.azure.com) an.
 
 2. Suchen Sie auf dem Blatt **Alle Dienste** die Option **Hilfe und Support**, und wählen Sie sie aus. Wählen Sie anschließend **Supportpläne** aus.
 
@@ -33,7 +33,7 @@ In dieser exemplarischen Vorgehensweise werden wir die verfügbaren Supportplano
 
     **Hinweis:** An diesem Punkt werden wir aufhören. Verstehen Sie, wie Sie eine technische Anfrage einreichen können?
 
-# Aufgabe 2: Erstellen Sie eine Abrechnungs-Supportanfrage.
+# Aufgabe 2: Erstellen einer Supportanfrage zur Abrechnung
 
 1. Wechseln Sie wieder zum Abschnitt **Neue Supportanfrage** und zur Registerkarte **Grundlagen**. 
 
@@ -56,4 +56,4 @@ In dieser exemplarischen Vorgehensweise werden wir die verfügbaren Supportplano
 
 Herzlichen Glückwunsch! Sie haben die verfügbaren Supportplanoptionen angezeigt und das Erstellen und Überwachen einer neuen Supportanfrage geübt.
 
-**Hinweis**: Klicken Sie hier für weitere Informationen zum [**Erstellen eines Azure-Supporttickets**](https://azure.microsoft.com/de-de/support/create-ticket).
+**HINWEIS**: Klicken Sie hier für weitere Informationen zum [**Erstellen eines Azure-Supporttickets**](https://azure.microsoft.com/de-de/support/create-ticket).

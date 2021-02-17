@@ -1,13 +1,13 @@
 ---
 wts:
     title: '04 – Erstellen eines virtuellen Netzwerks (20 Min.)'
-    module: 'Modul 02 – Azure-Kerndienste (Workloads)'
+    module: 'Modul 02 – Core Azure Services (Workloads)'
 ---
 # 04 – Erstellen eines virtuellen Netzwerks
 
 In dieser exemplarischen Vorgehensweise erstellen wir ein virtuelles Netzwerk, stellen zwei virtuelle Computer in diesem virtuellen Netzwerk bereit und konfigurieren sie dann so, dass ein virtueller Computer den anderen innerhalb dieses virtuellen Netzwerks pingen kann.
 
-# Aufgabe 1: Erstellen eines virtuellen Netzwerks (20 Min.)
+# Aufgabe 1: Erstellen Sein in virtuelles Netzwerk (20 Min.)
 
 In dieser Aufgabe erstellen wir ein virtuelles Netzwerk. 
 
@@ -22,7 +22,7 @@ In dieser Aufgabe erstellen wir ein virtuelles Netzwerk.
     | Name | **vnet1** |
     | Adressraum |**10.1.0.0/16** |
     | Abonnement | **Wählen Sie Ihr Abonnement** |
-    | Ressourcengruppe | **myRGVNet** (Neu erstellen) |
+    | Ressourcengruppe | **myRGVNet** (neu erstellen) |
     | Standort | **(USA) USA, Osten** |
     | Subnetzname | **Standard** |
     | Subnetzadressbereich | **10.1.0.0/24** |
@@ -30,19 +30,19 @@ In dieser Aufgabe erstellen wir ein virtuelles Netzwerk.
     ![Screenshot des Schrittes „Einfach“ auf dem Blatt „Virtuelles Netzwerk erstellen“ mit den Standardfeldern.](../images/0301a.png)
     ![Screenshot des Schrittes „IP-Adressen“ auf dem Blatt „Virtuelles Netzwerk erstellen“ mit den Standardfeldern.](../images/0301b.png)
 
-5. Klicken Sie auf die Schaltfläche **Überprüfen + Erstellen**. Stellen Sie sicher, dass die Prüfung erfolgreich ist.
+5. Klicken Sie auf die Schaltfläche **Überprüfen + erstellen**. Stellen Sie sicher, dass die Validierung erfolgreich ist.
 
 6. Klicken Sie zum Bereitstellen des virtuellen Netzwerks auf die Schaltfläche **Erstellen**. 
 
-    **HINWEIS**: Woher wissen Sie in Ihrem Unternehmen, welche virtuellen Netzwerke und IP-Adressen Sie benötigen?
+    **HINWEIS**: Woher wissen Sie in Ihrer Organisation, welche virtuellen Netzwerke und IP-Adressen Sie benötigen?
 
-# Aufgabe 2: Zwei virtuelle Computer erstellen
+# Aufgabe 2: Erstellen von zwei virtuellen Computern
 
 In dieser Aufgabe erstellen wir zwei virtuelle Computer im virtuellen Netzwerk. 
 
-1. Suchen Sie im Blatt **Alle Dienstleistungen** nach **Virtuelle Computer**, und klicken Sie dann auf **+ Hinzufügen**. 
+1. Suchen Sie auf dem Blatt **Alle Dienste** nach **Virtuelle Computer**, und klicken Sie dann auf **+ Hinzufügen**. 
 
-2. Auf der Registerkarte **Grundlagen** geben Sie die folgenden Informationen ein (belassen Sie ansonsten die Standardeinstellungen):
+2. Geben Sie auf der Registerkarte **Grundlagen** die folgenden Informationen ein (belassen Sie ansonsten die Standardeinstellungen):
 
    | Einstellung | Wert | 
    | --- | --- |
@@ -64,7 +64,7 @@ In dieser Aufgabe erstellen wir zwei virtuelle Computer im virtuellen Netzwerk.
    | Virtuelles Netzwerk | **vnet1** |
    |||
 
-4. Klicken Sie auf **Überprüfen + Erstellen**. Klicken Sie nach Abschluss der Validierung auf **Erstellen**. Die Bereitstellungszeiten können variieren, die Bereitstellung kann jedoch im Allgemeinen zwischen drei und sechs Minuten dauern.
+4. Klicken Sie auf **Überprüfen + erstellen**. Klicken Sie nach Abschluss der Validierung auf **Erstellen**. Die Bereitstellungszeiten können variieren, die Bereitstellung kann jedoch im Allgemeinen zwischen drei und sechs Minuten dauern.
 
 5. Überwachen Sie Ihre Bereitstellung, fahren Sie jedoch mit dem nächsten Schritt fort. 
 
@@ -80,11 +80,11 @@ In dieser Aufgabe erstellen wir zwei virtuelle Computer im virtuellen Netzwerk.
 
 7. Warten Sie, bis beide virtuellen Computer bereitgestellt sind. 
 
-# Aufgabe 3: Verbindung testen 
+# Aufgabe 3: Testen der Verbindung 
 
-In dieser Aufgabe werden wir ICMP-Verbindungen zulassen und testen, ob die Virtual Machines miteinander kommunizieren (pingen) können. 
+In dieser Aufgabe werden wir ICMP-Verbindungen zulassen und testen, ob die virtuellen Computer miteinander kommunizieren (pingen) können. 
 
-1. Suchen Sie im Blatt **Alle Ressourcen** nach **vm1**, öffnen Sie das zugehörige Blatt **Übersicht** und stellen Sie sicher, dass das Blatt **Status** **Laufend** anzeigt. Möglicherweise müssen Sie die Seite **Aktualisieren**.
+1. Suchen Sie auf dem Blatt **Alle Ressourcen** nach **vm1**, öffnen Sie das zugehörige Blatt **Übersicht**, und stellen Sie sicher, dass für **Status** **Wird ausgeführt** angezeigt wird. Möglicherweise müssen Sie die Seite **Aktualisieren**.
 
 2. Klicken Sie auf dem Blatt **Überblick** auf die Schaltfläche **Verbinden**.
 
@@ -92,11 +92,11 @@ In dieser Aufgabe werden wir ICMP-Verbindungen zulassen und testen, ob die Virtu
 
 3. Behalten Sie auf dem Blatt **Verbindung mit virtueller Maschine herstellen** die Standardoptionen für die Verbindung per IP-Adresse über Port 3389 bei, und klicken Sie auf **RDP-Datei herunterladen**.
 
-4. Öffnen Sie die heruntergeladene RDP-Datei und klicken Sie auf **Verbinden**, wenn Sie dazu aufgefordert werden. 
+4. Öffnen Sie die heruntergeladene RDP-Datei, und klicken Sie auf **Verbinden**, wenn Sie dazu aufgefordert werden. 
 
-5. Geben Sie im Fenster **Windows-Sicherheit** den Benutzernamen **azureuser** und das Kennwort **Pa$$w0rd1234** ein, und klicken Sie dann auf **OK**.
+5. Geben Sie im Fenster **Windows-Sicherheit** den Benutzernamen **azureuser** und das Kennwort **Pa$$$w0rd1234** ein, und klicken Sie dann auf **OK**.
 
-6. Möglicherweise erhalten Sie während des Anmeldevorgangs eine Zertifikatwarnung. Klicken Sie auf **Ja**, um die Verbindung herzustellen und eine Verbindung zu Ihrem bereitgestellten virtuellen Computer herzustellen. Sie sollten erfolgreich eine Verbindung herstellen.
+6. Möglicherweise erhalten Sie während des Anmeldevorgangs eine Zertifikatwarnung. Klicken Sie auf **Ja**, um die Verbindung herzustellen und eine Verbindung zu Ihrem bereitgestellten virtuellen Computer herzustellen. Die Verbindung sollte erfolgreich hergestellt werden.
 
 7. Öffnen Sie eine PowerShell-Eingabeaufforderung auf dem virtuellen Computer, indem Sie auf die Schaltfläche **Start** klicken, **PowerShell** eingeben, mit der rechten Maustaste auf **Windows PowerShell** im Rechtsklickmenü klicken und auf **Als Administrator ausführen** klicken.
 
@@ -120,7 +120,7 @@ In dieser Aufgabe werden wir ICMP-Verbindungen zulassen und testen, ob die Virtu
    ```
    ![Screenshot der PowerShell-Eingabeaufforderung mit dem Befehl „New-NetFirewallRule DisplayName Allow ICMPv4-In -Protocol ICMPv4“ nach seiner Fertigstellung und der Ausgabe, die angibt, dass der Befehl erfolgreich war.](../images/0303.png)
 
-   **HINWEIS**: Sie wechseln jetzt zur RDP-Sitzung zu VM1 und versuchen den Ping erneut
+   **HINWEIS**: Sie wechseln jetzt zur RDP-Sitzung zu vm1 und versuchen den Ping erneut
 
 11. Kehren Sie zur RDP-Sitzung zu vm1 zurück und versuchen Sie den Ping erneut. Sie sollten jetzt erfolgreich sein. 
 
@@ -130,4 +130,4 @@ In dieser Aufgabe werden wir ICMP-Verbindungen zulassen und testen, ob die Virtu
 
 Herzlichen Glückwunsch! Sie haben zwei virtuelle Computer in einem virtuellen Netzwerk konfiguriert und bereitgestellt. Sie haben auch die Windows-Firewall so konfiguriert, dass einer der virtuellen Computer eingehende Ping-Anforderungen zulässt. 
 
-**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.

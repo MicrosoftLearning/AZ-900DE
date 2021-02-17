@@ -1,15 +1,15 @@
 ---
 wts:
     title: '05 – Blob-Speicher erstellen (5 Min.)'
-    module: 'Modul 02 – Azure-Kerndienste (Workloads)'
+    module: 'Modul 02 – Core Azure Services (Workloads)'
 ---
-# 05 – Blob-Speicher erstellen
+# 05 – Erstellen von Blob-Speicher
 
 In dieser exemplarischen Vorgehensweise erstellen wir ein Speicherkonto und arbeiten dann mit Blob Storage-Dateien.
 
-# Aufgabe 1: Speicherkonto erstellen (5 Min.)
+# Aufgabe 1: Erstellen Sie ein Speicherkonto (5 Min.)
 
-In dieser Übung erstellen wir ein neues Speicherkonto. 
+In dieser Aufgabe erstellen wir ein neues Speicherkonto. 
 
 1. Melden Sie sich beim Azure-Portal an unter: <a href="https://portal.azure.com" target="_blank"><span style="color: #0066cc;" color="#0066cc">https://portal.azure.com</span></a>
 
@@ -20,17 +20,17 @@ In dieser Übung erstellen wir ein neues Speicherkonto.
     | Einstellung | Wert | 
     | --- | --- |
     | Abonnement | **Wählen Sie Ihr Abonnement** |
-    | Ressourcengruppe | **myRGStorage** (Neu erstellen) |
-    | Name des Speicherkontos | **storageaccountxxxx** |
+    | Ressourcengruppe | **myRGStorage** (neu erstellen) |
+    | Speicherkontoname | **storageaccountxxxx** |
     | Standort | **(USA) USA, Osten**  |
     | Leistung | **Standard** |
     | Kontotyp | **StorageV2 (universell v2)** |
     | Replikation | **Lokal redundanter Speicher (LRS)** |
     | | |
 
-    **Hinweis** – Denken Sie daran, **xxxx** zu ändern, sodass sich ein eindeutiger **Speicherkontoname** ergibt
+    **Hinweis** -  – Denken Sie daran, **xxxx** zu ändern, sodass sich ein eindeutiger **Speicherkontoname** ergibt
 
-5. Klicken Sie auf **Überprüfen + Erstellen** um die Einstellungen Ihres Speicherkontos zu überprüfen und Azure die Überprüfung der Konfiguration zu ermöglichen. 
+5. Klicken Sie auf **Überprüfen + erstellen**, um die Einstellungen Ihres Speicherkontos zu überprüfen und Azure die Validierung der Konfiguration zu ermöglichen. 
 
 6. Klicken Sie nach der Validierung auf **Erstellen**. Warten Sie auf die Benachrichtigung, dass das Konto erfolgreich erstellt wurde. 
 
@@ -38,7 +38,7 @@ In dieser Übung erstellen wir ein neues Speicherkonto.
 
     ![Screenshot des neu erstellten Speicherkontos im Azure-Portal.](../images/0401.png)
 
-# Aufgabe 2: Arbeiten mit Blob Storage
+# Aufgabe 2: Arbeiten mit Blob-Speicher
 
 In dieser Aufgabe erstellen wir einen Blob-Container und laden eine Blob-Datei hoch. 
 
@@ -63,22 +63,22 @@ In dieser Aufgabe erstellen wir einen Blob-Container und laden eine Blob-Datei h
 
 6. Klicken Sie auf den Pfeil **Erweitert**, übernehmen Sie die Standardwerte, überprüfen Sie die verfügbaren Optionen, und klicken Sie dann auf **Hochladen**.
 
-    **HINWEIS**: Auf diese Weise können Sie beliebig viele Blobs hochladen. Neue BLOBs werden im Container aufgelistet.
+    **HINWEIS**: Auf diese Weise können Sie beliebig viele Blobs hochladen. Neue Blobs werden im Container aufgelistet.
 
 7. Klicken Sie nach dem Hochladen der Datei mit der rechten Maustaste auf die Datei und beachten Sie die Optionen „Anzeigen/Bearbeiten“, „Herunterladen“, „Eigenschaften“ und „Löschen“. 
 
 8. Wenn Sie Zeit haben, überprüfen Sie auf dem Blatt „Speicherkonten“ die Optionen für Dateien, Tabellen und Warteschlangen.
 
-# Aufgabe 3: Überwachung des Speicherkontos
+# Aufgabe 3: Überwachen des Speicherkontos
 
 1. Kehren Sie bei Bedarf zum Blatt „Speicherkonto“ zurück, und klicken Sie auf **Diagnose und Problembehandlung**. 
 
-2. Erkunden Sie einige der häufigsten Speicherprobleme. Beachten Sie, dass es mehrere Maßnahmen zur Fehlerbehebung gibt.
+2. Untersuchen Sie einige der häufigsten Speicherprobleme. Beachten Sie, dass es mehrere Maßnahmen zur Fehlerbehebung gibt.
 
 3. Scrollen Sie auf dem Blatt „Speicherkonten“ nach unten zum Abschnitt **Überwachung**, und klicken Sie auf **Insights**. Beachten Sie, dass Informationen zu Fehlern, Leistung, Verfügbarkeit und Kapazität vorhanden sind. Ihre Informationen werden davon abweichen.
 
-    ![Screenshot der Seite „Insights“ des Speicherkontos.](../images/0403.png)
+    ![Screenshot der Seite „Insights“ des Speicherkontos.](../images/0403.PNG)
 
 Herzlichen Glückwunsch! Sie haben ein Speicherkonto erstellt und dann mit Speicherblobs gearbeitet.
 
-**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.

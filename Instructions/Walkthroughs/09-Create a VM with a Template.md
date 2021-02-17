@@ -1,17 +1,17 @@
 ---
 wts:
     title: '09 – Erstellen eines virtuellen Computers mit Hilfe einer Vorlage (10 Min.)'
-    module: 'Modul 03: Kernlösungen und Verwaltungstools beschreiben'
+    module: 'Modul 03: Kernlösungen und Verwaltungstools beschreiben'
 ---
-# 09 – Erstellen eines virtuellen Computers mit Hilfe einer Vorlage
+# 09 – Erstellen eines virtuellen Computers mithilfe einer Vorlage
 
 In dieser exemplarischen Vorgehensweise stellen wir einen virtuellen Computer mit einer Schnellstartvorlage bereit und untersuchen Überwachungsfunktionen.
 
-# Task1: Durchsuchen Sie die Galerie und suchen Sie eine Vorlage (10 Min.).
+# Aufgabe 1: Durchsuchen Sie die Galerie und suchen Sie eine Vorlage (10 Min.)
 
-In dieser Aufgabe durchsuchen wir die Azure-Schnellstartgalerie und stellen eine Vorlage bereit, mit der ein virtueller Computer erstellt wird. 
+In dieser Aufgabe durchsuchen wir den Azure-Schnellstartkatalog und stellen eine Vorlage bereit, mit der ein virtueller Computer erstellt wird. 
 
-1. Greifen Sie in einem Browser auf die [Azure-Schnellstart-Vorlagengalerie](https://azure.microsoft.com/resources/templates?azure-portal=true) zu. In der Galerie finden Sie eine Reihe beliebter und kürzlich aktualisierter Vorlagen. Diese Vorlagen automatisieren die Bereitstellung von Azure-Ressourcen, einschließlich der Installation gängiger Softwarepakete.
+1. Greifen Sie in einem Browser auf den [Azure-Schnellstartvorlagen-Katalog](https://azure.microsoft.com/resources/templates?azure-portal=true) zu. Im Katalog finden Sie eine Reihe beliebter und kürzlich aktualisierter Vorlagen. Diese Vorlagen automatisieren die Bereitstellung von Azure-Ressourcen, einschließlich der Installation gängiger Softwarepakete.
 
 2. Durchsuchen Sie die vielen verschiedenen Arten von Vorlagen, die verfügbar sind. 
 
@@ -34,17 +34,17 @@ In dieser Aufgabe durchsuchen wir die Azure-Schnellstartgalerie und stellen eine
     | Einstellung| Wert|
     |----|----|
     | Abonnement | **Wählen Sie Ihr Abonnement**|
-    | Ressourcengruppe | **myRGTemplate** (Neu erstellen) |
+    | Ressourcengruppe | **myRGTemplate** (neu erstellen) |
     | Standort | **(USA) USA, Osten** |
     | Admin-Benutzername | **azureuser** |
     | Admin-Kennwort | **Pa$$w0rd1234** |
     | Präfix der DNS-Bezeichnung | **myvmtemplate*xxxx*** |
-    | Windows-Betriebssystemversion | **2019-Datencenter** |
+    | Windows-Betriebssystemversion | **2019-Datacenter** |
     | | |
     
-    **Hinweis**: Bei der Nutzung dieser Vorlage fallen keine Kosten an.
+    ** Hinweis: Bei der Nutzung dieser Vorlage fallen keine Kosten an.
 
-9. Klicken Sie auf **Überprüfen + Erstellen**.
+9. Klicken Sie auf **Überprüfen + erstellen**.
 
 10. Überwachen Sie Ihre Bereitstellung. 
 
@@ -76,4 +76,4 @@ In dieser Aufgabe überprüfen wir, ob der virtuelle Computer ordnungsgemäß be
 
     ![Screenshot der Seite „Filter hinzufügen“ mit ausgewähltem Ereignistyp.](../images/0904.png)
 
-**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.

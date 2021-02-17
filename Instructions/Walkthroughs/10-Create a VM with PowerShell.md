@@ -1,7 +1,7 @@
 ---
 wts:
-    title: '10 – Erstellen eines virtuellen Computers mithilfe von PowerShell (10 Min.)'
-    module: 'Modul 03: Kernlösungen und Verwaltungstools beschreiben'
+    title: '10 – Einen virtuellen Computer mithilfe von PowerShell erstellen (10 Min.)'
+    module: 'Modul 03: Kernlösungen und Verwaltungstools beschreiben'
 ---
 # 10 – Erstellen eines virtuellen Computers mithilfe von PowerShell
 
@@ -25,7 +25,7 @@ In dieser Aufgabe konfigurieren wir Cloud Shell.
 
 # Aufgabe 2: Erstellen einer Ressourcengruppe und eines virtuellen Computers
 
-In dieser Übung erstellen Sie mithilfe von PowerShell eine Ressourcengruppe und einen virtuellen Computer.  
+In dieser Aufgabe erstellen Sie mithilfe von PowerShell eine Ressourcengruppe und einen virtuellen Computer.  
 
 1. Stellen Sie sicher, dass **PowerShell** im Dropdownmenü oben links im Cloud Shell-Bereichs ausgewählt ist.
 
@@ -38,7 +38,7 @@ In dieser Übung erstellen Sie mithilfe von PowerShell eine Ressourcengruppe und
 3. Überprüfen Sie Ihre neue Ressourcengruppe. 
 
     ```PowerShell
-    Get-AzResourceGroup | Format-Table
+    Get-AzResourceGroup | Format-Tabelle
     ```
 
 4. Erstellen Sie einen virtuellen Computer. Wenn Sie dazu aufgefordert werden, geben Sie den Benutzernamen (**azureuser**) und das Kennwort (**Pa$$w0rd1234**) an, die als lokales Administratorkonto auf diesen virtuellen Computern konfiguriert werden. Stellen Sie sicher, dass Sie die Häkchen (`) am Ende jeder Zeile mit Ausnahme des letzten Häkchens einfügen (es sollten keine Häkchen vorhanden sein, wenn Sie den gesamten Befehl in eine einzige Zeile eingeben).
@@ -63,7 +63,7 @@ In dieser Übung erstellen Sie mithilfe von PowerShell eine Ressourcengruppe und
 
 7. Greifen Sie auf den neuen virtuellen Computer zu, und überprüfen Sie die Einstellungen für „Übersicht“ und „Netzwerk“, um sicherzustellen, dass Ihre Informationen korrekt bereitgestellt wurden. 
 
-# Aufgabe 3: Befehle in Cloud Shell ausführen
+# Aufgabe 3: Ausführen von Befehlen in Cloud Shell
 
 In dieser Aufgabe üben wir das Ausführen von PowerShell-Befehlen aus der Cloud Shell. 
 
@@ -71,7 +71,7 @@ In dieser Aufgabe üben wir das Ausführen von PowerShell-Befehlen aus der Cloud
 
 2. Stellen Sie sicher, dass **PowerShell** im Dropdownmenü oben links im Cloud Shell-Bereichs ausgewählt ist.
 
-3. Rufen Sie Informationen zu Ihrem virtuellen Computer ab, einschließlich Name, Ressourcengruppe, Standort und Status. Beachten Sie, dass PowerState **ausgeführt wird**.
+3. Rufen Sie Informationen zu Ihrem virtuellen Computer ab, einschließlich Name, Ressourcengruppe, Standort und Status. Beachten Sie, dass der Energiestatus **Wird ausgeführt** lautet.
 
     ```PowerShell
     Get-AzVM -name myVMPS -status | Format-Table -autosize
@@ -83,13 +83,13 @@ In dieser Aufgabe üben wir das Ausführen von PowerShell-Befehlen aus der Cloud
     Stop-AzVM -ResourceGroupName myRGPS -Name myVMPS
     ```
 
-5. Überprüfen Sie den Status Ihres virtuellen Computers. Die Energiestatus-Zuordnung sollte jetzt **aufgehoben** sein. Sie können den Status des virtuellen Computers auch im Portal überprüfen. 
+5. Überprüfen Sie den Status Ihres virtuellen Computers. Der Energiestatus sollte jetzt **Zuweisung aufgehoben** lauten. Sie können den Status des virtuellen Computers auch im Portal überprüfen. 
 
     ```PowerShell
     Get-AzVM -name myVMPS -status | Format-Table -autosize
     ```
 
-# Aufgabe 4: Azure Advisor-Empfehlungen überprüfen
+# Aufgabe 4: Überprüfen von Azure Advisor-Empfehlungen
 
 **Hinweis:** Diese Aufgabe finden Sie im Lab „Erstellen eines virtuellen Computers mit der Azure CLI“. 
 
@@ -97,15 +97,15 @@ In dieser Aufgabe überprüfen wir die Azure Advisor-Empfehlungen für unseren v
 
 1. Suchen Sie auf Blatt **Alle Dienste** nach **Advisor**, und wählen Sie diese Option aus. 
 
-2. Wählen Sie im Blatt **Advisor** den Eintrag **Überblick** aus. Beachten Sie, dass Empfehlungen nach Hochverfügbarkeit, Sicherheit, Leistung und Kosten gruppiert sind. 
+2. Wählen Sie auf dem Blatt **Advisor** den Eintrag **Überblick** aus. Beachten Sie, dass Empfehlungen nach Hochverfügbarkeit, Sicherheit, Leistung und Kosten gruppiert sind. 
 
-    ![Screenshot der Seite „Advisor-Übersicht“.](../images/1003.png)
+    ![Screenshot der Seite „Advisor-Übersicht“. ](../images/1003.png)
 
 3. Wählen Sie **Alle Empfehlungen** aus und Sie sich Zeit, um die einzelnen Empfehlungen und vorgeschlagenen Maßnahmen anzuzeigen. 
 
     **Hinweis:** Die Empfehlungen sind je nach Ihren Ressourcen unterschiedlich. 
 
-    ![Screenshot der Advisor-Seite „Alle Empfehlungen“.](../images/1004.png)
+    ![Screenshot der Advisor-Seite „Alle Empfehlungen“. ](../images/1004.png)
 
 4. Beachten Sie, dass Sie die Empfehlungen als CSV- oder PDF-Datei herunterladen können. 
 
@@ -115,4 +115,4 @@ In dieser Aufgabe überprüfen wir die Azure Advisor-Empfehlungen für unseren v
 
 Herzlichen Glückwunsch! Sie haben Cloud Shell konfiguriert, mithilfe von PowerShell einen virtuellen Computer erstellt, PowerShell-Befehle geübt und Advisor-Empfehlungen angesehen.
 
-**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.

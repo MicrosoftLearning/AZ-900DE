@@ -1,17 +1,17 @@
 ---
 wts:
     title: '18 – Erkunden des Trust Center (5 Min.)'
-    module: 'Modul 05: Beschreiben der Features für Identität, Governance, Datenschutz und Compliance'
+    module: 'Modul 05: Beschreiben der Features für Identität, Governance, Datenschutz und Compliance'
 ---
-# 18 – Erkunden des Trust Center
+# 18 – Erkunden des Trust Centers
 
-In dieser schrittweisen Anleitung greifen wir auf Trust Center, Service Trust Portal (STP) und Compliance-Manager zu.
+In dieser exemplarischen Vorgehensweise greifen wir auf Trust Center, Service Trust Portal (STP) und Compliance-Manager zu.
 
-# Aufgabe 1: Zugreifen auf das Trust Center (5 Min.)
+# Aufgabe 1: Greifen Sie auf Trust Center zu (5 Min.)
 
 1. Greifen Sie in einem Browser auf die Seite mit [Microsoft Trust Center-Compliance-Angeboten](https://docs.microsoft.com/de-de/microsoft-365/compliance/offering-home) zu.
 
-2. Beachten Sie, dass die Angebote in die Gruppen **Global**, **US-Regierung**, **Industrie** und **Regional** zusammengefasst sind.
+2. Beachten Sie, dass die Angebote in die Gruppen **Global**, **US Government**, **Branche** und **Länderspezifisch** zusammengefasst sind.
 
 3. Klicken Sie in der Gruppe **Global** auf **ISO 27001**. 
 
@@ -23,7 +23,7 @@ In dieser schrittweisen Anleitung greifen wir auf Trust Center, Service Trust Po
 
     **Hinweis:** Gibt es ein Complianceangebot, an dem Ihre Organisation am meisten interessiert ist?
 
-# Aufgabe 2: Auf das Service Trust Portal (STP) zugreifen
+# Aufgabe 2: Zugreifen auf das Service Trust Portal (STP)
 
 1. Greifen Sie in einem Browser auf die Seite [Service Trust Portal (STP)](https://servicetrust.microsoft.com) zu.
 
@@ -35,12 +35,12 @@ In dieser schrittweisen Anleitung greifen wir auf Trust Center, Service Trust Po
 
 4. Wenn Sie Zeit haben, lesen Sie alle anderen Informationen, die für Sie von Interesse sind. 
 
-# Aufgabe 3: Auf Compliance Manager zugreifen
+# Aufgabe 3: Zugreifen auf Compliance-Manager
 
-1. Mit dem Compliance Manager können Sie auf einfache Weise Risikobewertungen für Cloud Services von Microsoft durchführen. Verwenden Sie Compliance Manager, um die Complianceaktivitäten Ihrer Organisation von der Implementierung bis zur Berichterstellung zu verwalten. Wenn Sie den Compliance-Manager ausprobieren möchten, müssen Sie sich anmelden.
+1. Mit Compliance-Manager können Sie auf einfache Weise Risikobewertungen für Clouddienste von Microsoft durchführen. Verwenden Sie Compliance-Manager, um die Complianceaktivitäten Ihrer Organisation von der Implementierung bis zur Berichterstellung zu verwalten. Wenn Sie Compliance-Manager ausprobieren möchten, müssen Sie sich anmelden.
 
 2. Besuchen Sie stattdessen die Seite [Compliance Guides](https://servicetrust.microsoft.com/Documents/TrustDocuments). 
 
 3. Wenn Sie Zeit haben, lesen Sie alle anderen Informationen, die für Sie von Interesse sind. 
 
-Herzlichen Glückwunsch! In dieser exemplarischen Vorgehensweise haben Sie auf Trust Center, Service Trust Portal (STP) und Compliance Manager zugegriffen.
+Herzlichen Glückwunsch! In dieser exemplarischen Vorgehensweise haben Sie auf Trust Center, Service Trust Portal (STP) und Compliance-Manager zugegriffen.

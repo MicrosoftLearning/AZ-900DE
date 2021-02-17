@@ -1,21 +1,21 @@
 ---
 wts:
     title: '15 – Verwalten von Ressourcensperren (5 Min.)'
-    module: 'Modul 05: Beschreiben der Features für Identität, Governance, Datenschutz und Compliance'
+    module: 'Modul 05: Beschreiben der Features für Identität, Governance, Datenschutz und Compliance'
 ---
 # 15 – Verwalten von Ressourcensperren
 
 In dieser exemplarischen Vorgehensweise erstellen wir eine Ressourcengruppe, fügen der Ressourcengruppe eine Sperre hinzu und testen das Löschen, testen das Löschen einer Ressource in der Ressourcengruppe und entfernen die Ressourcensperre. 
 
-# Aufgabe 1: Ressourcengruppe erstellen (5 Min.)
+# Aufgabe 1: Erstellen Sie eine Ressourcengruppe (5 Min.)
 
 In dieser Aufgabe erstellen wir für diese Übung eine Ressourcengruppe. 
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 
-2. Suchen Sie im Blatt **Alle Dienstleistungen** nach **Ressourcengruppen** und wählen Sie es aus. Wählen Sie dann **+ Hinzufügen** aus.
+2. Suchen Sie auf dem Blatt **Alle Dienste** den Eintrag **Ressourcengruppen**, und wählen Sie ihn aus. Wählen Sie dann **+ Hinzufügen** aus.
 
-3. Erstellen Sie eine neue Ressourcengruppe. Wenn Sie fertig sind, klicken Sie auf **Überprüfen + Erstellen** und dann auf **Erstellen**. 
+3. Erstellen Sie eine neue Ressourcengruppe. Wenn Sie fertig sind, klicken Sie auf **Überprüfen + erstellen** und dann auf **Erstellen**. 
 
     | Einstellung | Wert |
     | -- | -- |
@@ -24,7 +24,7 @@ In dieser Aufgabe erstellen wir für diese Übung eine Ressourcengruppe.
     | Region | **(USA) USA, Osten** |
     | | |
 
-# Aufgabe 2:  Sperre zur Ressourcengruppe hinzufügen und das Löschen testen
+# Aufgabe 2:  Hinzufügen einer Sperre zur Ressourcengruppe und Testen des Löschvorgangs
 
 In dieser Aufgabe fügen wir der Ressourcengruppe eine Ressourcensperre hinzu und testen das Löschen der Ressourcengruppe. 
 
@@ -41,14 +41,14 @@ In dieser Aufgabe fügen wir der Ressourcengruppe eine Ressourcensperre hinzu un
     | Einstellung | Wert |
     | -- | -- |
     | Sperrenname | **RGLock** |
-    | Sperrtyp | **Löschen** |
+    | Sperrentyp | **Löschen** |
     | | |
 
 5. Klicken Sie auf **Übersicht** und dann auf **Ressourcengruppe löschen**. Geben Sie den Namen der Ressourcengruppe ein, und klicken Sie anschließend auf **OK**. Sie erhalten eine Fehlermeldung, dass die Ressourcengruppe gesperrt ist und nicht gelöscht werden kann.
 
     ![Screenshot der fehlgeschlagenen Löschsperren.](../images/1602.png)
 
-# Aufgabe 3: Testlöschung eines Mitglieds der Ressourcengruppe
+# Aufgabe 3: Testen des Löschens eines Mitglieds der Ressourcengruppe
 
 In dieser Aufgabe testen wir, ob die Ressourcensperre ein Speicherkonto in der Ressourcengruppe schützt. 
 
@@ -60,7 +60,7 @@ In dieser Aufgabe testen wir, ob die Ressourcensperre ein Speicherkonto in der R
     | --- | --- |
     | Abonnement | **Wählen Sie Ihr Abonnement** |
     | Ressourcengruppe | **myRGLocks** |
-    | Name des Speicherkontos | **storageaccountxxxx** |
+    | Speicherkontoname | **storageaccountxxxx** |
     | Standort | **(USA) USA, Osten**  |
     | Leistung | **Standard** |
     | Kontotyp | **StorageV2 (universell v2)** |
@@ -68,7 +68,7 @@ In dieser Aufgabe testen wir, ob die Ressourcensperre ein Speicherkonto in der R
     | Zugriffsebene (Standard) | **Heiße Ebene** |
     | | |
 
-3. Klicken Sie auf **Überprüfen + Erstellen** um die Einstellungen Ihres Speicherkontos zu überprüfen und Azure die Überprüfung der Konfiguration zu ermöglichen. 
+3. Klicken Sie auf **Überprüfen + erstellen**, um die Einstellungen Ihres Speicherkontos zu überprüfen und Azure die Validierung der Konfiguration zu ermöglichen. 
 
 4. Klicken Sie nach der Validierung auf **Erstellen**. Warten Sie auf die Benachrichtigung, dass das Konto erfolgreich erstellt wurde. 
 
@@ -80,7 +80,7 @@ In dieser Aufgabe testen wir, ob die Ressourcensperre ein Speicherkonto in der R
 
     **HINWEIS**: Obwohl wir keine Sperre speziell für das Speicherkonto erstellt haben, haben wir eine Sperre auf der Ressourcengruppenebene erstellt, die das Speicherkonto enthält. Als solches verhindert die *übergeordnete* Ebenensperre, dass wir die Ressource löschen, und das Speicherkonto übernimmt die Sperre vom übergeordneten Element.
 
-# Aufgabe 4: Ressourcensperre entfernen
+# Aufgabe 4: Entfernen der Ressourcensperre
 
 In dieser Aufgabe entfernen wir die Ressourcensperre und testen. 
 
@@ -94,4 +94,4 @@ In dieser Aufgabe entfernen wir die Ressourcensperre und testen.
 
 Herzlichen Glückwunsch! Sie haben eine Ressourcengruppe erstellt, der Ressourcengruppe eine Sperre hinzugefügt und das Löschen getestet, das Löschen einer Ressource in der Ressourcengruppe getestet und die Ressourcensperre entfernt. 
 
-**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.

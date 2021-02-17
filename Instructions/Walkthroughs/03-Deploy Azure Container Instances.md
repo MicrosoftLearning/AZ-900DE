@@ -1,14 +1,14 @@
 ---
 wts:
     title: '03 – Bereitstellen von Azure Container Instances (10 Min.)'
-    module: 'Modul 02 – Azure-Kerndienste (Workloads)'
+    module: 'Modul 02 – Core Azure Services (Workloads)'
 ---
 
 # 03 – Bereitstellen von Azure Container Instances
 
-In dieser exemplarischen Vorgehensweise erstellen, konfigurieren und stellen wir einen Docker-Container mithilfe von Azure Container Instances (ACI) im Azure-Portal bereit. Der Container ist eine „Welcome to ACI“-Webanwendung, die eine statische HTML-Seite anzeigt. 
+In dieser exemplarischen Vorgehensweise erstellen, konfigurieren und implementieren wir einen Docker-Container mithilfe von Azure Container Instances (ACI) im Azure-Portal. Der Container ist eine „Welcome to ACI“-Webanwendung, die eine statische HTML-Seite anzeigt. 
 
-# Aufgabe 1: Containerinstanz erstellen (10 Min.)
+# Aufgabe 1: Erstellen Sie eine Container Instance (10 Min.)
 
 In dieser Aufgabe erstellen wir eine neue Containerinstanz für die Webanwendung. 
 
@@ -21,13 +21,13 @@ In dieser Aufgabe erstellen wir eine neue Containerinstanz für die Webanwendung
 	| Einstellung| Wert|
 	|----|----|
 	| Abonnement | **Wählen Sie Ihr Abonnement** |
-	| Ressourcengruppe | **myRGContainer** (Neu erstellen) |
+	| Ressourcengruppe | **myRGContainer** (neu erstellen) |
 	| Containername| **mycontainer**|
 	| Region | **(USA) USA, Osten** |
-	| Bildquelle| **Docker Hub oder andere Registrierung**|
-	| Bildtyp| **Öffentlich**|
-	| Bild| **microsoft/aci-helloworld**|
-	| BS-Typ:| **Linux** |
+	| Imagequelle| **Docker Hub oder andere Registrierung**|
+	| Imagetyp| **Öffentlich**|
+	| Image| **microsoft/aci-helloworld**|
+	| Betriebssystemtyp| **Linux** |
 	| Größe| ***Belassen Sie die Standardeinstellung***|
 	|||
 
@@ -38,26 +38,26 @@ In dieser Aufgabe erstellen wir eine neue Containerinstanz für die Webanwendung
 	| DNS-Namensbezeichnung| **mycontainerdnsxxxx** |
 	|||
 	
-	**HINWEIS**: Ihr Container ist unter „dns-name-label.region.azurecontainer.io“ öffentlich erreichbar. Wenn Sie die Fehlermeldung **DNS-Namensbezeichnung nicht verfügbar** nach der Bereitstellung erhalten, geben Sie eine andere DNS-Namensbezeichnung an (verwenden Sie nicht „xxxx“) und stellen Sie sie erneut bereit.
+	**HINWEIS**: Ihr Container ist unter „dns-name-label.region.azurecontainer.io“ öffentlich erreichbar. Wenn Sie die Fehlermeldung **DNS-Namensbezeichnung nicht verfügbar****** nach der Bereitstellung erhalten, geben Sie eine andere DNS-Namensbezeichnung an (verwenden Sie nicht „xxxx“) und stellen Sie sie erneut bereit. 
 
 
 	![Screenshot des Konfigurationsbereichs des Blatts zum Erstellen von Container Instances im Azure-Portal mit eingegebener DNS-Namensbezeichnung. ](../images/0201.png)
 
-5. Klicken Sie auf **Überprüfen + Erstellen**, um den automatischen Validierungsprozess zu starten.
+5. Klicken Sie auf **Überprüfen + Erstellen**, um die automatische Validierung zu starten.
 
 6. Klicken Sie auf **Erstellen**, um die Containerinstanz zu erstellen. 
 
 7. Überwachen Sie die Bereitstellungsseite und die Seite **Benachrichtigungen**. 
 
-8. Während Sie warten, könnten Sie daran interessiert sein, den [Beispielcode hinter dieser einfachen Anwendung](https://github.com/Azure-Samples/aci-helloworld) anzuzeigen. Durchsuchen Sie den Ordner „\App“. 
+8. Während Sie warten, könnten Sie daran interessiert sein, den [Beispielcode hinter dieser einfachen Anwendung](https://github.com/Azure-Samples/aci-helloworld) anzuzeigen. Durchsuchen Sie den Ordner „\app“. 
 
-# Aufgabe 2: Überprüfen Sie die Bereitstellung der Containerinstanz
+# Aufgabe 2: Überprüfen der Bereitstellung der Containerinstanz
 
 In dieser Aufgabe überprüfen wir, ob die Containerinstanz ausgeführt wird, indem wir sicherstellen, dass die Willkommensseite angezeigt wird.
 
 1. Klicken Sie nach Abschluss der Bereitstellung auf **Zu Ressource wechseln**, verknüpfen Sie das Blatt „Bereitstellung“ oder die Verknüpfung mit der Ressource im Benachrichtigungsbereich.
 
-2. Stellen Sie im Blatt **Überblick** von **meincontainer** sicher, dass der **Status** Ihres Containers auf **wird ausgeführt** steht. 
+2. Stellen Sie auf dem Blatt **Überblick** von **mycontainer** sicher, dass der **Status** Ihres Containers **Wird ausgeführt** lautet. 
 
 3. Suchen Sie den vollqualifizierten Domänennamen (FQDN).
 
@@ -71,4 +71,4 @@ In dieser Aufgabe überprüfen wir, ob die Containerinstanz ausgeführt wird, in
 
 Herzlichen Glückwunsch! Sie haben Azure-Portal verwendet, um eine Anwendung erfolgreich in einem Container in Azure Containerinstanz bereitzustellen.
 
-**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.

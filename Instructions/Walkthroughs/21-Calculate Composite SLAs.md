@@ -1,9 +1,9 @@
 ---
 wts:
     title: '21 – Berechnen zusammengesetzter SLAs (5 Min.)'
-    module: 'Modul 06: Beschreiben von Azure Cost Management und der Vereinbarungen zum Servicelevel'
+    module: 'Modul 06: Beschreiben von Azure Cost Management und der Vereinbarungen zum Servicelevel'
 ---
-# 21 – Berechnen zusammengesetzter SLAs
+# 21 – Berechnen von Verbund-SLAs
 
 In dieser exemplarischen Vorgehensweise ermitteln wir das Verfügbarkeits-SLA von Azure-Diensten und berechnen dann die SLA-basierte erwartete Verfügbarkeit auf Anwendungsbasis.
 
@@ -14,7 +14,7 @@ Unsere Beispielanwendung besteht aus diesen Azure-Diensten. Wir wollen hier nich
 + **Application Gateway**: So verwalten Sie den Anwendungszugriff und die Skalierung. 
 + **Azure SQL-Datenbank**: So speichern Sie Anwendungsdaten. 
 
-# Aufgabe 1: Bestimmen der prozentualen SLA-Verfügbarkeitswerte für unsere Anwendung (5 Min.)
+# Aufgabe 1: Bestimmen Sie die prozentualen SLA-Verfügbarkeitswerte für unsere Anwendung (5 Min.)
 
 1. Navigieren Sie in einem Browser zur Seite [DLV-Übersicht für Azure-Dienste](https://azure.microsoft.com/de-de/support/legal/sla/summary/).
 
@@ -26,9 +26,9 @@ Unsere Beispielanwendung besteht aus diesen Azure-Diensten. Wir wollen hier nich
 
 5. Die Azure SQL-Datenbank verwendet Premium-Ebenen, ist jedoch nicht für zonenredundante Bereitstellungen konfiguriert. Suchen Sie den SLA-Verfügbarkeitswert der **Azure SQL-Datenbank** (**99,99 %**). 
 
-    **Hinweis**: Es gibt unterschiedliche Betriebszeitwerte für unterschiedliche Konfigurationen und Bereitstellungen der Azure SQL-Datenbank. Es ist wichtig, dass Sie Ihre erforderlichen Betriebszeitwerte genau kennen, wenn Sie Ihre Bereitstellung und Konfiguration planen und die Kosten bestimmen. Kleine Änderungen der Betriebszeit können sich auf die Dienstkosten auswirken und möglicherweise die Komplexität der Konfiguration erhöhen. Einige andere Dienste, die auf der Azure SLA-Zusammenfassungs-Webseite von Interesse sein könnten, wären zum Beispiel: **Virtuelle Computer**, **Speicherkonten** und **Cosmos DB**.
+    **HINWEIS**: Es gibt unterschiedliche Betriebszeitwerte für unterschiedliche Konfigurationen und Bereitstellungen der Azure SQL-Datenbank. Es ist wichtig, dass Sie Ihre erforderlichen Betriebszeitwerte genau kennen, wenn Sie Ihre Bereitstellung und Konfiguration planen und die Kosten bestimmen. Kleine Änderungen der Betriebszeit können sich auf die Dienstkosten auswirken und möglicherweise die Komplexität der Konfiguration erhöhen. Einige andere Dienste, die auf der Azure SLA-Zusammenfassungs-Webseite von Interesse sein könnten, wären zum Beispiel: **Virtuelle Computer**, **Speicherkonten** und **Cosmos DB**.
 
-# Aufgabe 2: Prozentuale Verfügbarkeit der Verbund-SLA-Betriebszeit der Anwendung berechnen
+# Aufgabe 2: Berechnen der prozentualen Verfügbarkeit der zusammengesetzten Anwendungs-SLA
 
 1. Wenn einer der Dienste, aus denen unsere Anwendung besteht, nicht verfügbar ist, steht unsere Anwendung Benutzern nicht zur Anmeldung und Nutzung zur Verfügung. Daher besteht die Gesamtbetriebszeit für unsere Anwendung aus folgenden Elementen:
 

@@ -1,45 +1,45 @@
 ---
 wts:
     title: '07 – Implementieren eines Azure IoT Hubs (10 Min.)'
-    module: 'Modul 03: Kernlösungen und Verwaltungstools beschreiben'
+    module: 'Modul 03: Kernlösungen und Verwaltungstools beschreiben'
 ---
 # 07 – Implementieren eines Azure IoT Hub
 
-In dieser exemplarischen Vorgehensweise konfigurieren wir einen neuen Azure IoT Hub im Azure-Portal und authentifizieren dann eine Verbindung zu einem IoT-Gerät mit Hilfe des Raspberry Pi-Gerätesimulators. Sensordaten und Nachrichten werden vom Raspberry Pi-Simulator an Ihren Azure IoT Hub übergeben, und Sie sehen Metriken für die Meldungsaktivität im Azure-Portal.
+In dieser exemplarischen Vorgehensweise konfigurieren wir einen neuen Azure IoT Hub im Azure-Portal und authentifizieren dann eine Verbindung zu einem IoT-Gerät mithilfe des Raspberry Pi-Gerätesimulators. Sensordaten und Nachrichten werden vom Raspberry Pi-Simulator an Ihren Azure IoT Hub übergeben, und Sie sehen Metriken für die Meldungsaktivität im Azure-Portal.
 
-# Aufgabe 1: Erstellen eines IoT-Hubs (10 Min.)
+# Aufgabe 1: Erstellen Sie einen IoT Hub (10 Min.)
 
-In dieser Aufgabe erstellen wir einen IoT-Hub. 
+In dieser Aufgabe werden wir einen IoT-Hub erstellen. 
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 
-2. Suchen Sie auf dem Blatt **Alle Dienste** nach **IoT Hub** und wählen Sie diese Option aus; anschließend klicken Sie auf **+ Hinzufügen**.
+2. Suchen Sie auf dem Blatt **Alle Dienste** nach **IoT Hub**, und wählen Sie diese Option aus; anschließend klicken Sie auf **+ Hinzufügen**.
 
-3. Auf der Registerkarte **Grundlagen** des Blattes **IoT-Hub** füllen Sie die Felder mit den folgenden Details aus (ersetzen Sie **xxxx** im Namen des Speicherkontos mit Buchstaben und Ziffern, so dass der Name global eindeutig ist):
+3. Auf der Registerkarte **Grundlagen** des Blatts **IoT-Hub** füllen Sie die Felder mit den folgenden Details aus (ersetzen Sie **xxxx** im Namen des Speicherkontos durch Buchstaben und Ziffern, sodass der Name global eindeutig ist):
 
     | Einstellungen | Wert |
     |--|--|
     | Abonnement | **Wählen Sie Ihr Abonnement** |
-    | Ressourcengruppe |  **myRGIoT** (Neu erstellen)|
+    | Ressourcengruppe |  **myRGIoT** (neu erstellen)|
     | Region | **USA, Osten** |
     | IoT Hub-Name | **my-hub-groupxxxx** |
     | | |
 
-    **Hinweis** – Denken Sie daran, **xxxx** zu ändern, sodass sich ein eindeutiger **IoT Hub-Name** ergibt
+    **Hinweis** -  – Denken Sie daran, **xxxx** zu ändern, sodass sich ein eindeutiger ***IoT Hub-Name** ergibt
 
-4. Wechseln Sie zur Registerkarte **Verwaltung**, und verwenden Sie die Dropdownliste, um die **Preis- und Skalierungsebene** festzulegen auf **S1: Standard-Tarif**.
+4. Wechseln Sie zur Registerkarte **Verwaltung**, und verwenden Sie die Dropdownliste, um die **Preis- und Skalierungsebene** festzulegen auf **S1: Standardebene**.
 
-5. Klicken Sie auf die Schaltfläche **Überprüfen + Erstellen**.
+5. Klicken Sie auf die Schaltfläche **Überprüfen + erstellen**.
 
 6. Klicken Sie auf die Schaltfläche **Erstellen**, um mit der Erstellung Ihrer neuen Azure IoT Hub-Instanz zu beginnen.
 
 7. Warten Sie, bis die Azure IoT Hub-Instanz bereitgestellt ist. 
 
-# Aufgabe 2: IoT-Gerät hinzufügen
+# Aufgabe 2: Hinzufügen eines IoT-Geräts
 
 In dieser Aufgabe fügen wir dem IoT-Hub ein IoT-Gerät hinzu. 
 
-1. Wenn die Bereitstellung abgeschlossen ist, klicken Sie im Blatt „Bereitstellung“ auf **Zur Ressource wechseln**. Alternativ suchen Sie auf dem Blatt **Alle Dienste** nach **IoT Hub**, wählen diese Option aus und suchen Ihre neue IoT Hub-Instanz
+1. Wenn die Bereitstellung abgeschlossen ist, klicken Sie auf dem Blatt „Bereitstellung“ auf **Zur Ressource wechseln**. Alternativ suchen Sie auf dem Blatt **Alle Dienste** nach **IoT Hub**, wählen diese Option aus und suchen Ihre neue IoT Hub-Instanz
 
 	![Screenshot der Benachrichtigungen „Die Bereitstellung wird ausgeführt“ und „Bereitstellung erfolgreich“ im Azure-Portal.](../images/0601.png)
 
@@ -55,7 +55,7 @@ In dieser Aufgabe fügen wir dem IoT-Hub ein IoT-Gerät hinzu.
 
 	![Screenshot der Seite „Primäre Verbindungszeichenfolge“ mit hervorgehobenem Kopiersymbol.](../images/0603.png)
 
-# Aufgabe 3: Gerät mit dem Raspberry Pi-Simulator testen
+# Aufgabe 3: Testen des Geräts mit dem Raspberry Pi-Simulator
 
 In dieser Aufgabe testen wir unser Gerät mit dem Raspberry Pi-Simulator. 
 
@@ -75,11 +75,11 @@ In dieser Aufgabe testen wir unser Gerät mit dem Raspberry Pi-Simulator.
 
 6. Kehren Sie zum Azure-Portal und zu Ihrem IoT-Hub zurück.
 
-7. Wechseln Sie zum IoT Hub-Blatt **Überblick** und scrollen Sie nach unten zur Information **IoT Hub-Nutzung**.
+7. Wechseln Sie zum IoT Hub-Blatt **Überblick**, und scrollen Sie nach unten zur Information **IoT Hub-Nutzung**.
 
 	![Screenshot der Metriken im IoT-Hub-Nutzungsbereich des Azure-Portals.](../images/0606.png)
 
 
 Herzlichen Glückwunsch! Sie haben Azure IoT Hub so eingerichtet, dass Sensordaten von einem IoT-Gerät erfasst werden.
 
-**Hinweis**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
