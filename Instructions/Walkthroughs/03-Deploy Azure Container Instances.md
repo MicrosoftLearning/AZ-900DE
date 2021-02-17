@@ -38,7 +38,7 @@ In dieser Aufgabe erstellen wir eine neue Containerinstanz für die Webanwendung
 	| DNS-Namensbezeichnung| **mycontainerdnsxxxx** |
 	|||
 	
-	**HINWEIS**: Ihr Container ist unter „dns-name-label.region.azurecontainer.io“ öffentlich erreichbar. Wenn Sie die Fehlermeldung **DNS-Namensbezeichnung nicht verfügbar****** nach der Bereitstellung erhalten, geben Sie eine andere DNS-Namensbezeichnung an (verwenden Sie nicht „xxxx“) und stellen Sie sie erneut bereit. 
+	**HINWEIS**: Ihr Container ist unter „dns-name-label.region.azurecontainer.io“ öffentlich erreichbar. Wenn Sie die Fehlermeldung **DNS-Namensbezeichnung nicht verfügbar** nach der Bereitstellung erhalten, geben Sie eine andere DNS-Namensbezeichnung an (verwenden Sie nicht „xxxx“) und stellen Sie sie erneut bereit. 
 
 
 	![Screenshot des Konfigurationsbereichs des Blatts zum Erstellen von Container Instances im Azure-Portal mit eingegebener DNS-Namensbezeichnung. ](../images/0201.png)

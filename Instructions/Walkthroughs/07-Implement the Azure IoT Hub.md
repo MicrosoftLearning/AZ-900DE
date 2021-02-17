@@ -25,7 +25,7 @@ In dieser Aufgabe werden wir einen IoT-Hub erstellen.
     | IoT Hub-Name | **my-hub-groupxxxx** |
     | | |
 
-    **Hinweis** -  – Denken Sie daran, **xxxx** zu ändern, sodass sich ein eindeutiger ***IoT Hub-Name** ergibt
+    **Hinweis** -  Denken Sie daran, **xxxx** zu ändern, sodass sich ein eindeutiger **IoT Hub-Name** ergibt
 
 4. Wechseln Sie zur Registerkarte **Verwaltung**, und verwenden Sie die Dropdownliste, um die **Preis- und Skalierungsebene** festzulegen auf **S1: Standardebene**.
 

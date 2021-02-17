@@ -41,9 +41,9 @@ In dieser Aufgabe schätzen wir die Kosten einer Infrastruktur-Stichprobe mithil
 
    ![Screenshot des Bereichs mit den Abrechnungsoptionen des virtuellen Computers auf der Azure-Webseite für Preisrechnerschätzung. Die hervorgehobene Abrechnungsoption „Vorausbezahlung“ gibt an, wie eine Abrechnungsoption für einen virtuellen Computer in einer Azure-Preisrechnerschätzung angegeben wird.](../images/1903.png)
 
-6. In Azure wird ein Monat als 730 Stunden definiert. Wenn Ihr virtueller Computer jeden Monat zu 100 Prozent verfügbar sein muss, setzen Sie den Wert für Stunden pro Monat auf „730“. In dieser exemplarischen Vorgehensweise muss ein virtueller Computer jeden Monat zu 50 Prozent verfügbar sein.
+6. In Azure wird ein Monat als 730 Stunden definiert. Wenn Ihr virtueller Computer jeden Monat zu 100 Prozent verfügbar sein muss, setzen Sie den Wert für Stunden pro Monat auf `730`. In dieser exemplarischen Vorgehensweise muss ein virtueller Computer jeden Monat zu 50 Prozent verfügbar sein.
 
-    Belassen Sie die Anzahl der virtuellen Computer auf „1“, und ändern Sie den Wert für Stunden pro Monat zu „365“.
+    Belassen Sie die Anzahl der virtuellen Computer auf `1`, und ändern Sie den Wert für Stunden pro Monat zu `365`.
 
    ![Screenshot des Bereichs mit den Abrechnungsoptionen des virtuellen Computers auf der Azure-Webseite für Preisrechnerschätzung. Die hervorgehobene Zahl von Instanzen des virtuellen Computers und Stunden pro Monat gibt an, wie die Anzahl von Instanzen und Stunden pro Monat für einen virtuellen Computer in einer Schätzung des Azure-Preisrechners bestimmt wird.](../images/1904.png)
 
@@ -104,7 +104,7 @@ In dieser Aufgabe werden die Ergebnisse des Azure-Preisrechners überprüft.
 
     **HINWEIS**: Informieren Sie sich über die verschiedenen Optionen, die im Azure-Preisrechner verfügbar sind. In dieser exemplarischen Vorgehensweise müssen Sie beispielsweise die Währung auf Euro aktualisieren.
 
-2. Ändern Sie die Währung in Euro und wählen Sie dann **Export**, um eine Kopie des Kostenvoranschlags für die Offline-Anzeige im Microsoft Excel-Format (.xlsx) herunterzuladen.
+2. Ändern Sie die Währung in Euro und wählen Sie dann **Export**, um eine Kopie des Kostenvoranschlags für die Offline-Anzeige im Microsoft Excel-Format (`.xlsx`) herunterzuladen.
 
     ![Screenshot der geschätzten monatlichen Gesamtkosten auf der Webseite für die Azure-Preisrechnerschätzung. Die hervorgehobene Euro-Währungsoption gibt an, wie die in einer Azure-Preisrechnerschätzung verwendete Währung geändert werden kann. Die hervorgehobene Exportoption zeigt, wie Sie eine Kopie eines Kostenvoranschlags für die Offline-Anzeige herunterladen.](../images/1910.png)
 

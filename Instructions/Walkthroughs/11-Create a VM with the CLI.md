@@ -43,7 +43,7 @@ In dieser Aufgabe verwenden wir Azure CLI, um eine Ressourcengruppe und einen vi
     az group list --output table
     ```
 
-4. Erstellen Sie einen neuen virtuellen Computer. Stellen Sie sicher, dass auf jede Zeile mit Ausnahme der letzten Zeile ein umgekehrter Schrägstrich („\“) folgt. Wenn Sie den gesamten Befehl in derselben Zeile eingeben, verwenden Sie keine umgekehrten Schrägstriche. 
+4. Erstellen Sie einen neuen virtuellen Computer. Stellen Sie sicher, dass auf jede Zeile mit Ausnahme der letzten Zeile ein umgekehrter Schrägstrich (`\`) folgt. Wenn Sie den gesamten Befehl in derselben Zeile eingeben, verwenden Sie keine umgekehrten Schrägstriche. 
 
     ```cli
     az vm create \
@@ -55,7 +55,7 @@ In dieser Aufgabe verwenden wir Azure CLI, um eine Ressourcengruppe und einen vi
     --admin-password Pa$$w0rd1234
     ```
 
-    >**Hinweis**: Wenn Sie die Befehlszeile auf einem Windows-Computer verwenden, ersetzen Sie den umgekehrten Schrägstrich (\) durch das Caretzeichen (^).
+    >**Hinweis**: Wenn Sie die Befehlszeile auf einem Windows-Computer verwenden, ersetzen Sie den umgekehrten Schrägstrich (`\`) durch das Caretzeichen (`^`).
     
     **HINWEIS**: Die Ausführung des Befehls dauert 2 bis 3 Minuten. Der Befehl erstellt einen virtuellen Computer und verschiedene damit verbundene Ressourcen wie Speicher-, Netzwerk- und Sicherheitsressourcen. Fahren Sie mit dem nächsten Schritt erst dann fort, wenn die Bereitstellung des virtuellen Computers abgeschlossen ist. 
 
