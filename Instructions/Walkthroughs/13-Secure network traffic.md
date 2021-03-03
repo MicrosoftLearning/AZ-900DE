@@ -134,7 +134,7 @@ In dieser Aufgabe erstellen wir eine NSG-Regel für ausgehende Ports, die den In
     | -- | -- |
     | Quelle | **Beliebig**|
     | Quellportbereiche | **\*** |
-    | Ziel | **Diensttag** |
+    | Ziel | **Dienstkennung** |
     | Zieldiensttag | **Internet** |
     | Zielportbereiche | **\*** |
     | Protokoll | **TCP** |
