@@ -1,10 +1,10 @@
 ---
 wts:
-    title: '06 – Erstellen einer SQL-Datenbank (5 Min.)'
-    module: 'Modul 02 – Core Azure Services (Workloads)'
+    title: '06 - Erstellen einer SQL-Datenbank (5 Min.)'
+    module: 'Modul 02 - Azure-Kerndienste (Workloads)'
 ---
 
-# 06 – Erstellen einer SQL-Datenbank
+# 06 - Erstellen einer SQL-Datenbank
 
 In dieser exemplarischen Vorgehensweise erstellen wir eine SQL-Datenbank in Azure und fragen dann die Daten in dieser Datenbank ab.
 
@@ -14,7 +14,7 @@ In dieser Aufgabe werden wir eine SQL-Datenbank auf der Grundlage der AdventureW
 
 1. Melden Sie sich beim Azure-Portal an unter [**https://portal.azure.com**](https://portal.azure.com).
 
-2. Suchen Sie auf dem Blatt **Alle Dienste** den Eintrag **SQL-Datenbanken**, wählen Sie ihn aus, und klicken Sie dann auf **+ Hinzufügen**. 
+2. Suchen Sie auf dem Blatt **Alle Dienste** den Eintrag **SQL-Datenbanken**, wählen Sie ihn aus, und klicken Sie auf **+ Hinzufügen, + Erstellen oder auf + Neu**. 
 
 3. Geben Sie auf der Registerkarte **Grundlagen** diese Informationen ein.  
 
@@ -55,7 +55,7 @@ In dieser Aufgabe werden wir eine SQL-Datenbank auf der Grundlage der AdventureW
     | --- | --- |
     | Vorhandene Daten verwenden | **Stichprobe** |
     | Sortierung | ***Standard verwenden*** |
-    | Advanced Data Security aktivieren | **Nicht jetzt** |
+    | „Enable Azure Defender for SQL“ (Azure Defender für SQL aktivieren) | **Nicht jetzt** |
     | | |
 
     ![Screenshot der Registerkarte „Zusätzliche Einstellungen“ des Blatts „SQL-Datenbank erstellen“, wobei die Einstellungen gemäß der Tabelle ausgewählt und die Schaltfläche „Überprüfen + erstellen“ hervorgehoben ist.](../images/0501c.png)
@@ -109,4 +109,4 @@ In dieser Aufgabe konfigurieren wir den SQL Server und führen eine SQL-Abfrage 
 
 Herzlichen Glückwunsch! Sie haben eine SQL-Datenbank in Azure erstellt und die Daten in dieser Datenbank erfolgreich abgefragt.
 
-**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.

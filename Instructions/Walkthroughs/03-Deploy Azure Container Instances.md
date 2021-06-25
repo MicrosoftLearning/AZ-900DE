@@ -1,10 +1,10 @@
 ---
 wts:
-    title: '03 – Bereitstellen von Azure Container Instances (10 Min.)'
-    module: 'Modul 02 – Core Azure Services (Workloads)'
+    title: '03 - Bereitstellen von Azure Container Instances (10 Min.)'
+    module: 'Modul 02 - Azure-Kerndienste (Workloads)'
 ---
 
-# 03 – Bereitstellen von Azure Container Instances
+# 03 - Bereitstellen von Azure Container Instances
 
 In dieser exemplarischen Vorgehensweise erstellen, konfigurieren und implementieren wir einen Docker-Container mithilfe von Azure Container Instances (ACI) im Azure-Portal. Der Container ist eine „Welcome to ACI“-Webanwendung, die eine statische HTML-Seite anzeigt. 
 
@@ -14,7 +14,7 @@ In dieser Aufgabe erstellen wir eine neue Containerinstanz für die Webanwendung
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 
-2. Suchen Sie auf dem Blatt **Alle Dienste** nach **Container Instances**, und wählen Sie diese Option aus. Klicken Sie anschließend auf **+ Hinzufügen**. 
+2. Suchen Sie auf dem Blatt **Alle Dienste** den Eintrag **Containerinstanzen**, wählen Sie ihn aus, und klicken Sie auf **+ Hinzufügen, + Erstellen oder auf + Neu**. 
 
 3. Geben Sie die folgenden grundlegenden Details für die neue Containerinstanz an (belassen Sie die Standardeinstellungen für alles andere so, wie sie sind): 
 
@@ -71,4 +71,4 @@ In dieser Aufgabe überprüfen wir, ob die Containerinstanz ausgeführt wird, in
 
 Herzlichen Glückwunsch! Sie haben Azure-Portal verwendet, um eine Anwendung erfolgreich in einem Container in Azure Containerinstanz bereitzustellen.
 
-**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.

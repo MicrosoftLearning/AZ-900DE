@@ -1,9 +1,9 @@
 ---
 wts:
-    title: '07 – Implementieren eines Azure IoT Hubs (10 Min.)'
+    title: '07 - Implementieren eines Azure IoT Hub (10 Min.)'
     module: 'Modul 03: Kernlösungen und Verwaltungstools beschreiben'
 ---
-# 07 – Implementieren eines Azure IoT Hub
+# 07 - Implementieren eines Azure IoT Hub
 
 In dieser exemplarischen Vorgehensweise konfigurieren wir einen neuen Azure IoT Hub im Azure-Portal und authentifizieren dann eine Verbindung zu einem IoT-Gerät mithilfe des Raspberry Pi-Gerätesimulators. Sensordaten und Nachrichten werden vom Raspberry Pi-Simulator an Ihren Azure IoT Hub übergeben, und Sie sehen Metriken für die Meldungsaktivität im Azure-Portal.
 
@@ -13,7 +13,7 @@ In dieser Aufgabe werden wir einen IoT-Hub erstellen.
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 
-2. Suchen Sie auf dem Blatt **Alle Dienste** nach **IoT Hub**, und wählen Sie diese Option aus; anschließend klicken Sie auf **+ Hinzufügen**.
+2. Suchen Sie auf dem Blatt **Alle Dienste** den Eintrag **IoT Hub**, wählen Sie ihn aus, und klicken Sie auf **+ Hinzufügen, + Erstellen oder auf + Neu**.
 
 3. Auf der Registerkarte **Grundlagen** des Blatts **IoT-Hub** füllen Sie die Felder mit den folgenden Details aus (ersetzen Sie **xxxx** im Namen des Speicherkontos durch Buchstaben und Ziffern, sodass der Name global eindeutig ist):
 
@@ -25,7 +25,7 @@ In dieser Aufgabe werden wir einen IoT-Hub erstellen.
     | IoT Hub-Name | **my-hub-groupxxxx** |
     | | |
 
-    **Hinweis** -  Denken Sie daran, **xxxx** zu ändern, sodass sich ein eindeutiger **IoT Hub-Name** ergibt
+    **Hinweis** -  – Denken Sie daran, **xxxx** zu ändern, sodass sich ein eindeutiger ***IoT Hub-Name** ergibt
 
 4. Wechseln Sie zur Registerkarte **Verwaltung**, und verwenden Sie die Dropdownliste, um die **Preis- und Skalierungsebene** festzulegen auf **S1: Standardebene**.
 
@@ -82,4 +82,4 @@ In dieser Aufgabe testen wir unser Gerät mit dem Raspberry Pi-Simulator.
 
 Herzlichen Glückwunsch! Sie haben Azure IoT Hub so eingerichtet, dass Sensordaten von einem IoT-Gerät erfasst werden.
 
-**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.

@@ -1,9 +1,9 @@
 ---
 wts:
-    title: '16 – Implementieren von Ressourcen-Tagging (5 Min.)'
+    title: '16 - Implementieren von Ressourcen-Tagging (5 Min.)'
     module: 'Modul 05: Beschreiben der Features für Identität, Governance, Datenschutz und Compliance'
 ---
-# 16 – Implementieren des Ressourcentaggings
+# 16 - Implementieren von Ressourcen-Tagging
 
 In dieser exemplarischen Vorgehensweise erstellen wir eine Richtlinienzuweisung, für die Tagging erforderlich ist, erstellen ein Speicherkonto und testen das Tagging, zeigen Ressourcen mit einem angegebenen Tag an und entfernen die Tagging-Richtlinie.
 
@@ -19,13 +19,13 @@ In dieser Aufgabe konfigurieren wir die Richtlinie **Einen Tag für Ressourcen a
 
 4. Beachten Sie, dass der **Bereich** für unsere Richtlinie abonnementweit sein wird. 
 
-5. Wählen Sie die Schaltfläche mit den Auslassungspunkten (**Richtliniendefinition**) aus (am Ende des Textfelds rechts). **Suchen** Sie nach Richtliniendefinitionen mit dem Wert **Tag**. Klicken Sie in der Ergebnismenge auf die Definition **Tag für Ressourcen erforderlich**, und klicken Sie dann auf **Auswählen**.
+5. Wählen Sie unter **Grundlagen** die Schaltfläche **Richtliniendefinition** mit den Auslassungspunkten (rechts neben dem Textfeld) aus. Geben Sie im **Suchfeld** den Wert **tag** ein. Eine Liste der verwandten Richtlinien mit dem Wort **tag** wird angezeigt. Blättern Sie nach unten zur Definition **Tag für Ressourcen erforderlich**, klicken Sie darauf, und klicken Sie dann auf **Auswählen**.
 
    ![Screenshot des Bereichs „Verfügbare Definitionen“ mit ausgewähltem Eintrag „Tag für Ressourcen erforderlich“.](../images/1701.png)
 
-6. Geben Sie auf dem Blatt **Richtlinie zuweisen** auf der Registerkarte **Parameter** die Zeichenfolge **Unternehmen** als Tag-Name ein. Klicken Sie auf **Überprüfen + erstellen** und dann auf **Erstellen**.
+6. Geben Sie auf dem Blatt **Parameter** den Wert **Unternehmen** als Tag-Name ein. Geben Sie den Wert **Contoso** ein. Klicken Sie auf **Überprüfen + erstellen** und dann auf **Erstellen**.
 
-    **Hinweis:** Dies ist ein einfaches Beispiel, um das Tagging zu demonstrieren. 
+    **Hinweis:** Dies ist ein einfaches Beispiel, um das Tagging zu demonstrieren. Es kann bis zu 30 Minuten dauern, bis die Zuweisung übernommen wird. 
 
     ![Screenshot des Bereichs „Richtlinie zuweisen“ mit ausgefülltem Tag-Namen.](../images/1702.png)
 
@@ -37,14 +37,14 @@ In dieser Aufgabe konfigurieren wir die Richtlinie **Einen Tag für Ressourcen a
 
 In dieser Aufgabe erstellen wir Speicherkonten, um das erforderliche Tagging zu testen. 
 
-1. Suchen Sie im Azure-Portal auf dem Blatt **Alle Dienste** nach **Speicherkonten**, und wählen Sie diese Option aus. Klicken Sie anschließend auf **+ Hinzufügen**.
+1. Suchen Sie im Azure-Portal auf dem Blatt **Alle Dienste** den Eintrag **Speicherkonten**, wählen Sie ihn aus, und klicken Sie auf **+ Hinzufügen, + Erstellen oder auf + Neu**.
 
 2. Geben Sie auf dem Blatt **Speicherkonto erstellen** auf der Registerkarte **Grundlagen** die folgenden Informationen ein (ersetzen Sie **xxxx** im Speicherkontonamen durch Buchstaben und Ziffern, sodass der Name global eindeutig ist). Belassen Sie ansonsten die Standardeinstellungen.
 
     | Einstellung | Wert | 
     | --- | --- |
     | Abonnement | **Verwenden Sie Ihr Abonnement** |
-    | Ressourcengruppe | **myRGTags** (Neu) |
+    | Ressourcengruppe | **myRGTags**  |
     | Speicherkontoname | **storageaccountxxxx** |
     | Standort | **(USA) USA, Osten** |
     | | |
@@ -102,4 +102,4 @@ In dieser Aufgabe werden wir die Richtlinie **Tag für Ressourcen erforderlich**
 In dieser exemplarischen Vorgehensweise haben wir eine Richtlinienzuweisung erstellt, für die Tagging erforderlich ist, ein Speicherkonto erstellt und das Tagging getestet, Ressourcen mit einem angegebenen Tag angezeigt und die Tagging-Richtlinie entfernt.
 
 
-**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.

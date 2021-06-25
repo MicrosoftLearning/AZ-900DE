@@ -1,9 +1,9 @@
 ---
 wts:
-    title: '09 – Erstellen eines virtuellen Computers mit Hilfe einer Vorlage (10 Min.)'
+    title: '09 - Erstellen eines virtuellen Computers mit Hilfe einer Vorlage (10 Min.)'
     module: 'Modul 03: Kernlösungen und Verwaltungstools beschreiben'
 ---
-# 09 – Erstellen eines virtuellen Computers mithilfe einer Vorlage
+# 09 - Erstellen eines virtuellen Computers mit Hilfe einer Vorlage
 
 In dieser exemplarischen Vorgehensweise stellen wir einen virtuellen Computer mit einer Schnellstartvorlage bereit und untersuchen Überwachungsfunktionen.
 
@@ -42,11 +42,11 @@ In dieser Aufgabe durchsuchen wir den Azure-Schnellstartkatalog und stellen eine
     | Windows-Betriebssystemversion | **2019-Datacenter** |
     | | |
     
-    ** Hinweis: Bei der Nutzung dieser Vorlage fallen keine Kosten an.
+    **Hinweis**: Bei der Nutzung dieser Vorlage fallen keine Kosten an.
 
-9. Klicken Sie auf **Überprüfen + erstellen**.
+8. Klicken Sie auf **Überprüfen + Erstellen**.
 
-10. Überwachen Sie Ihre Bereitstellung. 
+9. Sobald die Validierung bestanden ist, klicken Sie auf die Schaltfläche **Erstellen**. Die Bereitstellung des virtuellen Computers kann zwischen fünf und sieben Minuten dauern. 
 
 # Aufgabe 2: Überprüfen und Überwachen der Bereitstellung Ihres virtuellen Computers
 
@@ -76,4 +76,4 @@ In dieser Aufgabe überprüfen wir, ob der virtuelle Computer ordnungsgemäß be
 
     ![Screenshot der Seite „Filter hinzufügen“ mit ausgewähltem Ereignistyp.](../images/0904.png)
 
-**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.

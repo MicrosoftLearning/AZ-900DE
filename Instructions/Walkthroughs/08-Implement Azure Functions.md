@@ -1,9 +1,9 @@
 ---
 wts:
-    title: '08 – Implementieren von Azure Functions (5 Min.)'
+    title: '08 - Implementieren von Azure Functions (5 Min.)'
     module: 'Modul 03: Kernlösungen und Verwaltungstools beschreiben'
 ---
-# 08 – Implementieren von Azure Functions
+# 08 - Implementieren von Azure Functions
 
 In dieser exemplarischen Vorgehensweise erstellen wir eine Funktions-App, um eine Hallo-Meldung anzuzeigen, wenn eine HTTP-Anforderung vorliegt. 
 
@@ -13,7 +13,7 @@ In dieser Aufgabe erstellen wir eine Funktions-App.
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 
-1. Wählen Sie im Textfeld **Ressourcen, Dienste und Dokumente suchen** oben im Portal **Funktions-App** aus, und klicken Sie dann auf dem Blatt **Funktions-App** auf **Hinzufügen**.
+1. Wählen Sie im Textfeld **Ressourcen, Dienste und Dokumente suchen** oben im Portal **Funktions-App** aus, und klicken Sie dann auf dem Blatt **Funktions-App** auf **+ Hinzufügen, + Erstellen oder auf + Neu**.
 
 1. Geben Sie auf dem Blatt **Funktions-App** auf der Registerkarte **Basic** die folgenden Einstellungen an (ersetzen Sie **xxxx** im Funktionsnamen durch Buchstaben und Ziffern, sodass der Name global eindeutig ist, und belassen Sie für alle anderen Einstellungen die Standardwerte): 
 
@@ -23,12 +23,12 @@ In dieser Aufgabe erstellen wir eine Funktions-App.
     | Ressourcengruppe | Der Name einer neuen Ressourcengruppe **myRGFunction** |
     | Name der Funktions-App | **Funktion-xxxx** |
     | Veröffentlichen | **Code** |
-    | Runtime-Stapel | **NET Core** |
+    | Runtime-Stapel | **NET** |
     | Version | **3,1** |
     | Region | **USA, Osten** |
     | | |
 
-    **Hinweis** -  – Denken Sie daran, **xxxx** zu ändern, sodass sich ein eindeutiger **Funktions-App-Name** ergibt
+    **Hinweis** - Denken Sie daran, **xxxx** zu ändern, sodass sich ein eindeutiger **Funktions-App-Name** ergibt
 
 1. Klicken Sie auf **Überprüfen + erstellen**. Klicken Sie nach erfolgreicher Validierung auf **Erstellen**, um mit der Bereitstellung Ihrer neuen Azure Funktions-App zu beginnen.
 
@@ -44,17 +44,11 @@ In dieser Aufgabe verwenden wir die Webhook + API-Funktion, um eine Nachricht an
 
 1. Klicken Sie auf dem Blatt **Funktions-App** auf die neu erstellte Funktions-App. 
 
-1. Klicken Sie auf dem Blatt „Funktions-App“ im Abschnitt **Funktionen** auf **Funktionen** und dann auf **Hinzufügen**.
+1. Klicken Sie auf dem Blatt „Funktions-App“ im Abschnitt **Funktionen** auf **Funktionen** und dann auf **+ Hinzufügen**.
 
     ![Screenshot des Schritts „Entwicklungsumgebung auswählen“ in den Azure Functions für den Bereich „Erste Schritte mit Dot Net“ im Azure-Portal. Die Anzeigeelemente zum Erstellen einer neuen Portalfunktion werden hervorgehoben. Die hervorgehobenen Elemente sind „Erweitern der Funktions-App“, „Hinzufügen einer neuen Funktion“, „Portal“ und die Schaltfläche „Weiter“.](../images/0702.png)
 
-1. Klicken Sie auf der Registerkarte **Vorlagen** unter **Neue Funktion** auf **HTTP-Trigger**. 
-
-    ![Screenshot des Schritts zum Erstellen einer Funktion in Azure Functions für den Bereich „Erste Schritte mit Dot Net“ im Azure-Portal. Die HTTP-Triggerkarte wird hervorgehoben, um die Anzeigeelemente zu veranschaulichen, mit denen einer Azure-Funktion ein neuer Webhook hinzugefügt wird.](../images/0702a.png)
-
-1. Akzeptieren Sie auf dem Blatt **Neue Funktion** auf der Registerkarte **Details** den Standardnamen **Neue Funktion** und die **Autorisierungsstufe**, und klicken Sie dann auf **Funktion erstellen**. 
-
-    ![Screenshot des Schritts zum Erstellen einer Funktion in Azure Functions für den Bereich „Erste Schritte mit Dot Net“ im Azure-Portal. Die Schaltflächen „Webhook + API“ und „Erstellen“ sind hervorgehoben, um die Anzeigeelemente zu veranschaulichen, mit denen einer Azure-Funktion ein neuer Webhook hinzugefügt wird](../images/0703.png)
+1. Klicken Sie im Abschnitt **Vorlage auswählen** auf dem Blatt **Funktion hinzufügen** auf **HTTP-Trigger**, akzeptieren Sie die Standardwerte im Abschnitt **Vorlagendetails**, und klicken Sie auf **Hinzufügen**.
 
 1. Klicken Sie auf dem Blatt **HttpTrigger1** im Abschnitt **Entwickler** auf **Code + Test**. 
 
@@ -74,7 +68,7 @@ In dieser Aufgabe verwenden wir die Webhook + API-Funktion, um eine Nachricht an
 
 1. Fügen Sie **&name=*yourname*** an das Ende der URL an.
 
-    **HINWEIS**: Ersetzen Sie ***yourname*** durch Ihren Vornamen. Wenn Sie beispielsweise Cindy heißen, ähnelt die endgültige URL der folgenden: „https://azfuncxxx.azurewebsites.net/api/HttpTrigger1?code=X9xx9999xXXXXX9x9xxxXX==&name=cindy“
+    **HINWEIS**: Ersetzen Sie ***yourname*** durch Ihren Vornamen. Wenn Sie beispielsweise Cindy heißen, ähnelt die endgültige URL der folgenden: `https://azfuncxxx.azurewebsites.net/api/HttpTrigger1?code=X9xx9999xXXXXX9x9xxxXX==&name=cindy`
 
     ![Screenshot einer hervorgehobenen Funktions-URL und eines angehängten Beispielbenutzernamens in der Adressleiste eines Webbrowsers. Die Hallo-Meldung und der Benutzername werden ebenfalls hervorgehoben, um die Ausgabe der Funktion im Hauptbrowserfenster zu veranschaulichen.](../images/0707.png)
 
@@ -84,4 +78,4 @@ In dieser Aufgabe verwenden wir die Webhook + API-Funktion, um eine Nachricht an
 
 Herzlichen Glückwunsch! Sie haben eine Funktions-App erstellt, um eine Hallo-Meldung anzuzeigen, wenn eine HTTP-Anforderung vorliegt. 
 
-**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.

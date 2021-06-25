@@ -1,9 +1,9 @@
 ---
 wts:
-    title: '12 – Implementieren von Azure Key Vault (5 Min.)'
+    title: '12 - Implementieren von Azure Key Vault (5 Min.)'
     module: 'Modul 04: Beschreiben der Features für allgemeine Sicherheit und Netzwerksicherheit'
 ---
-# 12 – Implementieren von Azure Key Vault
+# 12 - Implementieren von Azure Key Vault
 
 In dieser exemplarischen Vorgehensweise erstellen wir einen Azure-Schlüsseltresor und erstellen dann ein Kennwortgeheimnis in diesem Schlüsseltresor. Dadurch wird ein sicher gespeichertes, zentral verwaltetes Kennwort für die Verwendung mit Anwendungen bereitgestellt.
 
@@ -11,7 +11,7 @@ In dieser exemplarischen Vorgehensweise erstellen wir einen Azure-Schlüsseltres
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 
-2. Suchen Sie auf dem Blatt **Alle Dienste** die Option **Schlüsseltresore**, und wählen Sie sie aus. Wählen Sie dann **+ Hinzufügen** aus.
+2. Suchen Sie auf dem Blatt **Alle Dienste** den Eintrag **Schlüsseltresore**, wählen Sie ihn aus, und wählen Sie dann **+ Hinzufügen, + Erstellen oder auf + Neu** aus.
 
 3. Konfigurieren Sie den Schlüsseltresor (ersetzen Sie **xxxx** im Namen des Schlüsseltresors durch Buchstaben und Ziffern, sodass der Name global eindeutig ist). Belassen Sie ansonsten die Standardeinstellungen.
 
@@ -24,7 +24,7 @@ In dieser exemplarischen Vorgehensweise erstellen wir einen Azure-Schlüsseltres
     | Tarif | **Standard** |
     | | |
 
-4. Klicken Sie auf **Überprüfen + erstellen**, und klicken Sie dann auf **Erstellen**. 
+4. Klicken Sie auf **Überprüfen + erstellen** und nach der Validierung auf **Erstellen**. 
 
 5. Wenn der neue Schlüsseltresor bereitgestellt ist, klicken Sie auf **Zu Ressource wechseln**. Sie können aber auch nach Ihrem neuen Schlüsseltresor suchen. 
 
@@ -59,4 +59,4 @@ In dieser Aufgabe werden wir dem Schlüsseltresor ein Kennwort hinzufügen.
 
 Herzlichen Glückwunsch! Sie haben einen Azure-Schlüsseltresor erstellt und anschließend in diesem Schlüsseltresor ein Kennwortgeheimnis erstellt. Damit steht ein sicher gespeichertes, zentral verwaltetes Kennwort für die Nutzung mit Anwendungen zur Verfügung.
 
-**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.

@@ -1,9 +1,9 @@
 ---
 wts:
-    title: '14 – Zugriff mit RBAC verwalten (5 Min.)'
+    title: '14 - Verwalten des Zugriffs mit RBAC (5 Min.)'
     module: 'Modul 05: Beschreiben der Features für Identität, Governance, Datenschutz und Compliance'
 ---
-# 14 – Verwalten des Zugriffs mit RBAC
+# 14 - Verwalten des Zugriffs mit RBAC
 
 In dieser exemplarischen Vorgehensweise werden wir Rollen zuweisen und Aktivitätsprotokolle anzeigen. 
 
@@ -13,9 +13,9 @@ In dieser Aufgabe weisen wir die Rolle „Mitwirkender für virtuelle Computer�
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 
-2. Suchen Sie auf dem Blatt **Alle Dienste** nach **Ressourcengruppen**, und wählen Sie diese Option aus. Klicken Sie anschließend auf **+ Hinzufügen**.
+2. Suchen Sie auf dem Blatt **Alle Dienste** den Eintrag **Ressourcengruppen**, wählen Sie ihn aus, und klicken Sie auf **+ Hinzufügen, + Erstellen oder auf + Neu**.
 
-3. Erstellen Sie eine neue Ressourcengruppe. Klicken Sie auf **Erstellen**, wenn Sie fertig sind. 
+3. Erstellen einer neuen Ressourcengruppe Klicken Sie auf **Erstellen**, wenn Sie fertig sind. 
 
     | Einstellung | Wert |
     | -- | -- |
@@ -65,6 +65,6 @@ In dieser Aufgabe werden wir anhand des Aktivitätsprotokolls die Rollenzuweisun
 
 Herzlichen Glückwunsch! Sie haben Rollen zugewiesen und Aktivitätsprotokolle angezeigt. 
 
-**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
 
 

@@ -1,11 +1,11 @@
 ---
 wts:
-    title: '15 – Verwalten von Ressourcensperren (5 Min.)'
+    title: '15 - Verwalten von Ressourcensperren (5 Min.)'
     module: 'Modul 05: Beschreiben der Features für Identität, Governance, Datenschutz und Compliance'
 ---
-# 15 – Verwalten von Ressourcensperren
+# 15 - Verwalten von Ressourcensperren
 
-In dieser exemplarischen Vorgehensweise erstellen wir eine Ressourcengruppe, fügen der Ressourcengruppe eine Sperre hinzu und testen das Löschen, testen das Löschen einer Ressource in der Ressourcengruppe und entfernen die Ressourcensperre. 
+In dieser exemplarischen Vorgehensweise fügen wir der Ressourcengruppe eine Sperre hinzu und testen das Löschen der Ressourcengruppe. Sperren können in einem Abonnement auf Ressourcengruppen oder einzelne Ressourcen angewendet werden, um ein versehentliches Löschen oder Ändern kritischer Ressourcen zu verhindern.  
 
 # Aufgabe 1: Erstellen Sie eine Ressourcengruppe (5 Min.)
 
@@ -13,16 +13,16 @@ In dieser Aufgabe erstellen wir für diese Übung eine Ressourcengruppe.
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 
-2. Suchen Sie auf dem Blatt **Alle Dienste** den Eintrag **Ressourcengruppen**, und wählen Sie ihn aus. Wählen Sie dann **+ Hinzufügen** aus.
+2. Suchen Sie in der **Suchleiste** am oberen Rand des Portals nach **Ressourcengruppen**. 
 
-3. Erstellen Sie eine neue Ressourcengruppe. Wenn Sie fertig sind, klicken Sie auf **Überprüfen + erstellen** und dann auf **Erstellen**. 
+3. Klicken Sie dann auf **+Hinzufügen +Neu +Erstellen** 
 
     | Einstellung | Wert |
     | -- | -- |
     | Abonnement | **Verwenden Sie Ihr Abonnement** |
     | Name | **myRGLocks** |
     | Region | **(USA) USA, Osten** |
-    | | |
+    
 
 # Aufgabe 2:  Hinzufügen einer Sperre zur Ressourcengruppe und Testen des Löschvorgangs
 
@@ -52,9 +52,9 @@ In dieser Aufgabe fügen wir der Ressourcengruppe eine Ressourcensperre hinzu un
 
 In dieser Aufgabe testen wir, ob die Ressourcensperre ein Speicherkonto in der Ressourcengruppe schützt. 
 
-1. Suchen Sie auf dem Blatt **Alle Dienste** nach **Speicherkonten**, und wählen Sie diese Option aus. Klicken Sie dann auf **+ Hinzufügen**. 
+1. Suchen Sie auf dem Blatt **Alle Dienste** den Eintrag **Speicherkonten**, wählen Sie ihn aus, und klicken Sie auf **+ Hinzufügen, + Erstellen oder auf + Neu**. 
 
-2. Geben Sie auf dem Blatt **Speicherkonto erstellen** auf der Registerkarte **Grundlagen** die folgenden Informationen ein (ersetzen Sie **xxxx** im Speicherkontonamen durch Buchstaben und Ziffern, sodass der Name global eindeutig ist). Belassen Sie ansonsten die Standardeinstellungen.
+2. Geben Sie auf dem Blatt **Speicherkonten** auf der Registerkarte **+Hinzufügen +Neu +Erstellen** die folgenden Informationen ein (ersetzen Sie **xxxx** im Speicherkontonamen durch einen global eindeutigen Namen, der aus Buchstaben und Ziffern besteht). Belassen Sie ansonsten die Standardeinstellungen.
 
     | Einstellung | Wert | 
     | --- | --- |
@@ -66,7 +66,7 @@ In dieser Aufgabe testen wir, ob die Ressourcensperre ein Speicherkonto in der R
     | Kontotyp | **StorageV2 (universell v2)** |
     | Replikation | **Lokal redundanter Speicher (LRS)** |
     | Zugriffsebene (Standard) | **Heiße Ebene** |
-    | | |
+   
 
 3. Klicken Sie auf **Überprüfen + erstellen**, um die Einstellungen Ihres Speicherkontos zu überprüfen und Azure die Validierung der Konfiguration zu ermöglichen. 
 
@@ -84,9 +84,9 @@ In dieser Aufgabe testen wir, ob die Ressourcensperre ein Speicherkonto in der R
 
 In dieser Aufgabe entfernen wir die Ressourcensperre und testen. 
 
-1. Wechseln Sie wieder zum Ressourcengruppen-Blatt **myRGLocks**, und klicken Sie im Abschnitt **Einstellungen** auf **Sperren**.
+1. Wechseln Sie wieder zum Ressourcengruppen-Blatt **myRGLocks-XXXXXXXX**, und klicken Sie im Abschnitt **Einstellungen** auf **Sperren**.
     
-2. Klicken Sie den Link **Löschen** rechts neben dem Eintrag **RGLock**.
+2. Klicken Sie auf den Link **Löschen** ganz rechts neben dem Eintrag **myRGLocks-XXXXXXXX**, rechts von **Bearbeiten**.
 
     ![Screenshot der Sperre mit hervorgehobenem Link zum Löschen.](../images/1604.png)
 
@@ -94,4 +94,4 @@ In dieser Aufgabe entfernen wir die Ressourcensperre und testen.
 
 Herzlichen Glückwunsch! Sie haben eine Ressourcengruppe erstellt, der Ressourcengruppe eine Sperre hinzugefügt und das Löschen getestet, das Löschen einer Ressource in der Ressourcengruppe getestet und die Ressourcensperre entfernt. 
 
-**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.

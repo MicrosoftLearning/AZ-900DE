@@ -1,9 +1,9 @@
 ---
 wts:
-    title: '02 – Erstellen einer Web-App (10 Min.)'
-    module: 'Modul 02 – Core Azure Services (Workloads)'
+    title: '02 - Erstellen einer Web-App (10 Min.)'
+    module: 'Modul 02 - Azure-Kerndienste (Workloads)'
 ---
-# 02 – Erstellen einer Web-App
+# 02 - Erstellen einer Web-App
 
 In dieser exemplarischen Vorgehensweise erstellen wir eine neue Web-App, in der ein Docker-Container ausgeführt wird. Der Container zeigt eine Begrüßungsnachricht an. 
 
@@ -15,7 +15,7 @@ In dieser Aufgabe erstellen Sie eine Azure App Service-Web-App.
 
 1. Melden Sie sich beim [Azure-Portal](http://portal.azure.com/) an. 
 
-2. Suchen Sie auf dem Blatt **Alle Dienste** den Eintrag **App Services**, wählen Sie ihn aus, und klicken Sie auf **+ Hinzufügen**.
+2. Suchen Sie auf dem Blatt **Alle Dienste** den Eintrag **App Services**, wählen Sie ihn aus, und klicken Sie auf **+ Hinzufügen, + Erstellen oder auf + Neu**.
 
 3. Geben Sie auf der Registerkarte **Grundlagen** des Blatts **Web-App** die folgenden Einstellungen an (ersetzen Sie **xxxx** im Namen der Web-App durch Buchstaben und Ziffern, sodass der Name global eindeutig ist). Behalten Sie ansonsten die Standardeinstellungen bei, auch für den App Service-Plan. 
 
@@ -64,5 +64,5 @@ In dieser Aufgabe testen wir die Web-App.
 
 5. Wechseln Sie wieder zum Blatt **Übersicht** Ihrer Web-App, und beachten Sie, dass es mehrere Diagramme enthält. Wenn Sie Schritt 4 einige Male wiederholen, sollte die entsprechende Telemetrie in den Diagrammen angezeigt werden. Dies umfasst die Anzahl der Anfragen und die durchschnittliche Antwortzeit. 
 
-**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
 

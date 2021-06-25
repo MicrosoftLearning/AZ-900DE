@@ -1,11 +1,11 @@
 ---
 wts:
-    title: '04 – Erstellen eines virtuellen Netzwerks (20 Min.)'
-    module: 'Modul 02 – Core Azure Services (Workloads)'
+    title: '04 - Erstellen eines virtuellen Netzwerks (20 Min.)'
+    module: 'Modul 02 - Azure-Kerndienste (Workloads)'
 ---
-# 04 – Erstellen eines virtuellen Netzwerks
+# 04 - Erstellen eines virtuellen Netzwerks
 
-In dieser exemplarischen Vorgehensweise erstellen wir ein virtuelles Netzwerk, stellen zwei virtuelle Computer in diesem virtuellen Netzwerk bereit und konfigurieren sie dann so, dass ein virtueller Computer den anderen innerhalb dieses virtuellen Netzwerks pingen kann.
+In dieser exemplarischen Vorgehensweise erstellen wir ein virtuelles Netzwerk, stellen zwei virtuelle Computer in diesem virtuellen Netzwerk so bereit, dass sie einander innerhalb dieses virtuellen Netzwerks pingen können.
 
 # Aufgabe 1: Erstellen Sein in virtuelles Netzwerk (20 Min.)
 
@@ -13,17 +13,17 @@ In dieser Aufgabe erstellen wir ein virtuelles Netzwerk.
 
 1. Melden Sie sich beim Azure-Portal an unter: <a href="https://portal.azure.com" target="_blank"><span style="color: #0066cc;" color="#0066cc">https://portal.azure.com</span></a>
 
-2. Suchen Sie auf dem Blatt **Alle Dienste** nach **Virtuelle Netzwerke**, und wählen Sie diese Option aus. Klicken Sie dann auf **+ Hinzufügen**. 
+2. Suchen Sie auf dem Blatt **Alle Dienste** den Eintrag **Virtuelle Netzwerke**, wählen Sie ihn aus, und klicken Sie auf **+ Hinzufügen, + Erstellen oder auf + Neu**. 
 
 3. Füllen Sie auf dem Blatt **Virtuelles Netzwerk erstellen** die folgenden Werte aus (belassen Sie die Standartwerte für alle anderen Werte):
 
     | Einstellung | Wert | 
     | --- | --- |
-    | Name | **vnet1** |
-    | Adressraum |**10.1.0.0/16** |
     | Abonnement | **Wählen Sie Ihr Abonnement** |
     | Ressourcengruppe | **myRGVNet** (neu erstellen) |
+    | Name | **vnet1** |
     | Standort | **(USA) USA, Osten** |
+    | Adressraum |**10.1.0.0/16** |
     | Subnetzname | **Standard** |
     | Subnetzadressbereich | **10.1.0.0/24** |
 
@@ -40,7 +40,7 @@ In dieser Aufgabe erstellen wir ein virtuelles Netzwerk.
 
 In dieser Aufgabe erstellen wir zwei virtuelle Computer im virtuellen Netzwerk. 
 
-1. Suchen Sie auf dem Blatt **Alle Dienste** nach **Virtuelle Computer**, und klicken Sie dann auf **+ Hinzufügen**. 
+1. Suchen Sie auf dem Blatt **Alle Dienste** nach **Virtuelle Computer**, klicken Sie auf **+ Hinzufügen**, und wählen Sie **+ Virtueller Computer** aus. 
 
 2. Geben Sie auf der Registerkarte **Grundlagen** die folgenden Informationen ein (belassen Sie ansonsten die Standardeinstellungen):
 
@@ -82,9 +82,9 @@ In dieser Aufgabe erstellen wir zwei virtuelle Computer im virtuellen Netzwerk.
 
 # Aufgabe 3: Testen der Verbindung 
 
-In dieser Aufgabe werden wir ICMP-Verbindungen zulassen und testen, ob die virtuellen Computer miteinander kommunizieren (pingen) können. 
+In dieser Aufgabe melden wir uns bei einer VM an und pingen die andere VM. 
 
-1. Suchen Sie auf dem Blatt **Alle Ressourcen** nach **vm1**, öffnen Sie das zugehörige Blatt **Übersicht**, und stellen Sie sicher, dass für **Status** **Wird ausgeführt** angezeigt wird. Möglicherweise müssen Sie die Seite **Aktualisieren**.
+1. Suchen Sie auf dem Blatt **Alle Ressourcen** nach **vm1**, öffnen Sie das zugehörige Blatt **Übersicht**, und stellen Sie sicher, dass für **Status Wird ausgeführt** angezeigt wird. Möglicherweise müssen Sie die Seite **Aktualisieren**.
 
 2. Klicken Sie auf dem Blatt **Überblick** auf die Schaltfläche **Verbinden**.
 
@@ -100,34 +100,12 @@ In dieser Aufgabe werden wir ICMP-Verbindungen zulassen und testen, ob die virtu
 
 7. Öffnen Sie eine PowerShell-Eingabeaufforderung auf dem virtuellen Computer, indem Sie auf die Schaltfläche **Start** klicken, **PowerShell** eingeben, mit der rechten Maustaste auf **Windows PowerShell** im Rechtsklickmenü klicken und auf **Als Administrator ausführen** klicken.
 
-8. Versuchen Sie, vm2 zu pingen (stellen Sie sicher, dass vm2 ausgeführt wird). Sie erhalten eine Fehlermeldung, dass das Zeitlimit für die Anforderung abgelaufen ist.  Der Ping schlägt fehl, weil Ping das **ICMP (Internet Control Message Protocol)** verwendet. Standardmäßig wird ICMP durch die Windows-Firewall nicht zugelassen.
-
-
-   ```PowerShell
-   ping vm2
-   ```
-   
-   ![Screenshot der PowerShell-Eingabeaufforderung mit dem Befehl „ping vm2“ nach dessen Abschluss und der Ausgabe, die angibt, dass der Befehl nicht erfolgreich war.](../images/0302.png)
-
-    **HINWEIS**: Sie öffnen jetzt eine RDP-Sitzung für vm2 und lassen eingehende ICMP-Verbindungen zu.
-
-9. Stellen Sie mithilfe von RDP eine Verbindung mit **vm2** her. Sie können die Schritte **2 bis 6** ausführen.
-
-10. Öffnen Sie eine **PowerShell**-Eingabeaufforderung, und lassen Sie ICMP zu. Dieser Befehl erlaubt eingehende ICMP-Verbindungen über die Windows-Firewall.
-
-   ```PowerShell
-   New-NetFirewallRule –DisplayName “Allow ICMPv4-In” –Protocol ICMPv4
-   ```
-   ![Screenshot der PowerShell-Eingabeaufforderung mit dem Befehl „New-NetFirewallRule DisplayName Allow ICMPv4-In -Protocol ICMPv4“ nach seiner Fertigstellung und der Ausgabe, die angibt, dass der Befehl erfolgreich war.](../images/0303.png)
-
-   **HINWEIS**: Sie wechseln jetzt zur RDP-Sitzung zu vm1 und versuchen den Ping erneut
-
-11. Kehren Sie zur RDP-Sitzung zu vm1 zurück und versuchen Sie den Ping erneut. Sie sollten jetzt erfolgreich sein. 
+8. Geben Sie den folgenden Befehl in PowerShell ein, um mit vm2 zu kommunizieren. Diese Kommunikation sollte erfolgreich sein.
 
    ```PowerShell
    ping vm2
    ```
 
-Herzlichen Glückwunsch! Sie haben zwei virtuelle Computer in einem virtuellen Netzwerk konfiguriert und bereitgestellt. Sie haben auch die Windows-Firewall so konfiguriert, dass einer der virtuellen Computer eingehende Ping-Anforderungen zulässt. 
+Herzlichen Glückwunsch! Sie haben zwei virtuelle Computer in einem virtuellen Netzwerk konfiguriert und bereitgestellt. Damit haben Sie die Kommunikation zwischen den beiden VMs getestet. 
 
-**HINWEIS**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe, und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
+**Hinweis**: Um zusätzliche Kosten zu vermeiden, können Sie diese Ressourcengruppe entfernen. Suchen Sie nach Ressourcengruppen, klicken Sie auf Ihre Ressourcengruppe und dann auf **Ressourcengruppe löschen**. Überprüfen Sie den Namen der Ressourcengruppe und klicken Sie dann auf **Löschen**. Überwachen Sie die **Benachrichtigungen**, um zu sehen, wie der Löschvorgang abläuft.
